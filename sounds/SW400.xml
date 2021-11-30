@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+<motorized>
+	<sounds>
+    <motorStart file="sounds/Engines/SW400/bizonZ056_start.ogg" linkNode="0>"/>
+    <motorStop template="DEFAULT_MOTOR_STOP" file="sounds/Engines/SW400/gaszenie.wav" linkNode="0>"/>
+    <motor template="DEFAULT_MOTOR_IDLE" file="sounds/Engines/SW400/idle.ogg" linkNode="0>"/>
+    <motor template="DEFAULT_MOTOR_RUN" file="sounds/Engines/SW400/jazda.ogg" linkNode="0>"/>
+
+	<gearGroupLeverStart template="clackVar5" volumeScale="1.9" pitchScale="0.8"/>
+    <gearGroupLeverEnd template="clackVar6"      volumeScale="1.9" pitchScale="0.8"/>
+	<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>">	
+		<volume indoor="0.5" outdoor="1">
+			<modifier type="SPEED" value="0.0"  modifiedValue="0.0"/>
+			<modifier type="SPEED" value="15.0" modifiedValue="0.9"/>
+			<modifier type="SPEED" value="20.0" modifiedValue="1.1"/>
+		</volume>
+        <pitch indoor="0.5" outdoor="0.5">
+           <modifier type="SPEED" value="0.0"  modifiedValue="0.9"/>
+           <modifier type="SPEED" value="20.0" modifiedValue="1"/>
+        </pitch>
+        <lowpassGain indoor="0.6" outdoor="1.0"/>
+	</retarder>
+	</sounds>
+	</motorized>
+    <airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/>
+    <airCompressorStop template="BRAKE_COMPRESSOR_STOP" linkNode="0>"/>
+    <airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/>
+    <compressedAir template="BRAKE_BIZON" linkNode="0>"/>
+    <airRelease template="BRAKE_REGULATOR_VALVE" linkNode="0>"/>
+
+	 <combine>
+        <sounds>
+            <chopperWork template="harvesterChopper" linkNode="strawChopper" fadeIn="2"/>
+            <chopStraw   template="chopStrawDischarge" linkNode="strawChopper"/>
+            <dropStraw   template="dropStrawDischarge" linkNode="strawChopper"/>
+            <fill file="$data/sounds/tools/fillTypes/grainMediumFillLoop.wav" innerRadius="2.0" outerRadius="8.0" fadeIn="0.5" fadeOut="1.0" linkNode="grainTankAuger">
+                <volume indoor="0.60" outdoor="1.50" />
+                <pitch indoor="0.7" outdoor="0.7" />
+                <lowpassGain indoor="0.30" outdoor="1.00" />
+                <randomization maxVolume="0.2" isInside="true" isOutside="true"/>
+            </fill>
+        </sounds>
+    </combine>
+
+    <!-- reverseDrive template="REVERSE_BEEP_01" linkNode="0>" / -->
+</sounds>
