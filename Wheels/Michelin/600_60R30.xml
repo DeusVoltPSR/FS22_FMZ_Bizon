@@ -2,7 +2,7 @@
 <wheel>
     <default>
         <physics radius="0.741" width="0.6" mass="0.2" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
-        <tire filename="$data/shared/wheels/michelin/axioBib2/R30_axioBib2.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.072" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <tire filename="$data/shared/wheels/tires/michelin/axioBib2/R30_axioBib2.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.072" isCareWheel="false" tireTrackAtlasIndex="0" />
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="42.1 45.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" />
     </default>
