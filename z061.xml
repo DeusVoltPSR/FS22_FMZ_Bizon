@@ -6,7 +6,7 @@
         <name>BIZON GIGANT Z061</name>
         <specs>
             <combination xmlFilename="Heder5M.xml"/>
-			<combination xmlFilename="BizonTrailer5.xml"/>
+	    <combination xmlFilename="BizonTrailer5.xml"/>
             <power>220</power>
             <maxSpeed>20</maxSpeed>
         </specs>
@@ -28,7 +28,7 @@
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
         <filename>Z061.i3d</filename>
-		<sounds filename="$data/vehicles/deutzFahr/topLiner4090/sounds/topLiner4090.xml"/>
+		<sounds filename="sounds/SW680.xml"/>
         <size width="4.8" length="7" lengthOffset="-0.3"/>
         <components>
             <component centerOfMass="0 0.92 -0.5" solverIterationCount="20" mass="6700"/>
@@ -36,7 +36,7 @@
             <joint component1="1" component2="2" node="0>0|0|2" rotLimit="0 0 10" rotLimitSpring="0 0 4000" rotLimitDamping="0 0 75" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 20" rotDriveDamping="0 0 10" breakable="false"/>
         </components>
          <schemaOverlay attacherJointPosition="0.5 0" name="HARVESTER"/>
-		<mapHotspot type="HARVESTER" />
+	 <mapHotspot type="HARVESTER" />
     </base>
 
     <powerConsumer ptoRpm="350" neededMaxPtoPower="5"/>
@@ -122,8 +122,8 @@
         </attacherJoint>
 
         <sounds>
-            <attach template="ATTACH_01"/>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" />
+            <attach template="HEADER_ATTACH_01"/>
+            <hydraulictemplate="hydraulicLayerTone2" volumeScale="1.9"/>
         </sounds>
     </attacherJoints>
 
@@ -236,7 +236,22 @@
                     <torque normRpm="0.86" torque="0.88"/>
                     <torque normRpm="1" torque="0.72"/>
                 </motor>
-                <transmission minForwardGearRatio="38" maxForwardGearRatio="250" minBackwardGearRatio="55" maxBackwardGearRatio="200" />
+                <transmission autoGearChangeTime="0.3" gearChangeTime="0.3" name="$l10n_info_transmission_manualWithPowerShiftGroups">
+                    <directionChange useGear="false" useGroups="false" changeTime="0.1"/>
+                    <groups type="CVT" changeTime="0.0">
+                        <group ratio="0.1"   name="A" isDefault="true"/>
+			<group ratio="0.2"   name="B" isDefault="false"/>
+			<group ratio="0.4"   name="C" isDefault="false"/>
+			<group ratio="0.6"   name="D" isDefault="false"/>
+			<group ratio="0.7"   name="E" isDefault="false"/>
+			<group ratio="0.8"   name="F" isDefault="false"/>
+			<group ratio="1.000" name="G" isDefault="false"/>
+                    </groups>
+
+                    <forwardGear maxSpeed="10.1" />
+                    <forwardGear maxSpeed="15.2" />
+                    <forwardGear maxSpeed="21.2" />
+                </transmission>
             </motorConfiguration>
         </motorConfigurations>
 
@@ -253,8 +268,8 @@
         <exhaustEffects>
             <exhaustEffect node="0>0|8|0" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5"/>
         </exhaustEffects>
-		
-		<sounds externalSoundFile="fmz_bizon.xml" />
+	    
+	
 		
         <motorStartDuration>3780</motorStartDuration>
 
@@ -417,7 +432,7 @@
         </movingParts>
 	
         <sounds>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" />
+            <hydraulic template="hydraulicLayerTone2" volumeScale="1.9"/>
         </sounds>
     </cylindered>
 
@@ -594,8 +609,8 @@
     </dashboard>
 
     <ai>
-		<agent width="3.55" length="8.5" height="4.1" lengthOffset="-2.35" frontOffset="-3.66" />
-        <collisionTrigger node="0>0|7|0"/>
+		<agent width="3.55" length="9.5" height="4.1" lengthOffset="-2.35" frontOffset="-3.66" />
+        	<collisionTrigger node="0>0|7|0" width="3.4" height="3.9"/>
     </ai>
 
     <foliageBending>
