@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.795" width="0.62" mass="0.209" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+        <tire filename="Wheels/tireNew.i3d" nodeLeft="1|4" nodeRight="1|4" maxDeformation="0.093" isCareWheel="false" tireTrackAtlasIndex="0" />
+		<outerRim filename="Wheels/tireNew.i3d" nodeLeft="0|6" nodeRight="0|6" widthAndDiam="52.5 38.9"/>
+        <innerRim filename="Wheels/tireNew.i3d" nodeLeft="4|0" nodeRight="4|1" />
+    </default>
+</wheel>

@@ -7,21 +7,23 @@
 
   <Files>
     <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="20" filename="../../FS19_BizonGigant/Wheels/tire03_normal.dds"/>
-    <File fileId="21" filename="../../FS19_BizonGigant/Wheels/tire03_specular.dds"/>
-    <File fileId="24" filename="../Stomile/tire/opona_substancja_specular.dds"/>
-    <File fileId="23" filename="../Stomile/tire/tireNew_normal.dds"/>
+    <File fileId="13" filename="../../FS19_BizonGigant/Wheels/rims_normal.dds"/>
+    <File fileId="14" filename="../../FS19_BizonGigant/Wheels/rims_specular.dds"/>
+    <File fileId="22" filename="../../FS19_BizonGigant/Wheels/tire03_normal.dds"/>
+    <File fileId="23" filename="../../FS19_BizonGigant/Wheels/tire03_specular.dds"/>
+    <File fileId="26" filename="../Stomile/tire/opona_substancja_specular.dds"/>
+    <File fileId="25" filename="../Stomile/tire/tireNew_normal.dds"/>
     <File fileId="11" filename="../Textures/femgi_normal.dds"/>
     <File fileId="12" filename="../Textures/femgi_specular.dds"/>
-    <File fileId="17" filename="../Textures/poponaWaska_normal.dds"/>
-    <File fileId="18" filename="../Textures/poponaWaska_specular.dds"/>
+    <File fileId="19" filename="../Textures/poponaWaska_normal.dds"/>
+    <File fileId="20" filename="../Textures/poponaWaska_specular.dds"/>
     <File fileId="2" filename="../Textures/remki_specular.dds"/>
-    <File fileId="25" filename="New/BKT_AS504_12_5_80_R18_normal_dds.dds"/>
-    <File fileId="26" filename="New/BKT_AS504_12_5_80_R18_specular.dds"/>
-    <File fileId="27" filename="New/tire_normal.dds"/>
-    <File fileId="28" filename="New/tire_specular.dds"/>
-    <File fileId="14" filename="New/untitled_normal.dds"/>
-    <File fileId="15" filename="New/untitled_specular_1.dds"/>
+    <File fileId="27" filename="New/BKT_AS504_12_5_80_R18_normal_dds.dds"/>
+    <File fileId="28" filename="New/BKT_AS504_12_5_80_R18_specular.dds"/>
+    <File fileId="29" filename="New/tire_normal.dds"/>
+    <File fileId="30" filename="New/tire_specular.dds"/>
+    <File fileId="16" filename="New/untitled_normal.dds"/>
+    <File fileId="17" filename="New/untitled_specular_1.dds"/>
     <File fileId="9" filename="femgi_normal.dds"/>
     <File fileId="10" filename="femgi_specular.dds"/>
     <File fileId="8" filename="untitled_specular2.dds"/>
@@ -29,9 +31,9 @@
 
 
   <Materials>
-    <Material name="acmat_0" materialId="9" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="27"/>
-      <Glossmap fileId="28"/>
+    <Material name="acmat_0" materialId="4" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
       <CustomParameter name="RDT" value="0 1 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
@@ -45,9 +47,9 @@
       <CustomParameter name="morphPosition" value="-0.29 -0.915 0.5 0.1"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
-    <Material name="Material.003" materialId="7" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="25"/>
-      <Glossmap fileId="26"/>
+    <Material name="Material.003" materialId="5" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.02 0.02 0.02 5"/>
@@ -61,7 +63,7 @@
       <CustomParameter name="morphPosition" value="-0.36 -0.7 0.18 0.07"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
-    <Material name="Rimeks_mat" materialId="4" diffuseColor="0.819608 0.74902 0.501961 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="Rimeks_mat" materialId="6" diffuseColor="0.819608 0.74902 0.501961 1" customShaderId="3" customShaderVariation="colorMask">
       <Glossmap fileId="8"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
@@ -74,7 +76,21 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="Rims_mat" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="rims" materialId="98" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.8 0.8 16"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Rims_mat" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
       <Glossmap fileId="2"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
@@ -87,7 +103,7 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="RimSetIII_mat" materialId="79" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="RimSetIII_mat" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -101,7 +117,7 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="RimSetIII_mat" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="RimSetIII_mat" materialId="9" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="colorMask">
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -115,9 +131,9 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="tire03_Mat" materialId="72" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="20"/>
-      <Glossmap fileId="21"/>
+    <Material name="tire03_Mat" materialId="10" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
       <CustomParameter name="RDT" value="1 1 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
@@ -131,9 +147,9 @@
       <CustomParameter name="morphPosition" value="-0.36 -0.915 0.5 0.1"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
-    <Material name="Tire_Thin" materialId="76" diffuseColor="0 0 0 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="17" bumpDepth="0"/>
-      <Glossmap fileId="18"/>
+    <Material name="Tire_Thin" materialId="11" diffuseColor="0 0 0 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="19" bumpDepth="0"/>
+      <Glossmap fileId="20"/>
       <CustomParameter name="RDT" value="0 0 0.5 0.1"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
@@ -147,9 +163,9 @@
       <CustomParameter name="morphPosition" value="-0.29 -0.915 0.5 0.1"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
-    <Material name="TireNew_mat" materialId="5" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="23" bumpDepth="0"/>
-      <Glossmap fileId="24"/>
+    <Material name="TireNew_mat" materialId="12" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="25" bumpDepth="0"/>
+      <Glossmap fileId="26"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
@@ -163,9 +179,9 @@
       <CustomParameter name="morphPosition" value="-0.45 -0.915 0.5 0.1"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
-    <Material name="Tires_small" materialId="8" diffuseColor="0.00392157 0.00392157 0.00392157 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
-      <Normalmap fileId="14"/>
-      <Glossmap fileId="15"/>
+    <Material name="Tires_small" materialId="13" diffuseColor="0.00392157 0.00392157 0.00392157 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
@@ -190,66 +206,68 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="OuterRims" nodeId="34">
-        <Shape shapeId="1" name="OuterRim_Wide" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="OuterRims" nodeId="45">
+        <Shape shapeId="1" name="OuterRim_Wide" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true"/>
       </TransformGroup>
-      <TransformGroup name="InnerRims" nodeId="36">
-        <TransformGroup name="01" nodeId="37">
-          <Shape shapeId="2" name="InnerRim_Thin01L" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="3" name="InnerRim_Thin01R" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="InnerRims" nodeId="47">
+        <TransformGroup name="01" nodeId="48">
+          <Shape shapeId="2" name="InnerRim_Thin01L" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="InnerRim_Thin01R" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="02" nodeId="40">
-          <Shape shapeId="4" name="InnerRim_Thin02L" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="5" name="InnerRim_Thin02R" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="02" nodeId="51">
+          <Shape shapeId="4" name="InnerRim_Thin02L" nodeId="52" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="InnerRim_Thin02R" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="03" nodeId="43">
-          <Shape shapeId="6" name="InnerRim_Thin03L" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="7" name="InnerRim_Thin03R" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="03" nodeId="54">
+          <Shape shapeId="6" name="InnerRim_Thin03L" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="InnerRim_Thin03R" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="04" nodeId="46">
-          <Shape shapeId="8" name="InnerRim_Wide01L" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="9" name="InnerRim_Wide01L" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="04" nodeId="57">
+          <Shape shapeId="8" name="InnerRim_Wide01L" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="9" name="InnerRim_Wide01L" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="05" nodeId="49">
-          <Shape shapeId="10" name="InnerRim_Wide01L" translation="-0.068 0 0" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="11" name="InnerRim_Wide01R" translation="0.068 0 0" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="05" nodeId="60">
+          <Shape shapeId="10" name="InnerRim_Wide01L" translation="-0.068 0 0" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="InnerRim_Wide01R" translation="0.068 0 0" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="06" nodeId="52">
-          <Shape shapeId="12" name="Cylinder_L" nodeId="53" materialIds="4" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="13" name="Cylinder_R" nodeId="54" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="06" nodeId="63">
+          <Shape shapeId="12" name="Cylinder_L" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="Cylinder_R" nodeId="65" materialIds="6" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="07" nodeId="55">
-          <Shape shapeId="14" name="FelgaRekordL" translation="0 -3.33173e-08 0" nodeId="56" materialIds="10" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="15" name="FelgaRekordR" translation="0 -3.33173e-08 0" nodeId="57" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="07" nodeId="66">
+          <Shape shapeId="14" name="FelgaRekordL" translation="0 -3.33173e-08 0" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="15" name="FelgaRekordR" translation="0 -3.33173e-08 0" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="08" nodeId="125">
-          <Shape shapeId="16" name="FelgaWzmocniona_L" translation="0 -3.13058e-08 0" nodeId="121" materialIds="79" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="17" name="FelgaWzmocniona_R" translation="0 -3.13058e-08 0" nodeId="122" materialIds="79" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="08" nodeId="69">
+          <Shape shapeId="16" name="FelgaWzmocniona_L" translation="0 -3.13058e-08 0" nodeId="70" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="FelgaWzmocniona_R" translation="0 -3.13058e-08 0" nodeId="71" materialIds="8" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="09" nodeId="128">
-          <Shape shapeId="18" name="FelgaWzmocnionaZ060_L" nodeId="123" materialIds="79" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="19" name="FelgaWzmocnionaZ060_R" nodeId="124" materialIds="79" castsShadows="true" receiveShadows="true"/>
-        </TransformGroup>
-      </TransformGroup>
-      <TransformGroup name="Rims_Stomil" nodeId="58">
-        <TransformGroup name="Smol" nodeId="59">
-          <Shape shapeId="20" name="FelgasmolL" nodeId="60" materialIds="4" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="21" name="FelgasmolR" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="22" name="FelgaWozekL" nodeId="106" materialIds="79" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="23" name="FelgaWozekR" nodeId="107" materialIds="79" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="09" nodeId="72">
+          <Shape shapeId="18" name="FelgaWzmocnionaZ060_L" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="FelgaWzmocnionaZ060_R" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="Tires" nodeId="62">
-        <TransformGroup name="TiresSmol" nodeId="63">
-          <Shape shapeId="24" name="koloStandard" nodeId="64" materialIds="8" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="25" name="koloPasy" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="26" name="Tire_Gigant" nodeId="113" materialIds="76" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="27" name="oponaWozek" clipDistance="300" nodeId="114" materialIds="72" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="Rims_Stomil" nodeId="75">
+        <TransformGroup name="Smol" nodeId="76">
+          <Shape shapeId="20" name="FelgasmolL" nodeId="77" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="FelgasmolR" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="FelgaWozekL" nodeId="79" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="FelgaWozekR" nodeId="80" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="24" name="rym_Left" nodeId="124" materialIds="98" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="25" name="rym_Right" nodeId="125" materialIds="98" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="Tiresbig" nodeId="66">
-          <Shape shapeId="28" name="low_poly" translation="0 -4.99651e-07 0" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="29" name="12_5_80_R18_used" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="30" name="tire" clipDistance="300" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="Tires" nodeId="81">
+        <TransformGroup name="TiresSmol" nodeId="82">
+          <Shape shapeId="26" name="koloStandard" nodeId="83" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="27" name="koloPasy" nodeId="84" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="28" name="Tire_Gigant" nodeId="85" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="29" name="oponaWozek" clipDistance="300" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Tiresbig" nodeId="87">
+          <Shape shapeId="30" name="low_poly" translation="0 -4.99651e-07 0" nodeId="88" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="31" name="12_5_80_R18_used" nodeId="89" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="32" name="tire" clipDistance="300" nodeId="90" materialIds="4" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>

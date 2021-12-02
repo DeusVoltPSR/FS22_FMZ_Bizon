@@ -29,10 +29,7 @@
         <components>
             <component centerOfMass="0 0.2 0" mass="1200" />
         </components>
-        <schemaOverlay attacherJointPosition="0 0">
-            <default name="DEFAULT_IMPLEMENT"/>
-            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
-        </schemaOverlay>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
     </base>
 
     <attachable>
@@ -54,6 +51,12 @@
         <workArea type="cutter" functionName="processCutterArea" >
             <area startNode="0>0|2|0" widthNode="0>0|2|1" heightNode="0>0|2|2" />
             <groundReferenceNode index="1" />
+			<testAreas>
+				<testArea startNode="0>0|4|0|0" widthNode="0>0|4|0|1" heightNode="0>0|4|0|2"/>
+				<testArea startNode="0>0|4|1|0" widthNode="0>0|4|1|1" heightNode="0>0|4|1|2"/>
+				<testArea startNode="0>0|4|2|0" widthNode="0>0|4|2|1" heightNode="0>0|4|2|2"/>
+				<testArea startNode="0>0|4|3|0" widthNode="0>0|4|3|1" heightNode="0>0|4|3|2"/>
+			</testAreas>
         </workArea>
     </workAreas>
 
@@ -113,28 +116,18 @@
         </movingParts>
 
         <sounds>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
+            <hydraulic template="hydraulicLayerTone2" volumeScale="1.9"/>
         </sounds>
     </cylindered>
 
     <cutter fruitTypeCategories="grainHeader">
 
-        <testAreas>
-            <testArea startNode="0>0|4|0|0" widthNode="0>0|4|0|1" heightNode="0>0|4|0|2"/>
-            <testArea startNode="0>0|4|1|0" widthNode="0>0|4|1|1" heightNode="0>0|4|1|2"/>
-            <testArea startNode="0>0|4|2|0" widthNode="0>0|4|2|1" heightNode="0>0|4|2|2"/>
-            <testArea startNode="0>0|4|3|0" widthNode="0>0|4|3|1" heightNode="0>0|4|3|2"/>
-        </testAreas>
-
         <effect>
-            <effectNode linkNode="0>0|5|0" speedScale="0.0018" effectType="CENTER" changeSpeedScale="0.01"/>
-            <effectNode linkNode="0>0|5|1" speedScale="0.0013" lengthAndRadius="0.7 1 1 2.1" effectType="LEFT" useInterpolation="true" minOffset="3"/>
-            <effectNode linkNode="0>0|5|2" speedScale="0.0013" lengthAndRadius="0.7 1 1 2.1" effectType="RIGHT" useInterpolation="true" minOffset="3" useMaxValue="true"/>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="0>0|5|0">
+                <motionPathEffect textureFilename="$data/vehicles/rostselmash/powerStream500/drumArray.dds" numRows="32" rowLength="42" minFade="0.06" textureRealWidth="16"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="0>0|5|1" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
         </effect>
-
-        <fillEffect>
-            <effectNode effectClass="ParticleEffect" effectNode="0>0|5|3" particleType="SMOKE" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
-        </fillEffect>
 
         <animationNodes>
 			<animationNode node="0>0|1|0" rotSpeed="400" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
@@ -221,173 +214,119 @@
         </material>
     </baseMaterial>
 	
-	<BodyDeusConfigurations useDefaultColors="false" defaultColorIndex="0">
-        <BodyDeusConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <BodyDeusConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
-        <BodyDeusConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <BodyDeusConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <BodyDeusConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
-        <BodyDeusConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <BodyDeusConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <BodyDeusConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <BodyDeusConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <BodyDeusConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <BodyDeusConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <BodyDeusConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-        <BodyDeusConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
-		<BodyDeusConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
-		<BodyDeusConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
-		<BodyDeusConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.21 0.01 0" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<BodyDeusConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
-		<BodyDeusConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<BodyDeusConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<BodyDeusConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<BodyDeusConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<BodyDeusConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<BodyDeusConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<BodyDeusConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<BodyDeusConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<BodyDeusConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
-		<BodyDeusConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<BodyDeusConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
-		<BodyDeusConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
-        <BodyDeusConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
+	<baseMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
+        <baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<baseMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<baseMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
 		
 		
         <material name="HederMain_mat" shaderParameter="colorMat0" />
 		<material name="HederNew_mat" shaderParameter="colorMat0" />
 		<material name="piston_mat" shaderParameter="colorMat0" />
 		<material name="oslona_mat" shaderParameter="colorMat0" />
-    </BodyDeusConfigurations>
+    </baseMaterialConfigurations>
 	
-	<MotowidlacolorDeusConfigurations useDefaultColors="false" defaultColorIndex="0">
-        <MotowidlacolorDeusConfiguration name="$l10n_White" color="0.8 0.8 0.8 0" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.21 0.01 0" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<MotowidlacolorDeusConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
-		<MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
-        <MotowidlacolorDeusConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
+	<designMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
+        <designMaterialConfiguration name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <designMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<designMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<designMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<designMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<designMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<designMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<designMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<designMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<designMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<designMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<designMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
 		
 		
         <material name="HederMain_mat" shaderParameter="colorMat1" />
 		<material name="HederNew_mat" shaderParameter="colorMat1" />
-    </MotowidlacolorDeusConfigurations>
-	
-	<ListwaBizonConfigurations useDefaultColors="false" defaultColorIndex="0">
-		<ListwaBizonConfiguration name="$l10n_White" color="0.8 0.8 0.8 0" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <ListwaBizonConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
-        <ListwaBizonConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <ListwaBizonConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <ListwaBizonConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
-        <ListwaBizonConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <ListwaBizonConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <ListwaBizonConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <ListwaBizonConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <ListwaBizonConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <ListwaBizonConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <ListwaBizonConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-        <ListwaBizonConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
-		<ListwaBizonConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
-		<ListwaBizonConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
-		<ListwaBizonConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.21 0.01 0" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<ListwaBizonConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
-		<ListwaBizonConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<ListwaBizonConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<ListwaBizonConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<ListwaBizonConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<ListwaBizonConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<ListwaBizonConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<ListwaBizonConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<ListwaBizonConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
-		<ListwaBizonConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<ListwaBizonConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
-		<ListwaBizonConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
-        <ListwaBizonConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
-		
-		
-        <material name="HederMain_mat" shaderParameter="colorMat2" />
-    </ListwaBizonConfigurations>
+		<material name="HederMain_mat" shaderParameter="colorMat2" />
+    </designMaterialConfigurations>
 
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
     <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>

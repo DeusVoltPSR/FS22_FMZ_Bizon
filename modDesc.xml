@@ -16,6 +16,8 @@
 
     <storeItems>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="Heder4M.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="Heder5M.xml"/>
     </storeItems>
 </modDesc>
