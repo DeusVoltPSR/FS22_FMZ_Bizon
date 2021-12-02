@@ -36,10 +36,7 @@
         <components>
             <component centerOfMass="0 0.5 1.2" solverIterationCount="10" mass="1938"/>
         </components>
-        <schemaOverlay attacherJointPosition="0 0">
-            <default name="DEFAULT_IMPLEMENT"/>
-            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
-        </schemaOverlay>
+         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
     </base>	
 	
 	<wheels>
@@ -65,7 +62,9 @@
         <brakeForce>0.4</brakeForce>
     </attachable>
 
-    <dynamicMountAttacher triggerNode="0>3" rootNode="0>" jointNode="0>" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ"/>
+    <dynamicMountAttacher triggerNode="dynamicMountTrigger" rootNode="0>" jointNode="0>11" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ" transferMass="true">
+        <lockPosition xmlFilename="Heder5M.xml" jointNode="0>11" />
+    </dynamicMountAttacher>
 	
 	<lights>		
 		<realLights>
