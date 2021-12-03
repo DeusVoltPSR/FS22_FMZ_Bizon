@@ -43,10 +43,10 @@
         <wheelConfigurations>
             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
                 <wheels>
-                    <wheel filename="Wheels/wozek.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                    <wheel filename="Wheels/Other/wozek.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
                         <physics restLoad="0.9" repr="0>0" forcePointRatio="0.2" initialCompression="05" suspTravel="0.1" spring="35" damper="40"/>
                     </wheel>
-                    <wheel filename="Wheels/wozek.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                    <wheel filename="Wheels/Other/wozek.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
                         <physics restLoad="0.9" repr="0>1" forcePointRatio="0.2" initialCompression="05" suspTravel="0.1" spring="35" damper="40" />
                     </wheel>
                 </wheels>
@@ -59,10 +59,9 @@
             <inputAttacherJoint node="0>2" jointType="trailer" attacherHeight="0.759"/>
         </inputAttacherJoints>
         <support animationName="moveSupport" />
-        <brakeForce>0.4</brakeForce>
     </attachable>
 
-    <dynamicMountAttacher triggerNode="dynamicMountTrigger" rootNode="0>" jointNode="0>11" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ" transferMass="true">
+    <dynamicMountAttacher triggerNode="0>3" rootNode="0>" jointNode="0>11" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ" transferMass="true">
         <lockPosition xmlFilename="Heder5M.xml" jointNode="0>11" />
     </dynamicMountAttacher>
 	
@@ -105,6 +104,10 @@
 			<part node="0>10|1|0|0|0" startTime="1.1" duration="1.2" startTrans="0.093 0.002 0.002" endTrans="0.001 0.001 0.001" />
 			<part node="0>10|1|1|1|0" startTime="1.2" duration="1.5" startTrans="0 -0.005 0" endTrans="0 -0.161 0" />
 			<part node="0>10|1|0|1|0" startTime="1.2" duration="1.5" startTrans="0 -0.059 0" endTrans="0 -0.151 0" />
+
+            <sound template="clackVar6"         startTime="0.0"    volumeScale="5"   pitchScale="1" linkNode="0>10|1"/>
+            <sound template="clackVar6"         startTime="0.05"  endTime="0.2"  volumeScale="5"   pitchScale="1.5" linkNode="0>10|1"/>
+            <sound template="clackVar6"         startTime="1.2"    volumeScale="5"   pitchScale="1" linkNode="0>10|1"/>
         </animation>
     </animations>    
 	

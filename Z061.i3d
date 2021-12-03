@@ -6,48 +6,51 @@
   </Asset>
 
   <Files>
-    <File fileId="52" filename="$data/shaders/mirrorShader.xml"/>
+    <File fileId="47" filename="$data/maps/textures/shared/metalGridGrating_diffuse.dds"/>
+    <File fileId="48" filename="$data/maps/textures/shared/metalGridGrating_normal.dds"/>
+    <File fileId="49" filename="$data/maps/textures/shared/metalGridGrating_specular.dds"/>
+    <File fileId="54" filename="$data/shaders/mirrorShader.xml"/>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="59" filename="$data/shared/assets/lights/lizard/sideMarker07_normal.dds"/>
-    <File fileId="60" filename="$data/shared/assets/lights/lizard/sideMarker07_vmask.dds"/>
-    <File fileId="49" filename="$data/shared/clearGlass_diffuse.dds"/>
-    <File fileId="61" filename="$data/shared/clearPlastic_diffuse.dds"/>
-    <File fileId="63" filename="$data/shared/default_normal.dds"/>
+    <File fileId="61" filename="$data/shared/assets/lights/lizard/sideMarker07_normal.dds"/>
+    <File fileId="62" filename="$data/shared/assets/lights/lizard/sideMarker07_vmask.dds"/>
+    <File fileId="51" filename="$data/shared/clearGlass_diffuse.dds"/>
+    <File fileId="63" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="65" filename="$data/shared/default_normal.dds"/>
     <File fileId="42" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="43" filename="$data/shared/window_specular.dds"/>
     <File fileId="40" filename="Textures/Kabina_normal.dds"/>
     <File fileId="41" filename="Textures/Kabina_specular.dds"/>
-    <File fileId="69" filename="Textures/Warnings.dds"/>
-    <File fileId="66" filename="Textures/Znaczki.dds"/>
+    <File fileId="71" filename="Textures/Warnings.dds"/>
+    <File fileId="68" filename="Textures/Znaczki.dds"/>
     <File fileId="2" filename="Textures/bizonZ056Lights_normal.dds"/>
     <File fileId="3" filename="Textures/bizonZ056Lights_specular.dds"/>
-    <File fileId="53" filename="Textures/chopper_normal.dds"/>
-    <File fileId="54" filename="Textures/chopper_specular.dds"/>
+    <File fileId="55" filename="Textures/chopper_normal.dds"/>
+    <File fileId="56" filename="Textures/chopper_specular.dds"/>
     <File fileId="35" filename="Textures/decals_normal.dds"/>
     <File fileId="36" filename="Textures/decals_specular.dds"/>
     <File fileId="21" filename="Textures/gigant_normal_1.dds"/>
-    <File fileId="73" filename="Textures/gigant_normal_11.dds"/>
-    <File fileId="57" filename="Textures/gigant_normal_9.dds"/>
-    <File fileId="58" filename="Textures/gigant_specular_10.dds"/>
-    <File fileId="74" filename="Textures/gigant_specular_12.dds"/>
+    <File fileId="75" filename="Textures/gigant_normal_11.dds"/>
+    <File fileId="59" filename="Textures/gigant_normal_9.dds"/>
+    <File fileId="60" filename="Textures/gigant_specular_10.dds"/>
+    <File fileId="76" filename="Textures/gigant_specular_12.dds"/>
     <File fileId="22" filename="Textures/gigant_specular_2.dds"/>
     <File fileId="24" filename="Textures/gigantel_specular_4.dds"/>
     <File fileId="32" filename="Textures/gigantelszesdziesiona_normal.dds"/>
     <File fileId="33" filename="Textures/gigantelszesdziesiona_specular.dds"/>
-    <File fileId="71" filename="Textures/hose_specular.dds"/>
-    <File fileId="68" filename="Textures/logoOLD.dds"/>
-    <File fileId="67" filename="Textures/napisOLD.dds"/>
+    <File fileId="73" filename="Textures/hose_specular.dds"/>
+    <File fileId="70" filename="Textures/logoOLD.dds"/>
+    <File fileId="69" filename="Textures/napisOLD.dds"/>
     <File fileId="26" filename="Textures/piston_normal.dds"/>
     <File fileId="27" filename="Textures/piston_specular.dds"/>
     <File fileId="44" filename="Textures/polywood.dds"/>
     <File fileId="45" filename="Textures/polywood_normal.dds"/>
-    <File fileId="62" filename="Textures/stickers_diffuse.dds"/>
+    <File fileId="64" filename="Textures/stickers_diffuse.dds"/>
     <File fileId="10" filename="Textures/untitled_specular.dds"/>
     <File fileId="14" filename="Textures/z056Chain_diffuse.dds"/>
     <File fileId="15" filename="Textures/z056Chain_normal.dds"/>
     <File fileId="16" filename="Textures/z056Chain_specular.dds"/>
-    <File fileId="64" filename="Textures/z056Decals_diffuse.dds"/>
-    <File fileId="65" filename="Textures/z056Decals_specular.dds"/>
+    <File fileId="66" filename="Textures/z056Decals_diffuse.dds"/>
+    <File fileId="67" filename="Textures/z056Decals_specular.dds"/>
     <File fileId="29" filename="Textures/z056Header_normal.dds"/>
     <File fileId="38" filename="Textures/z056Stairs_normal.dds"/>
     <File fileId="39" filename="Textures/z056Stairs_specular.dds"/>
@@ -57,8 +60,8 @@
     <File fileId="18" filename="Textures/z083ChainBelt_normal.dds"/>
     <File fileId="19" filename="Textures/z083ChainBelt_specular.dds"/>
     <File fileId="30" filename="Textures/z083Header_specular.dds"/>
-    <File fileId="77" filename="Wheels_Textures/rims_normal.dds"/>
-    <File fileId="78" filename="Wheels_Textures/rims_specular.dds"/>
+    <File fileId="79" filename="Wheels_Textures/rims_normal.dds"/>
+    <File fileId="80" filename="Wheels_Textures/rims_specular.dds"/>
   </Files>
 
 
@@ -96,8 +99,8 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="chopper_mat" materialId="7" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="53"/>
-      <Glossmap fileId="54"/>
+      <Normalmap fileId="55"/>
+      <Glossmap fileId="56"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.3 0.3 0.4 16"/>
@@ -126,7 +129,7 @@
       <CustomParameter name="blinkOffset" value="0 0 1 0"/>
     </Material>
     <Material name="clearPlastic_mat" materialId="9" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
-      <Texture fileId="61"/>
+      <Texture fileId="63"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -212,8 +215,8 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="glass_indoor" materialId="15" alphaBlending="true" customShaderId="4">
-      <Texture fileId="49"/>
-      <Glossmap fileId="65"/>
+      <Texture fileId="51"/>
+      <Glossmap fileId="67"/>
       <CustomParameter name="RDT" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
@@ -223,11 +226,14 @@
       <CustomParameter name="RDT" value="1 1 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="Grid" materialId="17" specularColor="0.34902 1 0.0784314">
+    <Material name="Grid" materialId="17">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="49"/>
     </Material>
     <Material name="hoses_mat" materialId="18" diffuseColor="0.00784314 0 0 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="63"/>
-      <Glossmap fileId="71"/>
+      <Normalmap fileId="65"/>
+      <Glossmap fileId="73"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.561 0.03 0.007 16"/>
@@ -240,8 +246,8 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="hub_mat" materialId="19" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="77"/>
-      <Glossmap fileId="78"/>
+      <Normalmap fileId="79"/>
+      <Glossmap fileId="80"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.561 0.03 0.007 16"/>
@@ -256,8 +262,8 @@
     <Material name="i3d_default_material" materialId="20" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
     </Material>
     <Material name="Kab_mat" materialId="21" diffuseColor="0.00392157 0.137255 0.8 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="57"/>
-      <Glossmap fileId="58"/>
+      <Normalmap fileId="59"/>
+      <Glossmap fileId="60"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.03 0.03 0.03 16"/>
@@ -302,7 +308,7 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="Lampa" materialId="26" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
-      <Texture fileId="49"/>
+      <Texture fileId="51"/>
       <Normalmap fileId="2" bumpDepth="0.34"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -319,7 +325,7 @@
       <CustomParameter name="blinkOffset" value="0 0 1 0"/>
     </Material>
     <Material name="light_white_mat" materialId="27" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
-      <Texture fileId="61"/>
+      <Texture fileId="63"/>
       <Normalmap fileId="2" bumpDepth="0"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -336,17 +342,17 @@
       <CustomParameter name="blinkOffset" value="0 0 1 0"/>
     </Material>
     <Material name="LogoOLD_mat" materialId="28" customShaderId="4" customShaderVariation="Decal">
-      <Texture fileId="68"/>
+      <Texture fileId="70"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="mirror_mat" materialId="29" diffuseColor="1 1 1 1" specularColor="0 1 1" customShaderId="52">
+    <Material name="mirror_mat" materialId="29" diffuseColor="1 1 1 1" specularColor="0 1 1" customShaderId="54">
       <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
       <CustomParameter name="reflectionScale" value="2 0 0 0"/>
     </Material>
     <Material name="NapisOLD_mat" materialId="30" customShaderId="4" customShaderVariation="Decal">
-      <Texture fileId="67"/>
+      <Texture fileId="69"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
@@ -384,8 +390,8 @@
       <Normalmap fileId="45"/>
     </Material>
     <Material name="sideMarker_06_mat" materialId="34" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="1 1 1 2"/>
@@ -398,8 +404,8 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="sideMarker_06_mat1" materialId="35" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
-      <Normalmap fileId="59"/>
-      <Glossmap fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="1 1 1 2"/>
@@ -414,8 +420,8 @@
       <CustomParameter name="blinkOffset" value="0 0 1 0"/>
     </Material>
     <Material name="silnik_mat" materialId="36" diffuseColor="0.203922 0.203922 0.203922 1" customShaderId="4" customShaderVariation="colorMask">
-      <Normalmap fileId="73"/>
-      <Glossmap fileId="74"/>
+      <Normalmap fileId="75"/>
+      <Glossmap fileId="76"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.3 0.3 0.3 16"/>
@@ -456,20 +462,20 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="Stickers_new" materialId="39" customShaderId="4" customShaderVariation="Decal">
-      <Texture fileId="62"/>
-      <Normalmap fileId="63"/>
+      <Texture fileId="64"/>
+      <Normalmap fileId="65"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
     <Material name="stickersSuper_mat" materialId="40" customShaderId="4" customShaderVariation="Decal">
-      <Texture fileId="64"/>
-      <Glossmap fileId="65"/>
+      <Texture fileId="66"/>
+      <Glossmap fileId="67"/>
       <CustomParameter name="RDT" value="0.2 1 0.08 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
     <Material name="warners_mat" materialId="41" specularColor="0.494118 1 0">
-      <Texture fileId="69"/>
+      <Texture fileId="71"/>
     </Material>
     <Material name="Z056_mat" materialId="42" diffuseColor="0 0.364706 0 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="12"/>
@@ -500,7 +506,7 @@
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="ZnaczkiOLD_mat" materialId="44" customShaderId="4" customShaderVariation="Decal">
-      <Texture fileId="66"/>
+      <Texture fileId="68"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="1 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
@@ -525,7 +531,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="263">
             <TransformGroup name="outdoorCameraTarget" translation="-3.27805e-08 1.60988 -0.453516" rotation="-24 180 0" nodeId="264">
-              <Camera name="outdoorCamera" translation="1.40195 -2.35442 2.92827" rotation="122.384 66.0371 84.0478" nodeId="265" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-2.11946 3.63658 -4.26912" rotation="156.403 -27.0832 -166.65" nodeId="265" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <Camera name="indoorCamera" translation="-2.41364e-08 3.56184 1.84153" rotation="-15 180 0" nodeId="266" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="cameraRaycastNode1" translation="1.26192e-15 3.9155 2.908" nodeId="267"/>
