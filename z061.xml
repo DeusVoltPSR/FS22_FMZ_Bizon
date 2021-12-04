@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicle type="combineDrivable">
+<vehicle type="combineDrivable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
@@ -207,11 +207,15 @@
         </cameras>
 
         <characterNode node="0>0|6|0|0|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
-            <target ikChain="rightFoot" targetNode="0>0|9|4|2|0|0|0" />
+            <target ikChain="rightFoot" targetNode="0>0|6|4" />
             <target ikChain="leftFoot"  targetNode="0>0|6|1" />
-            <target ikChain="rightArm"  targetNode="0>0|6|3" />
+            <target ikChain="rightArm"  targetNode="0>0|9|4|2|0|13|0" />
             <target ikChain="leftArm"   targetNode="0>0|4|0|0" />
         </characterNode>
+
+        <characterTargetNodeModifier node="0>0|6|4" transitionTime="0.1" >
+            <state node="0>0|9|4|2|0|0|0" referenceNode="0>0|9|4|2|0|0" />
+        </characterTargetNodeModifier>
 
         <mirrors>
 		<mirror node="0>0|11|0|0|5|2|0|0" prio="1"/>
@@ -284,7 +288,7 @@
         <steeringWheel node="0>0|4|0" indoorRotation="540" outdoorRotation="30"/>
 
         <dashboards>
-            <dashboard displayType="ROT"     valueType="decelerationAxis" node="0>0|9|4|2|0|0" minRot="-35.134 0 0" maxRot="-7.099 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="0>0|9|4|2|0|0" minRot="-35 0 0" maxRot="-15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
         </dashboards>
     </drivable>
 
@@ -360,7 +364,13 @@
         </animation>
 		<animation name="cover">
             <part node="0>0|14|1|3|0" startTime="0.0" endTime="2.0" startRot="-180 0 -90" endRot="-180 0 92.84"/>
-			<part node="0>0|14|1|3|1" startTime="0.0" endTime="2.0" startRot="180 0 90" endRot="180 0 -93.363"/>
+			<part node="0>0|14|1|3|1" startTime="2.0" endTime="4.0" startRot="180 0 90" endRot="180 0 -93.363"/>
+
+            <sound template="clickLong"         startTime="0.02"   endTime="1.99"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|14|1|3|1"/>
+            <sound template="sheetImp06"        startTime="2.0"                   volumeScale="3"   pitchScale="1.0" linkNode="0>0|14|1|3|1"/>
+
+            <sound template="clickLong"         startTime="2.02"   endTime="3.99"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|14|1|3|0"/>
+            <sound template="sheetImp06"        startTime="4.0"                   volumeScale="3"   pitchScale="1.0" linkNode="0>0|14|1|3|0"/>
         </animation>
 		<animation name="foldChopper">
             <part node="0>0|11|1|1|5" startTime="0.0" endTime="0.3" startRot="0 0 -90" endRot="0 36 -90"/>
@@ -453,7 +463,16 @@
             </fillVolumeConfiguration>
         </fillVolumeConfigurations>
 		
-		
+	<foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.02" turnOnFoldDirection="-1">
+                    <foldingPart animationName="cover" speedScale="1" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
         <unloadInfos>
             <unloadInfo>
                 <node node="0>0|12|1" width="0.5" length="0.3"/>

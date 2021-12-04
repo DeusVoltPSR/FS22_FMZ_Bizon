@@ -39,9 +39,9 @@
 
 	<combine>
         <sounds>
-            <chopperWork template="harvesterChopper" linkNode="0>0|11|1|1|3" fadeIn="2"/>
-            <chopStraw   template="chopStrawDischarge" linkNode="0>0|11|1|1|3"/>
-            <dropStraw   template="dropStrawDischarge" linkNode="0>0|11|1|1|3"/>
+            <chopperWork template="harvesterChopper" linkNode="0>0|9|1|2|0|1" fadeIn="2"/>
+            <chopStraw   template="chopStrawDischarge" linkNode="0>0|9|1|2|0|1"/>
+            <dropStraw   template="dropStrawDischarge" linkNode="0>0|9|1|2|0|1"/>
             <fill file="$data/sounds/tools/fillTypes/grainMediumFillLoop.wav" innerRadius="2.0" outerRadius="8.0" fadeIn="0.5" fadeOut="1.0" linkNode="0>0|9|1|3">
                 <volume indoor="0.60" outdoor="1.50" />
                 <pitch indoor="0.7" outdoor="0.7" />

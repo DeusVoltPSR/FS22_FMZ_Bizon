@@ -208,12 +208,16 @@
             <camera node="0>0|1|1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" useOutdoorSounds="true" shadowFocusBox="0>0|1|5" />
         </cameras>
 
-        <characterNode node="0>0|6|0|0|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
-            <target ikChain="rightFoot" targetNode="0>0|9|4|2|0|0|0" />
+         <characterNode node="0>0|6|0|0|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="0>0|6|4" />
             <target ikChain="leftFoot"  targetNode="0>0|6|1" />
             <target ikChain="rightArm"  targetNode="0>0|6|3" />
             <target ikChain="leftArm"   targetNode="0>0|4|0|0" />
         </characterNode>
+
+        <characterTargetNodeModifier node="0>0|6|4" transitionTime="0.1" >
+            <state node="0>0|9|4|2|0|0|0" referenceNode="0>0|9|4|2|0|0" />
+        </characterTargetNodeModifier>
 
         <mirrors>
 		<mirror node="0>0|11|0|5|2|0|0" prio="1"/>
