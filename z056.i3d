@@ -24,6 +24,7 @@
     <File fileId="58" filename="Textures/Loga.dds"/>
     <File fileId="23" filename="Textures/Nowe_specular.dds"/>
     <File fileId="47" filename="Textures/Warnings.dds"/>
+    <File fileId="36" filename="Textures/Zegary.dds"/>
     <File fileId="37" filename="Textures/Zegary_normal.dds"/>
     <File fileId="73" filename="Textures/barierki_normal.dds"/>
     <File fileId="74" filename="Textures/barierki_specular.dds"/>
@@ -37,6 +38,8 @@
     <File fileId="28" filename="Textures/decals_specular.dds"/>
     <File fileId="54" filename="Textures/kolkaSiecz_specular.dds"/>
     <File fileId="59" filename="Textures/naklejkiNaleznosc.dds"/>
+    <File fileId="78" filename="Textures/ok_normal.png"/>
+    <File fileId="79" filename="Textures/ok_specular.png"/>
     <File fileId="85" filename="Textures/piston_normal.dds"/>
     <File fileId="86" filename="Textures/piston_specular.dds"/>
     <File fileId="65" filename="Textures/polywood.dds"/>
@@ -65,9 +68,6 @@
     <File fileId="16" filename="Textures/z083ChainBelt_diffuse.dds"/>
     <File fileId="17" filename="Textures/z083ChainBelt_normal.dds"/>
     <File fileId="18" filename="Textures/z083ChainBelt_specular.dds"/>
-    <File fileId="79" filename="D:/GE/BizonnowySuper/NowySystem/ok_specular.png"/>
-    <File fileId="36" filename="D:/GE/BizonnowySuper/NowySystem/textures/Zegary.dds"/>
-    <File fileId="78" filename="D:/GE/BizonnowySuper/NowySystem/textures/ok_normal.png"/>
   </Files>
 
 
@@ -637,7 +637,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="463">
             <TransformGroup name="outdoorCameraTarget" translation="2.50158e-15 1.44293 -0.0785513" rotation="-24 180 0" nodeId="464">
-              <Camera name="outdoorCamera" translation="-3.15401 2.98605 -4.29093" rotation="149.417 -40.2482 -157.524" nodeId="465" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-0.178433 2.45189 -1.5766" rotation="8.52409 -55.0306 -40.0767" nodeId="465" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.000389914 3.399 2.11762" rotation="165 -9.68238e-06 -180" nodeId="466">
               <Camera name="indoorCamera" translation="2.52385e-15 0 0" visibility="false" nodeId="467" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
@@ -989,7 +989,7 @@
                 </Shape>
               </TransformGroup>
               <TransformGroup name="Pulpit/Kolumna" nodeId="717">
-                <TransformGroup name="Z040" visibility="false" nodeId="718">
+                <TransformGroup name="Z040" nodeId="718">
                   <Shape shapeId="82" name="Pulpit_Z050" translation="-0.904 2.51181 1.896" scale="0.25703 0.25703 0.25703" nodeId="719" materialIds="52" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="83" name="KolumnaZ040" translation="-0.000390099 0.000299841 -0.000200033" rotation="90 -0 0" nodeId="720" materialIds="52" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="84" name="Szkielka_40" translation="-0.000390099 0.000299841 -0.000200033" rotation="90 -0 0" nodeId="721" materialIds="17" castsShadows="true" receiveShadows="true"/>
@@ -997,7 +997,7 @@
                   <Shape shapeId="85" name="Cube.030" translation="-0.0168217 2.51207 2.65255" scale="0.104549 0.0849584 0.104549" nodeId="723" materialIds="18" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="86" name="Pulpit_Z050.001" translation="-0.904087 2.51211 1.89589" scale="0.25703 0.25703 0.25703" nodeId="724" materialIds="55" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
-                <TransformGroup name="Z050" nodeId="725">
+                <TransformGroup name="Z050" visibility="false" nodeId="725">
                   <Shape shapeId="87" name="KolumnaZygmunta" rotation="90 -0 0" nodeId="726" materialIds="52" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="88" name="Cockpit_Z050" translation="0.0911792 3.233 2.82021" rotation="90 -0 0" nodeId="727" materialIds="52" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="89" name="PulpitZ050" translation="-0.000390099 0.000299841 0" rotation="90 -0 0" nodeId="728" materialIds="52" castsShadows="true" receiveShadows="true"/>
