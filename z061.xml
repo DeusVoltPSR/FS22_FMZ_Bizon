@@ -336,8 +336,10 @@
 			<part node="0>0|9|4|1|0" startTime="0.5" endTime="1.0" startTrans="0.174 0.989 -1.999" endTrans="0.174 0.964 -1.908"/>
 			<part node="0>0|9|4|1|2" startTime="0.5" endTime="1.0" startTrans="-0.365 1.8239 -2.981" endTrans="-0.365 1.835 -3.011"/>
         </animation>
-		<animation name="ladderAnim">
-			<part node="0>0|9|4|0" startTime="0.0" endTime="1.5" startRot="90 0 0" endRot="90 0 -176"/>
+		<animation name="ladderAnimation" soundVolumeFactor="4.5">
+            <part node="0>0|9|4|0" startTime="0" endTime="2" startRot="90 0 0" endRot="90 0 -178" />
+            <sound template="metalClose" startTime="0.01"  volumeScale="0.5" pitchScale="1.7"  linkNode="0>0|9|4|0"/>
+            <sound template="metalClose" startTime="1.89" direction="1"  volumeScale="0.4" pitchScale="0.7"  linkNode="0>0|9|4|0"/>
         </animation>
 		<animation name="klapa_L">
             <part node="0>0|14|1|1" startTime="0.0" endTime="2.0" startRot="90 0 82" endRot="90 0 168.63"/>
@@ -462,16 +464,6 @@
                 </volumes>
             </fillVolumeConfiguration>
         </fillVolumeConfigurations>
-		
-	<foldable>
-        <foldingConfigurations>
-            <foldingConfiguration>
-                <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.02" turnOnFoldDirection="-1">
-                    <foldingPart animationName="cover" speedScale="1" />
-                </foldingParts>
-            </foldingConfiguration>
-        </foldingConfigurations>
-    </foldable>
 
         <unloadInfos>
             <unloadInfo>
@@ -521,7 +513,7 @@
         <chopper available="true" workAreaIndex="2"  animName="toggleChopper" animSpeedScale="1"/>
         <swath available="true" workAreaIndex="1"/>
         <processing toggleTime="4.0"/>
-		<ladder animName="ladderAnim" animSpeedScale="-1" foldMinLimit="0.01" foldMaxLimit="1"/>
+		<ladder animName="ladderAnimation" animSpeedScale="-1" foldMinLimit="0.01" foldMaxLimit="1"/>
 
         <fillEffect>
             <effectNode effectNode="0>0|8|1" materialType="unloading" materialTypeId="3" delay="0"/>
@@ -615,10 +607,21 @@
         </groups>
     </dashboard>
 
+
     <ai>
 		<agent width="3.55" length="9.5" height="4.1" lengthOffset="-2.35" frontOffset="-3.66" />
         	<collisionTrigger node="0>0|7|0" width="3.4" height="3.9"/>
     </ai>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.02" turnOnFoldDirection="1">
+                    <foldingPart animationName="cover" speedScale="1" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
 
     <foliageBending>
         <bendingNode minX="-1.8" maxX="1.8" minZ="0.9" maxZ="2.4" yOffset="0.6" />

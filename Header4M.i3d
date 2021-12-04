@@ -169,6 +169,7 @@
         <TransformGroup name="Heder4m" translation="0.107 0.698 0.08" nodeId="86">
           <TransformGroup name="attachable" translation="-0.106838 0.246611 -0.612523" rotation="0 -90 0" clipDistance="300" nodeId="87">
             <TransformGroup name="heightNode" translation="1.22023 -0.933048 -1.11362e-20" clipDistance="300" nodeId="88"/>
+            <TransformGroup name="trailerJoint" translation="0.180571 -0.907074 0.0372603" rotation="180 0 166.48" nodeId="461"/>
           </TransformGroup>
           <TransformGroup name="movingParts" translation="-0.106838 -0.697708 -0.0797686" clipDistance="300" nodeId="89">
             <TransformGroup name="mainDrum" translation="0.0964714 0.428411 -0.246" clipDistance="300" nodeId="90">

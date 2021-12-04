@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="62">
     <author>Deus Szmeus Volteus</author>
-    <version>0.9.0.0</version>
+    <version>0.5.0.0</version>
 	
 	<title>
         <en>Bizon Pack</en>
@@ -23,5 +23,6 @@
 		<storeItem rootNode="vehicle" xmlFilename="Heder4M.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="Heder5M.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="BizonTrailer5.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="BizonTrailer4.xml"/>
     </storeItems>
 </modDesc>

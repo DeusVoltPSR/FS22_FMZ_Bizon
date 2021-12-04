@@ -520,7 +520,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="256">
             <TransformGroup name="outdoorCameraTarget" translation="-3.27805e-08 1.60988 -0.453516" rotation="-24 180 0" nodeId="257">
-              <Camera name="outdoorCamera" translation="-1.29618 3.11886 -2.75009" rotation="160.747 -49.2613 -148.618" nodeId="258" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="1.56632 -0.669166 1.74532" rotation="144.574 28.2446 166.329" nodeId="258" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <Camera name="indoorCamera" translation="-2.41364e-08 3.56184 1.84153" rotation="-15 180 0" nodeId="259" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="cameraRaycastNode1" translation="1.26192e-15 3.9155 2.908" nodeId="260"/>
@@ -750,9 +750,11 @@
               </Shape>
             </TransformGroup>
             <TransformGroup name="Animated" nodeId="434">
-              <Shape shapeId="65" name="Cylinder.014" translation="-1.133 1.416 -3.182" rotation="90 -0 -2.73208e-05" nodeId="435" materialIds="12" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="66" name="skotki.002" translation="1.23494 1.374 0.411513" rotation="6.83019e-06 -0 0" nodeId="436" materialIds="35" castsShadows="true" receiveShadows="true"/>
-              </Shape>
+              <TransformGroup name="ladderParts" translation="-1.133 1.416 -3.182" rotation="90 -0 -178" nodeId="689">
+                <Shape shapeId="65" name="Cylinder.014" translation="0 -1.14793e-07 0" nodeId="435" materialIds="12" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="66" name="skotki.002" translation="1.23494 1.374 0.411513" rotation="6.83019e-06 -0 0" nodeId="436" materialIds="35" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+              </TransformGroup>
               <TransformGroup name="Sita" nodeId="437">
                 <Shape shapeId="67" name="Cube.006" translation="0.174 0.964 -1.908" nodeId="438" materialIds="12" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="68" name="Cylinder.005" translation="-0.817 1.14512 -1.741" nodeId="439" materialIds="12" castsShadows="true" receiveShadows="true"/>
