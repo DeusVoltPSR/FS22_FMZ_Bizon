@@ -1,0 +1,2705 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="combineDrivable">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>BIZON SUPER Z050</name>
+        <specs>
+            <combination>4.2MHeader, Quasar F4</combination>
+            <power>100</power>
+            <maxSpeed>20</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_combine</function>
+            <function>$l10n_function_combineNeedsCutter</function>
+        </functions>
+        <image>store/store_Z056.dds</image>
+        <price>84000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>FMZ</brand>
+        <category>harvesters</category>
+        <shopFoldingState>1</shopFoldingState>
+        <shopTranslationOffset>0 -0.31 0</shopTranslationOffset>
+        <shopRotationOffset>-0.9 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>2874720</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>517218</indexBufferMemoryUsage>
+        <textureMemoryUsage>28486856</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_combine</typeDesc>
+        <filename>z056.i3d</filename>
+		<sounds filename="sounds/SW400.xml" />
+        <size width="4.5" length="7" height="3.9" lengthOffset="-0.3"/>
+        <components>
+            <component centerOfMass="0 0.92 -0.5" solverIterationCount="20" mass="5000"/>
+            <component centerOfMass="0 0 0" solverIterationCount="20" mass="2000"/>
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="20"/>
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="20"/>
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="20"/>
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="20"/>
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="20"/>
+            <joint component1="1" component2="2" node="0>0|0|2" rotLimit="0 0 10" rotLimitSpring="0 0 4000" rotLimitDamping="0 0 75" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 20" rotDriveDamping="0 0 10" breakable="false"/>
+			 <joint component1="1" component2="3" node="0>0|18|0" rotLimit="5 0 1" rotLimitSpring="0 0 500"/>
+			 <joint component1="1" component2="4" node="0>0|18|1" rotLimit="1 0 5" rotLimitSpring="0 0 500"/>
+			 <joint component1="1" component2="5" node="0>0|18|2" rotLimit="1 0 5" rotLimitSpring="0 0 500"/>
+			 <joint component1="1" component2="6" node="0>0|18|3" rotLimit="1 0 5" rotLimitSpring="0 0 500"/>
+			 <joint component1="1" component2="7" node="0>0|18|4" rotLimit="1 0 5" rotLimitSpring="0 0 500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="HARVESTER" />
+        <mapHotspot type="HARVESTER" />
+    </base>
+
+    <powerConsumer ptoRpm="350" neededMaxPtoPower="5"/>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Standard02.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Standard02.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Standard03.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Standard03.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Standard04.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Standard04.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Standard05.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Standard05.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Thin.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Thin02.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Thin02.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Thin03.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Thin03.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Stomil_Thin05.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Stomil_Thin05.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Pasy.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Pasy.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Trelleborg/600_70R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Trelleborg/600_70R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Trelleborg/420_85R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Trelleborg/420_85R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Michelin/600_60R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Michelin/600_60R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Michelin/420_85R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Michelin/420_85R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MITAS">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Mitas/600_70R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Mitas/600_70R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="NOKIAN">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Nokian/440_80R30.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Nokian/440_80R30.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Back_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="40" rotMax="55" rotCenterWheel1="1" rotCenterWheel2="2"/>
+        </ackermannSteeringConfigurations>
+
+        <rimColor>BIZON_BEIGE1</rimColor>
+    </wheels>
+
+
+    <attacherJoints>
+        <attacherJoint node="0>0|5|0|0|0|0" jointType="cutter" jointPositionOffset="0 0.389 -1.36" lowerRotLimit="0 0 10" lowerTransLimit="0 0 0" lockDownRotLimit="true" moveTime="2.5" comboTime="0">
+            <distanceToGround lower="1.14" upper="1.63"/>
+            <rotationNode node="0>0|5|0|0" upperRotation="-5 0 0" lowerRotation="15 0 0"/>
+            <bottomArm rotationNode="0>0|5|0|1" startRotation="0 0 0"/>
+            <schema position="1 0" rotation="0" invertX="true"/>
+            <objectChange node="0>2|1" visibilityActive="true"/>
+            <objectChange node="0>0|16|0" visibilityActive="false"/>
+			<objectChange node="0>0|5|0|1|0|9" visibilityActive="true"/>
+        </attacherJoint>
+
+        <attacherJoint node="0>0|5|1|0" jointType="trailer" lowerRotLimit="10 80 50" upperRotationOffset="0" comboTime="1" allowsJointLimitMovement="false">
+            <schema position="1 0" rotation="0" invertX="false"/>
+        </attacherJoint>
+
+        <attacherJoint node="0>0|5|1|0" jointType="trailerLow" lowerRotLimit="10 80 50" upperRotationOffset="0" comboTime="1" allowsJointLimitMovement="false">
+            <schema position="1 0" rotation="0" invertX="false"/>
+        </attacherJoint>
+
+        <sounds>
+            <attach template="HEADER_ATTACH_01"/>
+            <hydraulic template="hydraulicLayerTone2" volumeScale="1.9"/>
+        </sounds>
+    </attacherJoints>
+
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 2"/>
+        </states>
+
+        <realLights>
+            <low>
+                <light node="0>0|2|1|0" lightTypes="0" excludedLightTypes="3"/>
+                <light node="0>0|2|1|1"   lightTypes="3" />
+				
+            </low>
+            <high>
+                <light node="0>0|2|1|2"     lightTypes="0" excludedLightTypes="3"/>
+                <light node="0>0|2|4|0"     lightTypes="0"/>
+				<light node="0>0|13|0|1|0|3"   lightTypes="0" />
+				<light node="0>0|13|3|1|2|1|2"     lightTypes="0"/>
+                <light node="0>0|2|2|0" lightTypes="2"/>
+                <light node="0>0|2|1|3"       lightTypes="3"/>
+                <turnLightLeft node="0>0|2|3|0"/>
+                <turnLightRight node="0>0|2|3|1"/>
+                <brakeLight node="0>0|2|4|0"/>
+            </high>
+        </realLights>
+
+        <defaultLights>
+			<!--zwukle-->
+            <defaultLight shaderNode="0>0|13|0|0|0|0|0"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|0|0|1|0"         lightTypes="0 3" />
+			
+			<defaultLight shaderNode="0>0|13|0|0|1|0|0"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|0|1|1|0"         lightTypes="0 3" />
+			
+			<defaultLight shaderNode="0>0|13|0|0|2|0|0"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|0|2|1|0"         lightTypes="0 3" />
+			<!--w_srodku-->
+			<defaultLight shaderNode="0>0|13|3|1|2|1|0"         lightTypes="0 3" />
+			<!--Pozycyjne-->
+			<defaultLight shaderNode="0>0|13|0|4|0|4"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|4|0|5"         lightTypes="0 3" />
+									  
+			<defaultLight shaderNode="0>0|13|0|4|1|4"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|4|1|5"         lightTypes="0 3" />
+									  
+			<defaultLight shaderNode="0>0|13|0|4|2|4"         lightTypes="0 3" />
+            <defaultLight shaderNode="0>0|13|0|4|2|5"         lightTypes="0 3" />
+			<!--Tylne-->
+            <defaultLight shaderNode="0>0|13|0|5|1|8"           lightTypes="0" />
+            <defaultLight shaderNode="0>0|13|0|5|1|13"          lightTypes="0" />
+			
+			<defaultLight shaderNode="0>0|13|0|5|0|7"           lightTypes="0" />
+            <defaultLight shaderNode="0>0|13|0|5|0|6"          lightTypes="0" />
+			<!--Robocze-->
+            <defaultLight shaderNode="0>0|13|3|1|5|1|0|0|0"         lightTypes="2" />
+			<defaultLight shaderNode="0>0|13|3|1|5|1|1|0|0"         lightTypes="2" />
+			
+			<defaultLight shaderNode="0>0|13|3|1|2|2|1|0|0"         lightTypes="2" />
+			<defaultLight shaderNode="0>0|13|3|1|2|2|2|0|0"         lightTypes="2" />
+			
+			<defaultLight shaderNode="0>0|13|3|2|0|0|2"         lightTypes="2" />
+			<defaultLight shaderNode="0>0|13|3|2|0|0|3"         lightTypes="2" />
+			
+			<defaultLight shaderNode="0>0|13|3|2|0|1|2"         lightTypes="2" />
+			<defaultLight shaderNode="0>0|13|3|2|0|1|3"         lightTypes="2" />
+			
+			<defaultLight shaderNode="0>0|13|3|2|0|2|4"         lightTypes="2" />
+			<defaultLight shaderNode="0>0|13|3|2|0|2|5"         lightTypes="2" />
+        </defaultLights>
+
+        <turnLights>
+            <turnLightLeft shaderNode="0>0|13|0|5|1|9" />
+            <turnLightLeft shaderNode="0>0|13|0|5|0|0" />
+			<turnLightLeft shaderNode="0>0|13|0|4|0|6" />
+			<turnLightLeft shaderNode="0>0|13|0|4|1|6" />
+			<turnLightLeft shaderNode="0>0|13|0|4|2|6" />
+			
+            <turnLightRight shaderNode="0>0|13|0|5|1|10" />
+            <turnLightRight shaderNode="0>0|13|0|5|0|5" />
+			<turnLightRight shaderNode="0>0|13|0|4|0|7" />
+			<turnLightRight shaderNode="0>0|13|0|4|1|7" />
+			<turnLightRight shaderNode="0>0|13|0|4|2|7" />
+        </turnLights>
+
+        <brakeLights>
+            <brakeLight shaderNode="0>0|13|0|5|1|12" />
+            <brakeLight shaderNode="0>0|13|0|5|1|11" />
+			<brakeLight shaderNode="0>0|13|0|5|0|6" />
+            <brakeLight shaderNode="0>0|13|0|5|0|7" />
+        </brakeLights>
+
+        <beaconLights>
+            <beaconLight node="0>0|2|5" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+        </beaconLights>
+        <sounds>
+            <switchLight template="SWITCH_01" />
+            <turnLight template="SWITCH_TURNLIGHT_OPENCABIN" />
+        </sounds>
+    </lights>
+
+    <workAreas>
+        <workArea type="combineSwath" functionName="processCombineSwathArea" requiresGroundContact="false" disableBackwards="false">
+            <area startNode="0>0|15|0|0" widthNode="0>0|15|0|1" heightNode="0>0|15|0|2" />
+        </workArea>
+        <workArea type="combineChopper" functionName="processCombineChopperArea" requiresGroundContact="false" disableBackwards="false">
+            <area startNode="0>0|15|1|0" widthNode="0>0|15|1|1" heightNode="0>0|15|1|2" />
+        </workArea>
+    </workAreas>
+
+    <enterable>
+        <exitPoint node="0>0|3"/>
+        <enterReferenceNode node="0>"/>
+
+        <cameras>
+            <camera node="0>0|1|0|0" rotatable="true" rotateNode="0>0|1|0" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="7" transMax="40" translation="0 0 7.4" rotation="-30 180 0">
+                <raycastNode node="0>0|1|2"/>
+                <raycastNode node="0>0|1|2"/>
+                <raycastNode node="0>0|1|2"/>
+            </camera>
+            <camera node="0>0|1|1|0" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" useOutdoorSounds="true" shadowFocusBox="0>0|1|5" />
+        </cameras>
+
+        <characterNode node="0>0|6|0|0|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="0>0|6|4" />
+            <target ikChain="leftFoot"  targetNode="0>0|6|3" />
+            <target ikChain="rightArm"  targetNode="0>0|6|5" />
+            <target ikChain="leftArm"   targetNode="0>0|4|0|0" />
+        </characterNode>
+
+		 <characterTargetNodeModifier node="0>0|6|4" transitionTime="0.1" >
+            <state node="0>0|16|4|2|1|0" referenceNode="0>0|16|4|2|1" />
+        </characterTargetNodeModifier>
+
+        <characterTargetNodeModifier node="0>0|6|3" transitionTime="0.1" >
+            <state node="0>0|16|4|2|0|0"   referenceNode="0>0|16|4|2|0"  />
+        </characterTargetNodeModifier>
+		
+		<characterTargetNodeModifier node="0>0|6|5" transitionTime="0.1" >
+            <state node="0>0|16|4|0|2|0"   referenceNode="0>0|16|4|0|2"  />
+        </characterTargetNodeModifier>
+		
+		<characterTargetNodeModifier node="0>0|6|0|0|1|0" transitionTime="0.1" >
+            <state node="0>0|6|0|0|1|1"   referenceNode="0>0|16|4|0|2"  />
+        </characterTargetNodeModifier>
+        <mirrors>
+           
+        </mirrors>
+    </enterable>
+
+    <suspensions>
+        <suspension node="0>0|6|0|0"             weight="150" minTranslation="0 -0.15 0.0" maxTranslation="0 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4" />
+        <suspension useCharacterTorso="true" weight="90"  minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />
+    </suspensions>
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="2" usage="40"  fillType="diesel" />  <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+
+        <motorConfigurations>
+            <motorConfiguration name="BIZON SUPER SW400" price="0">
+                <motor torqueScale="0.433" minRpm="850" maxRpm="2200" maxForwardSpeed="22" maxBackwardSpeed="15" brakeForce="2" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" >
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission autoGearChangeTime="1.2" gearChangeTime="0.5" name="$l10n_info_transmission_manualWithPowerShiftGroups">
+                    <directionChange useGear="true" reverseGearIndex="1" changeTime="1.2"/>
+                    <groups type="DEFAULT" changeTime="0.0">
+                        <group ratio="1.000" name="A" isDefault="true"/>
+                    </groups>
+
+                    <forwardGear maxSpeed="9.1" />
+                    <forwardGear maxSpeed="14.2" />
+                    <forwardGear maxSpeed="21.2" />
+                </transmission>
+				
+            </motorConfiguration>
+        </motorConfigurations>
+
+		<gearLevers>
+            <gearLever node="0>0|16|4|0|2" centerAxis="3" changeTime="0.5" handsOnDelay="0.25">
+                <state gear="-1" xRot="-17" zRot="-8" />
+                <state gear="0" xRot="0" zRot="0" />
+                <state gear="1" xRot="17" zRot="-8" />
+                <state gear="2" xRot="17" zRot="8" />
+                <state gear="3" xRot="-17" zRot="8" />
+            </gearLever>
+			<gearLever node="0>0|16|4|0|0" centerAxis="3" changeTime="0.5" handsOnDelay="0.25">
+                <state gear="-1" xRot="-17" zRot="0" />
+                <state gear="0" xRot="0" zRot="0" />
+                <state gear="1" xRot="17" zRot="0" />
+                <state gear="2" xRot="0" zRot="0" />
+                <state gear="3" xRot="0" zRot="0" />
+            </gearLever>
+			<gearLever node="0>0|16|4|0|1" centerAxis="3" changeTime="0.5" handsOnDelay="0.25">
+                <state gear="-1" xRot="0" zRot="0" />
+                <state gear="0" xRot="0" zRot="0" />
+                <state gear="1" xRot="0" zRot="0" />
+                <state gear="2" xRot="17" zRot="0" />
+                <state gear="3" xRot="-17" zRot="0" />
+            </gearLever>
+        </gearLevers>
+
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.6" wheelIndex1="1" wheelIndex2="2" /> <!-- front left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.5" wheelIndex1="3" wheelIndex2="4" /> <!-- back left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.7" differentialIndex1="1" differentialIndex2="2" /> <!-- front-back -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+
+        <exhaustEffects>
+            <exhaustEffect node="0>0|8|0" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.5 0.5 0.5 3.0" maxRpmColor="0.03 0.03 0.03 1.0" minRpmScale="0.05" maxRpmScale="0.5" xzRotationsOffset="90 0" xzRotationsForward="-90 0" xzRotationsBackward="90 0" xzRotationsLeft="0 -100" xzRotationsRight="0 100"/>
+        </exhaustEffects>
+		
+		
+		<exhaustFlap node="0>0|13|0|2" maxRot="0.05"/>
+        <motorStartDuration>1980</motorStartDuration>
+
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay" minValueAnim="0" maxValueAnim="2200" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="speed" animName="speedDisplay" minValueAnim="0" maxValueAnim="30" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="motorTemperature" animName="temperatureDisplay" minValueAnim="40" maxValueAnim="120" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ANIMATION" valueType="rpm"  animName="rpmGaz" minValueAnim="0" maxValueAnim="2200" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="ROT" valueType="clutchPedal" node="0>0|16|4|2|0"   minRot="0 0 0" maxRot="18 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+		
+		<animationNodes>
+		<animationNode node="0>0|9|4|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|1" rotSpeed="1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|2" rotSpeed="1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|3" rotSpeed="-1000" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|4" rotSpeed="-900" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|5" rotSpeed="-1500" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|6" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		</animationNodes>
+		
+        
+    </motorized>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+
+        <steeringWheel node="0>0|4|0" indoorRotation="540" outdoorRotation="30"/>
+
+         <dashboards>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="0>0|16|4|2|1" minRot="0 0 0" maxRot="15 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+
+    <animations>
+        <animation name="rpmDisplay">
+            <part node="0>0|13|0|15|0|1" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-240 0 0"/>
+			<part node="0>0|13|0|15|1|1" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-240 0 0"/>
+			<part node="0>0|13|0|15|2|1" startTime="0.0" endTime="1.0" startRot="95 0 7.733" endRot="-105 0 7.733"/>
+        </animation>
+        <animation name="speedDisplay">
+            <part node="0>0|13|0|15|0|2" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-240 0 0"/>
+			<part node="0>0|13|0|15|1|2" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-240 0 0"/>
+			<part node="0>0|13|0|15|2|2" startTime="0.0" endTime="1.0" startRot="0 45.014 0" endRot="-90 45.014 0"/>
+			<part node="0>0|16|4|7|3" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="27 0 0"/>
+        </animation>
+        <animation name="fuelDisplay">
+            <part node="0>0|13|0|15|0|0" startTime="0.0" endTime="1.0" startRot="-15 0 0" endRot="-95 0 0"/>
+			<part node="0>0|13|0|15|1|0" startTime="0.0" endTime="1.0" startRot="-15 0 0" endRot="-95 0 0"/>
+			<part node="0>0|13|0|15|2|0" startTime="0.0" endTime="1.0" startRot="95 0 4.472" endRot="-95 0 4.472"/>
+        </animation>
+        <animation name="temperatureDisplay">
+            <part node="0>0|13|0|15|0|3" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-85 0 0"/>
+			<part node="0>0|13|0|15|1|3" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="-85 0 0"/>
+			<part node="0>0|13|0|15|2|3" startTime="0.0" endTime="1.0" startRot="0 0 6.822" endRot="-85 0 6.822"/>
+        </animation>
+		<animation name="rpmGaz">
+            <part node="0>0|16|4|1|0" startTime="0.0" endTime="700" startRot="5.865 0 0" endRot="5.865 0 -9.887"/>
+			<part node="0>0|16|4|1|0" startTime="700" endTime="733" startRot="5.865 0 -9.887" endRot="0 0 -9.887"/>
+			<part node="0>0|16|4|1|0" startTime="745" endTime="766" startRot="0 0 -9.887" endRot="5.865 0 -9.887"/>
+			<part node="0>0|16|4|1|0" startTime="766" endTime="1433" startRot="5.865 0 -9.887" endRot="5.865 0 -28"/>
+			<part node="0>0|16|4|1|0" startTime="1433" endTime="1456" startRot="5.865 0 -28" endRot="0 0 -28"/>
+			<part node="0>0|16|4|1|0" startTime="1456" endTime="1466" startRot="0 0 -28" endRot="5.865 0 -28"/>
+			<part node="0>0|16|4|1|0" startTime="1496" endTime="2169" startRot="5.865 0 -28" endRot="5.865 0 -43.5"/>
+			<part node="0>0|16|4|1|0" startTime="2169" endTime="2199" startRot="5.865 0 -43.5" endRot="0 0 -43.5"/>
+        </animation>
+        <animation name="pipeAnimation" soundVolumeFactor="2.0">
+            <part node="0>0|9|2|0|0"      startTime="0.0"  endTime="5.0" startRot="0 0 0" endRot="-91 0 0"/>
+			<part node="0>0|9|2|4|0"      startTime="0.0"  endTime="5.0" startRot="6.398 44.068 5.915" endRot="5.68 -36 -1.89"/>
+			<part node="0>0|9|2|0|0|10"   startTime="0.0"  endTime="5.0" startRot="1.645 7.48 0.62" endRot="16.327 6.043 28.884"/>
+            <part node="0>0|9|2|2|0" startTime="5.00" endTime="5.2" startRot="0 0 0" endRot="89.444 0 0"/>
+            <part node="0>0|9|2|0|0|3|0"  startTime="5.20" endTime="5.2" startRot="0 0 0" endRot="93 0 0"/>
+			<sound template="slideOpen"  startTime="2.5"  direction="1"  volumeScale="0.9" pitchScale="0.8"  linkNode="0>0|19|3"/>
+			
+			<sound template="sheetImp06"            startTime="0.0"                   volumeScale="5"   pitchScale="0.8" linkNode="0>0|19|2"/>
+			<sound template="hingeMedium"         startTime="0.1"   endTime="4.99"   volumeScale="1"   pitchScale="0.1" linkNode="0>0|19|3"/>
+			<sound template="clackVar6"         startTime="5.1"    volumeScale="5"   pitchScale="1" linkNode="0>0|19|3"/>
+			<sound template="clackVar6"         startTime="5.2"    volumeScale="3"   pitchScale="1.2" linkNode="0>0|19|4"/>
+			<sound template="clickLong"         startTime="0.1"   endTime="4.99"   volumeScale="5"   pitchScale="0.8" linkNode="0>0|19|4"/>
+        </animation>
+		<animation name="klapa_L">
+            <part node="0>0|16|5|0|0|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="90 0 83.5"/>
+		    <part node="0>0|16|5|0|0|0|1" startTime="0.8" endTime="1.0" startRot="0 0 0" endRot="-117.86 33.557 -10.038"/>
+        </animation>
+		<animation name="klapa_P">
+            <part node="0>0|16|5|0|1|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="90 0 -69"/>
+		    <part node="0>0|16|5|0|1|0|1" startTime="0.8" endTime="1.0" startRot="0 0 0" endRot="-93.877 -48.032 -1.769"/>
+        </animation>
+		<animation name="klapa_Silnik">
+            <part node="0>0|16|5|0|2|0" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="175 0 0"/>
+        </animation>
+		<animation name="cover">
+            <part node="0>0|16|5|0|3|0" startTime="0.0" endTime="1.0" startRot="89.985 0 0" endRot="13.895 0 0"/>
+			<part node="0>0|16|5|0|3|0|0" startTime="0.0" endTime="1.0" startRot="-1.789 0 0" endRot="-42.701 0 0"/>
+			<part node="0>0|16|5|0|3|0|0" startTime="1.0" endTime="1.2" startRot="-42.701 0 0" endRot="-36.844 0 0"/>
+
+			<sound template="clickLong"   startTime="0.02"   endTime="0.9"   volumeScale="5"   pitchScale="1.7" linkNode="0>0|16|5|0|3|0"/>
+			<sound template="slideOpen"   startTime="0.0"   endTime="0.9"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|16|5|0|3|0|0"/>
+        </animation>
+		<animation name="klapa_Akum">
+            <part node="0>0|16|5|0|4|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="90 0 -40"/>
+        </animation>
+		<animation name="klapa_Oleju">
+            <part node="0>0|16|5|0|5|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="-89.874 6.404 172.982"/>
+        </animation>
+		<animation name="cleaningSartAnimation">
+            <part node="0>0|16|4|3|0" startTime="0.0" endTime="1.5" startRot="0 0 0" endRot="59.461 0 0"/>
+			<part node="0>0|1|1" startTime="0.0" endTime="1.5" startTrans="0 3.399 2.118" endTrans="0 3.561 2.616"/>
+			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="0 0 0" endRot="57.226 0 0"/>
+		</animation>
+		<animation name="toggleChopper">
+		    <part node="0>0|13|1|1|2|0" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 13"/>
+			<part node="0>0|13|1|1|2|3" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 -13"/>
+			
+			<part node="0>0|13|1|0|5|0" startTime="0.0" endTime="7.5" startRot="37.330 0 0" endRot="-15.265 0 0"/>
+			<part node="0>0|13|1|0|5|1" startTime="0.0" endTime="7.5" startRot="-47.067 0 0" endRot="0 0 0"/>
+			
+			<part node="0>0|13|1|1|3|0" startTime="0.5" endTime="3.5" startRot="-90 0 0" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|3|0|5" startTime="0.5" endTime="3.5" startRot="90 0 0" endRot="0 0 0"/>
+			
+			<part node="0>0|13|1|1|2|1" startTime="3.5" endTime="4.5" startRot="0 0 -155" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|2|2" startTime="3.5" endTime="4.5" startRot="0 0 155" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|2|0" startTime="3.5" endTime="4.5" startRot="0 0 13" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|2|3" startTime="3.5" endTime="4.5" startRot="0 0 -13" endRot="0 0 0"/>
+			
+			<part node="0>0|13|1|1|3|1|0" startTime="4.5" endTime="7.5" startRot="97.6 0 0" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|3|1|1" startTime="4.5" endTime="7.5" startRot="97.6 0 0" endRot="0 0 0"/>
+			<part node="0>0|13|1|1|3|1|2" startTime="4.5" endTime="7.5" startRot="97.6 0 0" endRot="0 0 0"/>
+			
+			<part node="0>0|13|1|1|4|4" startTime="7.5" endTime="7.51" startScale="0 0 0" endScale="1 1 1"/>
+			<part node="0>0|13|1|1|3|0|4" startTime="7.5" endTime="7.51" startScale="0 0 0" endScale="1 1 1"/>
+			<part node="0>0|13|1|1|3|0|5|0" startTime="7.5" endTime="7.51" startScale="1 1 1" endScale="0 0 0"/>
+			<part node="0>0|13|1|0|7" startTime="7.5" endTime="7.51" startScale="0 0 0" endScale="1 1 1"/>
+			<part node="0>0|13|1|0|8|0" startTime="7.5" endTime="7.51" startScale="1 1 1" endScale="0 0 0"/>
+			<part node="0>0|13|1|1|3|0|3" startTime="7.5" endTime="7.51" startScale="0 0 0" endScale="1 1 1"/>
+			<part node="0>0|13|1|1|3|0|6" startTime="7.5" endTime="7.51" startScale="1 1 1" endScale="0 0 0"/>
+			
+			
+        </animation>
+    </animations>
+
+	 <simpleIC outsideInteractionTrigger="0>0|17|0" >
+		<animation animationName="klapa_L" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|0|0|2" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="klapa_P" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|1|0|2" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="klapa_Silnik" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|2|0|2" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="klapa_Zbiornik" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|3|0|1" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="klapa_Akum" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|4|1" triggerPointSize="0.04" />
+		</animation>
+		<animation animationName="klapa_Oleju" animationSpeed="1" sharedAnimation="false" soundVolumeIncreasePercentage="0.5" >
+			<outsideTrigger triggerPoint="0>0|16|5|0|5|1" triggerPointSize="0.04" />
+		</animation>
+	</simpleIC>
+	
+	<turnOnVehicle turnOffIfNotAllowed="true">
+        <turnedAnimation name="cleaningSartAnimation" speedScale="1.0" />
+		<turnedOnAnimation name="Body" speedScale="3.5" />
+    </turnOnVehicle>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="0>0|13|1|1|3|0" playSound="false">
+                <dependentPart node="0>0|13|1|1|3|0|2"/>
+            </movingTool>
+			<movingTool node="0>0|13|1|0|5|1" playSound="false">
+                <dependentPart node="0>0|13|1|0|5|1|0"/>
+            </movingTool>
+			<movingTool node="0>0|9|2|0|0" playSound="false">
+                <dependentPart node="0>0|9|2|1"/>
+            </movingTool>
+            <movingTool node="0>0|5|0|1">
+                <dependentPart node="0>0|5|0|1|0|1"/>
+                <dependentPart node="0>0|9|0|0"/>
+				<dependentPart node="0>0|9|0|2"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="0>0|9|2|1" referencePoint="0>0|9|2|0|0|2" referenceFrame="0>0|9|2|0|0|2"/>
+			
+			<movingPart node="0>0|13|1|1|3|0|2" referencePoint="0>0|13|1|1|2|4" referenceFrame="0>0|13|1|1|2|4"/>
+			
+			<movingPart node="0>0|13|1|0|5|1|0" referencePoint="0>0|13|1|0|5|0|0" referenceFrame="0>0|13|1|0|5|0|0" scaleZ="true"/>
+
+            <movingPart node="0>0|5|0|1|0|1" referencePoint="0>0|9|0|1" referenceFrame="0>0|9|0|1">
+                <translatingPart node="0>0|5|0|1|0|1|0"/>
+            </movingPart>
+            <movingPart node="0>0|9|0|2" referencePoint="0>0|5|0|1|0|8" referenceFrame="0>0|5|0|1|0|8">
+                <translatingPart node="0>0|9|0|2|0"/>
+            </movingPart>
+			<movingPart node="0>0|9|0|0" referencePoint="0>0|5|0|1|0|2" referenceFrame="0>0|5|0|1|0|2">
+                <translatingPart node="0>0|9|0|0|0"/>
+            </movingPart>
+
+            <movingPart node="1>1|0|1" referencePoint="1>0|0|1" referenceFrame="1>0|0|1" scaleZ="true" isActiveDirty="true"  maxUpdateDistance="50"/>
+			<movingPart node="0>0|9|1|3|0|0|0" referencePoint="0>0|9|5|0|0" referenceFrame="0>0|9|5|0|0" isActiveDirty="true"  maxUpdateDistance="50">
+			<dependentPart node="0>0|9|1|3|0|0|0|1"/>
+			</movingPart>
+			<movingPart node="0>0|9|1|3|0|0|0|1" referencePoint="0>0|9|5|0|1" referenceFrame="0>0|9|5|0|1" isActiveDirty="true"  maxUpdateDistance="50"/>
+			
+			<movingPart node="0>0|9|5|3" referencePoint="0>0|9|1|3|0|0|0|1|4" referenceFrame="0>0|9|1|3|0|0|0|1|4" scaleZ="true" isActiveDirty="true"  maxUpdateDistance="50"/>
+			<movingPart node="0>0|9|5|4" referencePoint="0>0|9|1|3|0|0|0|1|5" referenceFrame="0>0|9|1|3|0|0|0|1|5" scaleZ="true" isActiveDirty="true"  maxUpdateDistance="50"/>
+			
+            <movingPart node="1>2" referencePoint="1>1|0|2" referenceFrame="1>1|0|2" isActiveDirty="true"  maxUpdateDistance="50">
+                <translatingPart node="1>2|0"/>
+            </movingPart>
+			<movingPart node="1>5" referencePoint="1>1|0|5" referenceFrame="1>1|0|5" isActiveDirty="true"  maxUpdateDistance="50">
+                <translatingPart node="1>5|0"/>
+            </movingPart>
+        </movingParts>
+
+        <sounds>
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations title="Wyposazenie">
+            <fillUnitConfiguration name="DEFAULT">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.19 -1.664" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 3" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+            </fillUnitConfiguration>
+			 <fillUnitConfiguration name="Kolnierz">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="true" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.19 -1.664" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 3" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+            </fillUnitConfiguration>
+			 <fillUnitConfiguration name="Kielecka">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="true" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="true" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.163 -2.952" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+            </fillUnitConfiguration>
+			 <fillUnitConfiguration name="Plocka">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="true" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.163 -2.952" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+            </fillUnitConfiguration>
+			 <fillUnitConfiguration name="Plocka Drut">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="true" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.163 -2.952" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+            </fillUnitConfiguration>
+			 <fillUnitConfiguration name="Wagrowiec">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                        <alarmTriggers>
+                            <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
+                        </alarmTriggers>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="200">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+				<objectChange node="0>0|13|1|0" visibilityActive="true" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="false" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.163 -2.952" /> 
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.67 -3.01" />
+			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
+			<objectChange node="0>0|8|3|0|1|1" rotationActive="-14.612 0 0" />
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="0>0|14|0" maxDelta="0.28" maxAllowedHeapAngle="20" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+        <unloadInfos>
+            <unloadInfo>
+                <node node="0>0|14|1" width="0.5" length="0.3"/>
+            </unloadInfo>
+        </unloadInfos>
+        <loadInfos>
+            <loadInfo>
+                <node node="0>0|14|2" width="0.2" length="0.2"/>
+            </loadInfo>
+        </loadInfos>
+    </fillVolume>
+
+    <dischargeable>
+        <dischargeNode node="0>0|9|2|0|0|1" emptySpeed="105" fillUnitIndex="1" maxDistance="6">
+            <info width="0.3" length="0.3"/>
+            <raycast extraDistance="-1" maxDistance="6"/>
+
+            <effects>
+                <effectNode effectClass="PipeEffect" effectNode="0>0|9|2|0|0|0|0" materialType="pipe" materialTypeId="1" maxBending="0.8" positionUpdateNodes="0>0|9|2|0|0|0|1" delay="0"/>
+                <effectNode effectNode="0>0|9|2|0|0|0|1" materialType="smoke" materialTypeId="1" alignToWorldY="true" delay="0.1"/>
+            </effects>
+        </dischargeNode>
+    </dischargeable>
+
+    <pipe unloadInfoIndex="1" >
+        <dischargeNode index="1" />
+        <states num="2" unloading="2" />
+        <animation name="pipeAnimation" speedScale="1" />
+        <unloadingTriggers>
+            <unloadingTrigger node="0>0|7|1" />
+        </unloadingTriggers>
+
+        <animationNodes>
+            <animationNode node="0>0|9|2|0|0|6|0|0" rotSpeed="300" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3"/>
+        </animationNodes>
+    </pipe>
+
+    <combine>
+        <chopper available="true"  workAreaIndex="2" animName="toggleChopper" animSpeedScale="1"/>
+        <swath available="true" workAreaIndex="1"/>
+        <processing toggleTime="7.5"/>
+
+        <fillEffect>
+            <effectNode effectNode="0>0|8|1" materialType="unloading" delay="0"/>
+        </fillEffect>
+
+        <chopperEffect>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="CHOPPER" linkNode="0>0|8|3|0|0|1">
+                <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/chopperCenterEffectArray.dds" numRows="29" rowLength="31" minFade="0.04"/>
+            </effectNode>
+
+            <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|0|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
+        </chopperEffect>
+		
+        <strawEffect>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="DROP" linkNode="0>0|8|3|0|1|1">
+                <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/strawUnloadArray.dds" numRows="16" rowLength="12" minFade="0.04"/>
+            </effectNode>
+
+            <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|1|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
+        </strawEffect>
+
+        <animationNodes>
+            <animationNode node="0>0|5|0|1|0|3|2" class="ScrollingAnimation" scrollSpeed="6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="2" toggleVisibility="false" turnOnFadeTime="4" turnOffFadeTime="3"/>
+            <animationNode node="0>0|5|0|1|0|3|0" class="ScrollingAnimation" scrollSpeed="-6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" toggleVisibility="false" turnOnFadeTime="4" turnOffFadeTime="3"/>
+            
+			<animationNode node="0>0|9|1|2" rotSpeed="-700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|9|1|3|0|0" rotSpeed="-700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|9|1|3|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|1" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|2" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|3" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|4" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|5" rotSpeed="600" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|6" rotSpeed="600" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|7" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|8" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|9" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|10" rotSpeed="1100" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|11" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|12" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|13" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|14" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|15" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|16" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|17" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|18" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|19" rotSpeed="1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|20" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|21" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|22" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|23" rotSpeed="1500" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|24" rotSpeed="900" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|25" rotSpeed="950" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|26" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|9|5|1|1" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|5|1|1|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|5|1|1|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|5|1|1|2" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+
+
+			
+			<animationNode node="0>0|13|0|3|0|0" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|0|3|1|0" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|13|1|1|3|0|4" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|0|7" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|13|1|1|3|0|3" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|4|0" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|4|1" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|4|2" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|4|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			
+			<animationNode node="0>0|13|1|0|6|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|0|6|1" rotSpeed="1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|0|6|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+            
+
+            <animationNode node="0>0|5|0|1|0|3|1" rotSpeed="-300" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+        </animationNodes>
+
+        <!-- WORK SOUNDS -->
+        <sounds>
+            <start file="sounds/Engines/SW400/bizonZ056_startwork.ogg" innerRadius="12.0" outerRadius="60.0">
+                <volume indoor="0.7" outdoor="1.45"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </start>
+            <work file="sounds/Engines/SW400/work.ogg" innerRadius="12.0" outerRadius="60.0" fadeOut="0.3">
+                <volume indoor="0.7" outdoor="1.2"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </work>
+            <stop file="sounds/Engines/SW400/stopwork.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1">
+                <volume indoor="0.7" outdoor="1.2"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </stop>
+        </sounds>
+    </combine>
+
+    <honk>
+        <sound template="HONK_IDEAL9T" />
+    </honk>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+    </dashboard>
+
+	<foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0.02" turnOnFoldDirection="1">
+                    <foldingPart animationName="cover" speedScale="1" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <ai>
+		<agent width="3.2" length="7.8" height="3.9" lengthOffset="-1.15" frontOffset="-3.6" />
+        <collisionTrigger node="0>0|7|0" width="3.2" height="3.9"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.8" maxX="1.8" minZ="0.9" maxZ="2.4" yOffset="0.6" />
+        <bendingNode minX="-0.9" maxX="0.9" minZ="-2.5" maxZ="3.0" yOffset="0.6" />
+    </foliageBending>
+	
+	
+	
+	<designConfigurations>
+	    <designConfiguration name="$l10n_Nie" price="0">
+			<objectChange node="0>0|13|3|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|2" visibilityActive="false" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="false" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="0 0 0" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="$l10n_Daszek" price="300">
+			<objectChange node="0>0|13|3|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|2" visibilityActive="true" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="false" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="1 1 1" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="Barierki" price="300">
+			<objectChange node="0>0|13|3|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|2" visibilityActive="true" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="false" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="0 0 0" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="Daszek_Barierki" price="300">
+			<objectChange node="0>0|13|3|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|2" visibilityActive="true" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="false" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="1 1 1" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="Kabina I" price="1000">
+			<objectChange node="0>0|13|3|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|2" visibilityActive="false" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="true" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="true" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="1 1 1" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="Kabina II" price="1100">
+			<objectChange node="0>0|13|3|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|2" visibilityActive="false" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="false" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="true" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="1 1 1" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </designConfiguration>
+		<designConfiguration name="Kabina IV" price="1200">
+			<objectChange node="0>0|13|3|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|2" visibilityActive="false" />
+			<!--Dach-->
+			<objectChange node="0>0|13|3|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="true" />
+			<!--Standard-->
+			<objectChange node="0>0|13|3|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|1|1" visibilityActive="true" />
+			<!--Plecy-->
+			<objectChange node="0>0|13|3|1|1|1|0|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|1|1|0|2" visibilityActive="false" />
+			<!--Drzwi-->
+			<objectChange node="0>0|13|3|1|4|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<!--Kolizja-->
+			<objectChange node="0>1|5" scaleActive="1 1 1" />
+			<!--Dodadtki-->
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="true" />
+        </designConfiguration>
+    </designConfigurations>
+	
+	<vehicleTypeConfigurations>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z050 I" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|8|0" translationActive="1.358 3.065 0.069"/> <!--Particle-->
+		<objectChange node="0>0|8|0" rotationActive="-41.249 -53.145 -42.379"/> 
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="false"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.459 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="false"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="false"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="true"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="false"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="true"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="false"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="true"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="false"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="true"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="false"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="true"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="true"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="false"/>
+		
+		<objectChange node="0>0|16|4|7|0" translationActive="0.022 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|1" translationActive="0.022 0 0"/>
+		<objectChange node="0>0|16|4|7|2" translationActive="-0.078 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="-0.078 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.11 3.059 2.674"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.043 0.57"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-2.599 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="true"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="false"/>
+		<objectChange node="0>0|16|2"      visibilityActive="false"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="true"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="false"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0 3.296 1.537"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="true"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="true" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="false" />
+			<objectChange node="0>2|3" visibilityActive="true" />
+			<objectChange node="0>2|4" visibilityActive="false" />
+			<objectChange node="1>3|0" visibilityActive="true" />
+			<objectChange node="1>3|1" visibilityActive="false" />
+			<objectChange node="1>5" visibilityActive="true" />
+			<objectChange node="1>2" visibilityActive="false" />
+			<objectChange node="1>1|0|4" visibilityActive="true" />
+			<objectChange node="1>1|0|3" visibilityActive="false" />
+		<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="false" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="true" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="false" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="false" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+	</vehicleTypeConfiguration> 
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z050 II" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+		<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="false"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.459 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="false"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="false"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="true"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="false"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="false"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="true"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="false"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="true"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="false"/>
+		<objectChange node="0>0|16|2"      visibilityActive="false"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="false"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0 3.296 1.537"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="true"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="false" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="true" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+	</vehicleTypeConfiguration >
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z050 III" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="false"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.459 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="false"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="false"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="true"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="false"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="false"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="true"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="false"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="false"/>
+		<objectChange node="0>0|16|2"      visibilityActive="false"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="false"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0 3.296 1.537"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="true"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="false" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="true" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+	</vehicleTypeConfiguration>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 I" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="false"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.459 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="false"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="false"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="true"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="false"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="false"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="true"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="false"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="true"/>
+		<objectChange node="0>0|16|2"      visibilityActive="true"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="true"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0 3.296 1.537"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="false"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+	</vehicleTypeConfiguration>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 II" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="false"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.459 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="false"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="false"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="true"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="false"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="true"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="false"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="true"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="false"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="true"/>
+		<objectChange node="0>0|16|2"      visibilityActive="true"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="true"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0 3.296 1.537"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="false"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+	</vehicleTypeConfiguration>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 III" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="false"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="true"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="true"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="false"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="false"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.704 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="true"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="true"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="false"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="true"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="true"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="false"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="true"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="true"/>
+		<objectChange node="0>0|16|2"      visibilityActive="true"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="true"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="true"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0.925 3.296 1.173"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="false"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="false" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="true" />
+	</vehicleTypeConfiguration>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 IV" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="true"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="true"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="true"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="true"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="true"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.704 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="true"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="true"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="false"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="true"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="true"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="false"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="true"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="true"/>
+		<objectChange node="0>0|16|2"      visibilityActive="true"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="true"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -3.137"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0.925 3.296 1.173"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="false"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="false" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="true" />
+	</vehicleTypeConfiguration>
+	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 V" price="0">
+		<!--Mostek-->
+		<objectChange node="0>0|13|0|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|0|1" visibilityActive="true"/>
+		<objectChange node="0>0|13|0|0|2" visibilityActive="false"/>
+		<!--Pulpit/Kolumna-->
+		<objectChange node="0>0|13|0|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|1|4" visibilityActive="true"/>
+		<!--Wydech-->
+		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
+<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/> 
+		<!--NapemdGardzieli-->
+		<objectChange node="0>0|13|0|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|3|1" visibilityActive="true"/>
+		<!--LampyFront-->
+		<objectChange node="0>0|13|0|4|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|4|2" visibilityActive="true"/>
+		<!--LampyTyl-->
+		<objectChange node="0>0|13|0|5|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|5|1" visibilityActive="true"/>
+		<!--Drabinka-->
+		<objectChange node="0>0|13|0|6|0" visibilityActive="true"/>
+		
+		
+		<!--RewersGardzieli-->
+		<objectChange node="0>0|13|0|7" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|1" visibilityActive="true"/>
+		<!--Klamra-->
+		<objectChange node="0>0|13|0|8|0" translationActive="0.704 0.763 1.792"/>
+		<!--RuraSilnik-->
+		<objectChange node="0>0|13|0|9|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|9|1" visibilityActive="true"/>
+		<!--Prund-->
+		<objectChange node="0>0|13|0|11|0" visibilityActive="true"/><!--Kable-->
+		<objectChange node="0>0|13|0|11|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|11|2" visibilityActive="false"/><!--Skrzynki-->
+		<objectChange node="0>0|13|0|11|3" visibilityActive="true"/>
+		<!--KratkaZboczona-->
+		<objectChange node="0>0|13|0|12|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|12|1" visibilityActive="false"/><!--Z050-->
+		<!--Naklejki-->
+		<objectChange node="0>0|13|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|2" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|3" visibilityActive="false"/>
+		<objectChange node="0>0|13|2|4" visibilityActive="true"/>
+		<objectChange node="0>0|13|1|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|1" visibilityActive="false"/>
+		<objectChange node="0>0|13|1|3|2" visibilityActive="false"/>
+		<!--NaklejkiInstr-->
+		<objectChange node="0>0|13|2|6" visibilityActive="true"/>
+		<objectChange node="0>0|13|2|7" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|11" visibilityActive="false"/>
+		<objectChange node="0>0|13|0|16|12" visibilityActive="true"/>
+		<!--Silowniki-->
+		<objectChange node="0>0|9|0|2" visibilityActive="false"/>
+		<objectChange node="0>0|9|0|0" visibilityActive="true"/>
+		<!--Klapa_Silnika-->
+		<objectChange node="0>0|16|5|0|2|0|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|5|0|2|0|1" visibilityActive="true"/>
+		<!--Gardziel-->
+		<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="true"/>
+		<objectChange node="0>0|5|0|1|0|6|2" visibilityActive="false"/>
+		<objectChange node="0>0|5|0|1|0|6|3" visibilityActive="false"/>
+		<!--Wajchy-->
+		<objectChange node="0>0|16|4|7|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|16|4|7|1|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|2|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|3|0" visibilityActive="false"/>
+		<objectChange node="0>0|16|4|7|0|1" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|16|4|7|1|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|2|1" visibilityActive="true"/>
+		<objectChange node="0>0|16|4|7|3|1" visibilityActive="true"/>
+		
+		<objectChange node="0>0|16|4|7|2" translationActive="0.025 0 0"/> <!--offset-->
+		<objectChange node="0>0|16|4|7|3" translationActive="0.025 0 0"/>
+		
+		<objectChange node="0>0|16|4|7" translationActive="0.058 3.103 2.757"/><!--Pozycja-->
+		<!--Kierka-->
+		<objectChange node="0>0|4" translationActive="-0.036 0.185 0.687"/><!--Pozycja-->
+		<objectChange node="0>0|4" rotationActive="-22.292 0 0"/><!--Rotacja-->
+		<!--Hudy-->
+		<objectChange node="0>0|13|0|15|2" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|0|15|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|0|15|0" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|13|0|14"   visibilityActive="true"/>
+		<objectChange node="0>0|16|2"      visibilityActive="true"/>
+		<!--Barierki-->
+		<objectChange node="0>0|13|3|2|0|0" visibilityActive="false"/><!--Z040-->
+		<objectChange node="0>0|13|3|2|0|1" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|13|3|2|0|2" visibilityActive="true"/><!--Z056-->
+		<!--KolizjaSwiatla-->
+		<objectChange node="0>1|3" translationActive="0 1.377 -3.137"/><!--Pozycja-->
+		<!--PasekGardzieli-->
+		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="false"/><!--Z050-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="false"/>
+		<!--Kogut-->
+		<objectChange node="0>0|2|5" translationActive="0.925 3.296 1.173"/><!--Pozycja-->
+		<!--SpodekKabiny-->
+		<objectChange node="0>0|13|3|1|3|0" visibilityActive="true"/><!--Z050-->
+		<objectChange node="0>0|13|3|1|3|1" visibilityActive="false"/><!--Z056-->
+		<!--Skret-->
+			<objectChange node="0>0|13|0|17|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|17|1" visibilityActive="true" />
+			<objectChange node="0>2|3" visibilityActive="false" />
+			<objectChange node="0>2|4" visibilityActive="true" />
+			<objectChange node="1>3|0" visibilityActive="false" />
+			<objectChange node="1>3|1" visibilityActive="true" />
+			<objectChange node="1>5" visibilityActive="false" />
+			<objectChange node="1>2" visibilityActive="true" />
+			<objectChange node="1>1|0|4" visibilityActive="false" />
+			<objectChange node="1>1|0|3" visibilityActive="true" />
+			<!--Detale-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" /><!--Tabliczki-->
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|0|16|9" visibilityActive="true" /><!--gaz-->
+			<objectChange node="0>0|13|0|16|5" visibilityActive="true" /><!--klepisko-->
+			
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="false" /><!--jakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="true" />
+	</vehicleTypeConfiguration>
+	</vehicleTypeConfigurations>
+	
+	
+	<SkrzynkaConfigurations>
+		<SkrzynkaConfiguration name="Bez" price="0" >
+			<objectChange node="0>0|13|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|4|1" visibilityActive="false" />
+        </SkrzynkaConfiguration>
+		<SkrzynkaConfiguration name="Gorna" price="200" >
+			<objectChange node="0>0|13|4|0" visibilityActive="true" />
+			<objectChange node="0>0|13|4|1" visibilityActive="false" />
+        </SkrzynkaConfiguration>
+		<SkrzynkaConfiguration name="Dolna" price="200" >
+			<objectChange node="0>0|13|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|4|1" visibilityActive="true" />
+        </SkrzynkaConfiguration>
+    </SkrzynkaConfigurations>
+	
+	<MataConfigurations>
+		<MataConfiguration name="Nie" price="0" >
+			<objectChange node="0>0|13|0|13|0" visibilityActive="false" />
+        </MataConfiguration>
+		<MataConfiguration name="Tak" price="50" >
+			<objectChange node="0>0|13|0|13|0" visibilityActive="true" />
+        </MataConfiguration>
+    </MataConfigurations>
+	
+	<OsloneBizConfigurations>
+		<OsloneBizConfiguration name="Nie" price="0" >
+			<objectChange node="0>0|13|0|10|0" visibilityActive="false" />
+        </OsloneBizConfiguration>
+		<OsloneBizConfiguration name="Tak" price="50" >
+			<objectChange node="0>0|13|0|10|0" visibilityActive="true" />
+        </OsloneBizConfiguration>
+    </OsloneBizConfigurations>
+	
+    <baseMaterial>
+        <material name="z056_mat" baseNode="0>0|16|3">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
+        </material>
+		<material name="Daszek_mat" baseNode="0>0|13|3|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat2" value="0.3 0.3 0.4 16"/>
+        </material>
+		<material name="Heder_mat" baseNode="0>0|9|1|3|21">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Nowe_mat" baseNode="0>0|9|1|3|20">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Barierki_mat" baseNode="0>0|13|3|2|0|2">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Kabina_mat" baseNode="0>0|13|3|1|0|0">
+            <shaderParameter name="colorMat0" value="0.8 0.8 0.8 16"/>
+			<shaderParameter name="colorMat1" value="0.8 0.8 0.8 16"/>
+			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat4" value="0.8 0.8 0.8 16"/>
+        </material>
+		<material name="paipu_mat" baseNode="0>0|9|2|0|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="bar_mat" baseNode="0>0|16|8">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Siatka_mat" baseNode="0>0|16|6|5">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Choppers_mat" baseNode="0>0|13|1|0|4|1">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="ChopperWheels" baseNode="0>0|13|1|0|6|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Piston_mat" baseNode="1>2|1">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="DecalsTwo_mat" baseNode="0>0|9|2|4|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="z056ChainBelt_mat" baseNode="0>0|5|0|1|0|3|2">
+            <shaderParameter name="colorMat1" value="BIZON_RED1"/>
+        </material>
+		<material name="roll_mat" baseNode="0>0|13|1|0|7">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Z056Decals3_mat" baseNode="0>0|16|9|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+    </baseMaterial>
+	
+	<baseMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+		<baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<baseMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<baseMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
+		<material name="z056_mat" shaderParameter="colorMat0" />
+		<material name="Barierki_mat" shaderParameter="colorMat0"/>
+		<material name="Nowe_mat" shaderParameter="colorMat0"/>
+		<material name="Heder_mat" shaderParameter="colorMat0"/>
+		<material name="bar_mat" shaderParameter="colorMat0"/>
+		<material name="Siatka_mat" shaderParameter="colorMat0"/>
+		<material name="Kabina_mat" shaderParameter="colorMat2"/>
+		<material name="Piston_mat" shaderParameter="colorMat0"/>
+		<material name="DecalsTwo_mat" shaderParameter="colorMat0"/>
+		<material name="z056ChainBelt_mat" shaderParameter="colorMat1"/>
+		<material name="Daszek_mat" shaderParameter="colorMat0"/>
+		<material name="paipu_mat" shaderParameter="colorMat0" />
+		<material name="Z056Decals3_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+	
+	
+	<kabinaBizMaterialConfigurations price="100" useDefaultColors="false" defaultColorIndex="0">
+		<kabinaBizMaterialConfiguration color="0.3 0.3 0.3 0"/>
+		<kabinaBizMaterialConfiguration color="0.03 0.03 0.03 0"/>
+		<kabinaBizMaterialConfiguration color="0.8 0.8 0.8 0"/>
+        <kabinaBizMaterialConfiguration  color="0.5 0.2 0.1 0"/>
+		<kabinaBizMaterialConfiguration  color="1 0.2 0.1 0"/>
+		<kabinaBizMaterialConfiguration color="0.239 0.004 0.004"/>
+		<kabinaBizMaterialConfiguration color="0.060 0.000 0.000"/>
+		<kabinaBizMaterialConfiguration color="0.289 0.037 0.037"/>
+		<kabinaBizMaterialConfiguration color="0.364 0.040 0.012"/>
+		<kabinaBizMaterialConfiguration color="0.119 0.000 0.000"/>
+		
+
+		<material name="Kabina_mat" shaderParameter="colorMat0" />
+    </kabinaBizMaterialConfigurations>
+	
+	<dachBizMaterialConfigurations price="100" useDefaultColors="false" defaultColorIndex="0">
+		<dachBizMaterialConfiguration color="0.3 0.3 0.3 0"/>
+		<dachBizMaterialConfiguration color="0.03 0.03 0.03 0"/>
+		<dachBizMaterialConfiguration color="0.8 0.8 0.8 0"/>
+        <dachBizMaterialConfiguration color="0.5 0.2 0.1 0"/>
+		<dachBizMaterialConfiguration color="1 0.2 0.1 0"/>
+		<dachBizMaterialConfiguration color="0.239 0.004 0.004"/>
+		<dachBizMaterialConfiguration color="0.060 0.000 0.000"/>
+		<dachBizMaterialConfiguration color="0.289 0.037 0.037"/>
+		<dachBizMaterialConfiguration color="0.364 0.040 0.012"/>
+		<dachBizMaterialConfiguration color="0.119 0.000 0.000"/>
+		<!--Do_Daszka_Bo_Qrwa_sie_nie_podoba-->
+		<dachBizMaterialConfiguration color="0.3 0.3 0.4 6"/>
+		<dachBizMaterialConfiguration color="0.55 0.04 0.02 6"/>
+		<dachBizMaterialConfiguration color="0.191 0.057 0.034"/>
+		<dachBizMaterialConfiguration color="0.5 0.2 0.01"/>
+		<dachBizMaterialConfiguration color="0.06 0.15 0.47"/>
+
+		<material name="Kabina_mat" shaderParameter="colorMat1" />
+		<material name="Kabina_mat" shaderParameter="colorMat4" />
+		<material name="Daszek_mat" shaderParameter="colorMat2"/>
+    </dachBizMaterialConfigurations>
+	
+	<designMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <designMaterialConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />
+        <designMaterialConfiguration  name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <designMaterialConfiguration  name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <designMaterialConfiguration  name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <designMaterialConfiguration  name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <designMaterialConfiguration  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <designMaterialConfiguration  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <designMaterialConfiguration  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <designMaterialConfiguration  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <designMaterialConfiguration  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <designMaterialConfiguration  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <designMaterialConfiguration  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.561 0.03 0.007" />
+		<designMaterialConfiguration  name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<designMaterialConfiguration  name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<designMaterialConfiguration  name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.29 0.03 0.007" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.21 0.01 0" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<designMaterialConfiguration  name="$l10n_Yellow" color="0.99 0.29 0" />
+		<designMaterialConfiguration  name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<designMaterialConfiguration  name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.18 0.02 0.02" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<designMaterialConfiguration  name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<designMaterialConfiguration  name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<designMaterialConfiguration  name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<designMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<designMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<designMaterialConfiguration  name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<designMaterialConfiguration  name="$l10n_Green" color="0.161 0.5 0.1" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.899 0.012 0.033" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.530 0.037 0.012" />
+		<designMaterialConfiguration  name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<designMaterialConfiguration  name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.394 0.018 0.010" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.099 0.006 0.010" />
+		<designMaterialConfiguration  name="$l10n_Red" color="0.243 0.007 0.012" />
+        <designMaterialConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
+		<material name="Choppers_mat" shaderParameter="colorMat0" />
+		<material name="ChopperWheels" shaderParameter="colorMat0" />
+		<material name="z056_mat" shaderParameter="colorMat2"/>
+		<material name="roll_mat" shaderParameter="colorMat0" />
+    </designMaterialConfigurations>
+
+
+	<rimColorConfigurations useDefaultColors="false" >
+        <rimColorConfiguration material="16"  name="$l10n_Beige" color="BIZON_BEIGE1" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="0.7 0.7 0.5 0" />
+		<rimColorConfiguration material="16"  name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<rimColorConfiguration material="8"  name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="1 1 0.5 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="0.82 0.749 0.502 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Grey" color="0.5 0.5 0.5 0" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.4 0.01 0 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.32 0.03 0.01 6" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.561 0.03 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Pink" color="0.861 0.1 0.08" />
+        <rimColorConfiguration material="16"  name="$l10n_Pink" color="0.661 0.2 0.1" />
+        <rimColorConfiguration material="16"  name="$l10n_Beige" color="0.861 0.25 0.1" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.29 0.03 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.24 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.17 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.20 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.22 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.19 0.07 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.21 0.01 0" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.99 0.29 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.18 0.02 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<rimColorConfiguration material="16"  name="$l10n_Green" color="0.161 0.5 0.1" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.899 0.012 0.033" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.530 0.037 0.012" />
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.394 0.018 0.010" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.099 0.006 0.010" />
+		<rimColorConfiguration material="16" name="$l10n_Red" color="0.243 0.007 0.012" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.334 0.013 0.013" />
+	</rimColorConfigurations> 
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    
+</vehicle>

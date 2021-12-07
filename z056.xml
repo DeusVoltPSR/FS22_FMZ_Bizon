@@ -814,7 +814,7 @@
 			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
 			<!--Efekty-->
 			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.19 -1.664" /> 
-			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.032" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
             </fillUnitConfiguration>
@@ -849,7 +849,7 @@
 			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
 			<!--Efekty-->
 			<objectChange node="0>0|8|3|0|0|1" translationActive="0 1.19 -1.664" /> 
-			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
+			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.032" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
             </fillUnitConfiguration>
