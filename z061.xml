@@ -61,10 +61,26 @@
             </wheelConfiguration>
 			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
                 <wheels autoRotateBackSpeed="2.2">
-                    <wheel filename="Wheels/Gigant/Trelleborg_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="Wheels/Trelleborg/600_70R30.xml"  configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
                     </wheel>
-                    <wheel filename="Wheels/Gigant/Trelleborg_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="Wheels/Trelleborg/600_70R30.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Trelleborg/420_85R30.xml" configId="dual"  isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Trelleborg/420_85R30.xml" configId="dual"  isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
                     </wheel>
                     <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
@@ -77,10 +93,58 @@
             </wheelConfiguration>
 			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN">
                 <wheels autoRotateBackSpeed="2.2">
-                    <wheel filename="Wheels/Gigant/Michelin_Standard.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="Wheels/Michelin/600_60R30.xml" configId="dual"  isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
                     </wheel>
-                    <wheel filename="Wheels/Gigant/Michelin_Standard.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="Wheels/Michelin/600_60R30.xml" configId="dual"  isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Michelin/420_85R30.xml" configId="dual"  isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Michelin/420_85R30.xml" configId="dual"  isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MITAS">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/Mitas/600_70R30.xml" configId="dual"  isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Mitas/600_70R30.xml" configId="dual"  isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>0|0" driveNode="1>0|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="-1" restLoad="2.6" repr="1>1|0" driveNode="1>1|0|0|0" forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="38" damper="40"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="BKT">
+                <wheels autoRotateBackSpeed="2.2">
+                    <wheel filename="Wheels/BKT/440_80R30.xml" configId="dual"  isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|0" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
+                    </wheel>
+                    <wheel filename="Wheels/BKT/440_80R30.xml" configId="dual"  isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" rotSpeed="0" restLoad="1.3" repr="0>0|0|1" forcePointRatio="0.5" initialCompression="30" suspTravel="0.13" spring="27" damper="40"/>
                     </wheel>
                     <wheel filename="Wheels/Gigant/standard_thin.xml" isLeft="true" hasTireTracks="true" hasParticles="true">

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="62">
+    <author>Deus Szmeus Volteus</author>
+    <version>0.5.0.0</version>
+	
+	<title>
+        <en>Bizon Pack</en>
+    </title>
+    <description>
+        <en><![CDATA[A pack of Harvesters produced in FMŻ in Płock]]></en>
+        <pl><![CDATA[Wale na cyce rozdawczyków]]></pl>
+    </description>
+    <iconFilename>store/icon_Bizon.dds</iconFilename>
+	<multiplayer supported="true" />
+
+
+    <storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="z0601.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="z060.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="z083.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="Heder4M.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="Heder5M.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="BizonTrailer5.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="BizonTrailer4.xml"/>
+    </storeItems>
+</modDesc>

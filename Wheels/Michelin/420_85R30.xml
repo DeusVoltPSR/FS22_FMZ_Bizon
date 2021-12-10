@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <wheel>
     <default>
-        <physics radius="0.738" width="0.42" mass="0.153" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
-        <tire filename="$data/shared/wheels/tires/michelin/agriBib2/R30_agriBib2.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.071" isCareWheel="false" tireTrackAtlasIndex="0" />
-        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="30.5 45.7"/>
-        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" />
+        <physics radius="0.775" width="0.42" mass="0.153" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/michelin/agriBib2/R34_agriBib2.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.071" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.5 51.7"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" widthAndDiam="70.5 41.9"/>
     </default>
+	
+	 <configurations>
+        <configuration id="dual" >
+            <tire filename="$data/shared/wheels/tires/michelin/agriBib2/R34_agriBib2.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.071" isCareWheel="false" tireTrackAtlasIndex="0" />
+			<outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.5 51.7"/>
+			<innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="42.5 52.2"/>
+        </configuration>
+    </configurations>
 </wheel>

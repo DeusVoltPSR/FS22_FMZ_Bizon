@@ -178,7 +178,6 @@
         </TransformGroup>
         <TransformGroup name="AttacherHeader" translation="-0.305261 0.36743 -0.0915475" rotation="-14.5132 -90 0" nodeId="84"/>
       </Shape>
-      <TransformGroup name="goooowno" nodeId="87"/>
   </Scene>
 
 </i3D>

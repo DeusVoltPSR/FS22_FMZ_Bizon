@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<wheel>
-    <default>
-        <physics radius="0.804" width="0.6" mass="0.216" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
-        <tire filename="$data/shared/wheels/tires/trelleborg/TM900/R30_TM900.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.085" isCareWheel="false" tireTrackAtlasIndex="0" />
-        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="36.1 43.7"/>
-        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" />
-    </default>
-</wheel>

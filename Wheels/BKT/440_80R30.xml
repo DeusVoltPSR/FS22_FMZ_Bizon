@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.773" width="0.44" mass="0.157" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/bkt/TR135/R30_tr135.i3d" nodeLeft="5|0" nodeRight="5|0" maxDeformation="0.07" isCareWheel="false" tireTrackAtlasIndex="8" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="33.1 45.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" />
+    </default>
+	<configurations>
+        <configuration id="dual" >
+           <tire filename="$data/shared/wheels/tires/bkt/TR135/R30_tr135.i3d" nodeLeft="5|0" nodeRight="5|0" maxDeformation="0.07" isCareWheel="false" tireTrackAtlasIndex="8" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="33.1 45.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="46.5 45.7"/>
+        </configuration>
+    </configurations>
+</wheel>
