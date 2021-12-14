@@ -678,19 +678,45 @@
         </fillEffect>
 
         <chopperEffect>
-            <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="CHOPPER" linkNode="0>0|8|3|0|0|1">
-                <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/chopperCenterEffectArray.dds" numRows="29" rowLength="31" minFade="0.04"/>
-            </effectNode>
-
-            <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|0|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
+            <effectNode effectNode="0>0|8|3|0|0|0" materialType="chopper" materialTypeId="1" delay="0"/>
+			<effectNode effectNode="0>0|8|3|0|0|3" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|0|0|1" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+            <effectNode effectNode="0>0|8|3|0|0|2" effectClass="ParticleEffect" particleType="smoke" emitCountScale="1"/>
+			
+			<effectNode effectNode="0>0|8|3|1|0|0" materialType="chopper" materialTypeId="1" delay="0"/>
+			<effectNode effectNode="0>0|8|3|1|0|3" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|1|0|1" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+            <effectNode effectNode="0>0|8|3|1|0|2" effectClass="ParticleEffect" particleType="smoke" emitCountScale="1"/>
+			
+			<effectNode effectNode="0>0|8|3|2|0|0" materialType="chopper" materialTypeId="1" delay="0"/>
+			<effectNode effectNode="0>0|8|3|2|0|3" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|2|0|1" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+            <effectNode effectNode="0>0|8|3|2|0|2" effectClass="ParticleEffect" particleType="smoke" emitCountScale="1"/>
+			
+			<effectNode effectNode="0>0|8|3|3|0|0" materialType="chopper" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="0>0|8|3|3|0|1" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+            <effectNode effectNode="0>0|8|3|3|0|2" effectClass="ParticleEffect" particleType="smoke" emitCountScale="1"/>
+			
+			
         </chopperEffect>
-		
-        <strawEffect>
-            <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="DROP" linkNode="0>0|8|3|0|1|1">
-                <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/strawUnloadArray.dds" numRows="16" rowLength="12" minFade="0.04"/>
-            </effectNode>
 
-            <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|1|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
+        <strawEffect>
+            <effectNode effectNode="0>0|8|3|0|1|0" materialType="straw" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="0>0|8|3|0|1|1" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|0|1|2" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+			
+			<effectNode effectNode="0>0|8|3|1|1|0" materialType="straw" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="0>0|8|3|1|1|1" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|1|1|2" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+			
+			<effectNode effectNode="0>0|8|3|2|1|0" materialType="straw" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="0>0|8|3|2|1|1" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|2|1|2" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+			
+			<effectNode effectNode="0>0|8|3|3|1|0" materialType="straw" materialTypeId="1" delay="0"/>
+            <effectNode effectNode="0>0|8|3|3|1|1" effectClass="ParticleEffect" particleType="smoke"/>
+            <effectNode effectNode="0>0|8|3|3|1|2" effectClass="ParticleEffect" particleType="chopper" worldSpace="false"/>
+			
         </strawEffect>
 
         <animationNodes>
@@ -757,6 +783,23 @@
         </animationNodes>
 
         <!-- WORK SOUNDS -->
+        <sounds>
+            <start file="sounds/bizonZ056_startwork.ogg" innerRadius="12.0" outerRadius="60.0">
+                <volume indoor="0.7" outdoor="1.45"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </start>
+            <work file="sounds/work.ogg" innerRadius="12.0" outerRadius="60.0" fadeOut="0.3">
+                <volume indoor="0.7" outdoor="1.2"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </work>
+            <stop file="sounds/stopwork.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1">
+                <volume indoor="0.7" outdoor="1.2"/>
+                <pitch indoor="1.00" outdoor="1.00"/>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </stop>
+        </sounds>
     </combine>
 
     <honk>
@@ -771,8 +814,7 @@
     </dashboard>
 
     <ai>
-		<agent width="3.2" length="8.0" height="3.9" lengthOffset="-1.15" frontOffset="-3.6" />
-        <collisionTrigger node="0>0|7|0" width="3.2" height="3.9"/>
+        <collisionTrigger node="0>0|7|0"/>
     </ai>
 
     <foliageBending>
@@ -782,8 +824,8 @@
 	
 	
 	
-	<designConfigurations>
-	    <designConfiguration name="$l10n_Nie" price="0">
+	<KabinaConfigurations>
+	    <KabinaConfiguration name="$l10n_Nie" price="0">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|2" visibilityActive="false" />
 			<!--Dach-->
@@ -805,8 +847,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="$l10n_Daszek" price="300">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="$l10n_Daszek" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="true" />
 			<objectChange node="0>0|13|3|2" visibilityActive="true" />
 			<!--Dach-->
@@ -828,8 +870,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="Barierki" price="300">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="Barierki" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|2" visibilityActive="true" />
 			<!--Dach-->
@@ -851,8 +893,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="Daszek_Barierki" price="300">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="Daszek_Barierki" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="true" />
 			<objectChange node="0>0|13|3|2" visibilityActive="true" />
 			<!--Dach-->
@@ -874,8 +916,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="Kabina I" price="1000">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="Kabina I" price="1000">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|2" visibilityActive="false" />
 			<!--Dach-->
@@ -897,8 +939,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="Kabina II" price="1100">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="Kabina II" price="1100">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|2" visibilityActive="false" />
 			<!--Dach-->
@@ -920,8 +962,8 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
-        </designConfiguration>
-		<designConfiguration name="Kabina IV" price="1200">
+        </KabinaConfiguration>
+		<KabinaConfiguration name="Kabina IV" price="1200">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|2" visibilityActive="false" />
 			<!--Dach-->
@@ -943,8 +985,207 @@
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="true" />
-        </designConfiguration>
-    </designConfigurations>
+        </KabinaConfiguration>
+    </KabinaConfigurations>
+	
+
+	<WyposazenieConfigurations>
+		<WyposazenieConfiguration name="$l10n_Nie" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="true" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="false" />
+			<objectChange node="0>0|8|3|2" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="false" />
+        </WyposazenieConfiguration>
+		<WyposazenieConfiguration name="$l10n_Kolnierz" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="true" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="true" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="false" />
+			<objectChange node="0>0|8|3|2" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="false" />
+        </WyposazenieConfiguration>
+		<WyposazenieConfiguration name="$l10n_Kielecka" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="true" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="true" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="true" />
+			<objectChange node="0>0|8|3|2" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="false" />
+        </WyposazenieConfiguration>
+		<WyposazenieConfiguration name="$l10n_Plocka" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="true" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="false" />
+			<objectChange node="0>0|8|3|2" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="true" />
+        </WyposazenieConfiguration>
+		<WyposazenieConfiguration name="$l10n_PlockaDrut" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="false" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="true" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="true" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="true" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="true" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="false" />
+			<objectChange node="0>0|8|3|2" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="true" />
+        </WyposazenieConfiguration>
+		<WyposazenieConfiguration name="$l10n_Wagrowiec" price="0" >
+			<objectChange node="0>0|13|1|0" visibilityActive="true" /> <!--Wagrowiec-->
+			<objectChange node="0>0|13|1|1" visibilityActive="false" /> <!--Rama_Mala-->
+			<!--Kielecka-->
+			<objectChange node="0>0|13|1|1|3|0|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|0" visibilityActive="false" />
+			<!--Plocka-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|1" visibilityActive="false" />
+			<!--PlockaII-->
+			<objectChange node="0>0|13|1|1|3|0|1" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|1|2" visibilityActive="false" />
+			<!--Uchwyty-->
+			<objectChange node="0>0|13|1|1|3|2|0" visibilityActive="false" /> 
+			<objectChange node="0>0|13|1|1|3|2|1" visibilityActive="false" />
+			<!--Plandeka-->
+			<objectChange node="0>0|13|1|2" visibilityActive="false" />
+			<!--Dupa-->
+			<objectChange node="0>0|13|1|3" visibilityActive="false" />	
+			<!--Efekty-->
+			<objectChange node="0>0|8|3|0" visibilityActive="false" /> 
+			<objectChange node="0>0|8|3|1" visibilityActive="false" />
+			<objectChange node="0>0|8|3|2" visibilityActive="true" /> 
+			<objectChange node="0>0|8|3|3" visibilityActive="false" />
+        </WyposazenieConfiguration>
+    </WyposazenieConfigurations>
+	
+	<FotelConfigurations>
+		<FotelConfiguration name="Stary" price="0" >
+			<objectChange node="0>0|6|0|0|2|0" visibilityActive="true" />
+			<objectChange node="0>0|6|0|0|2|1" visibilityActive="false" />
+			<objectChange node="0>0|6|0|0|1" translationActive="-0.023 0.068 0.002" />
+			<objectChange node="0>0|6|0|0|1" rotationActive="0.663 0 0" />
+        </FotelConfiguration>
+		<FotelConfiguration name="Nowy" price="200" >
+			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
+			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<objectChange node="0>0|6|0|0|1" translationActive="-0.023 0.112 0.04" />
+			<objectChange node="0>0|6|0|0|1" rotationActive="4.636 0 0" />
+        </FotelConfiguration>
+    </FotelConfigurations>
+	
+	<SkrzynkaConfigurations>
+		<SkrzynkaConfiguration name="Bez" price="0" >
+			<objectChange node="0>0|13|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|4|1" visibilityActive="false" />
+        </SkrzynkaConfiguration>
+		<SkrzynkaConfiguration name="Gorna" price="200" >
+			<objectChange node="0>0|13|4|0" visibilityActive="true" />
+			<objectChange node="0>0|13|4|1" visibilityActive="false" />
+        </SkrzynkaConfiguration>
+		<SkrzynkaConfiguration name="Dolna" price="200" >
+			<objectChange node="0>0|13|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|4|1" visibilityActive="true" />
+        </SkrzynkaConfiguration>
+    </SkrzynkaConfigurations>
+	
+	<MataConfigurations>
+		<MataConfiguration name="Nie" price="0" >
+			<objectChange node="0>0|13|0|13|0" visibilityActive="false" />
+        </MataConfiguration>
+		<MataConfiguration name="Tak" price="50" >
+			<objectChange node="0>0|13|0|13|0" visibilityActive="true" />
+        </MataConfiguration>
+    </MataConfigurations>
+	
+	<OsloneBizConfigurations>
+		<OsloneBizConfiguration name="Nie" price="0" >
+			<objectChange node="0>0|13|0|10|0" visibilityActive="false" />
+        </OsloneBizConfiguration>
+		<OsloneBizConfiguration name="Tak" price="50" >
+			<objectChange node="0>0|13|0|10|0" visibilityActive="true" />
+        </OsloneBizConfiguration>
+    </OsloneBizConfigurations>
 	
     <baseMaterial>
         <material name="z056_mat" baseNode="0>0|16|3">
@@ -1009,55 +1250,55 @@
         </material>
     </baseMaterial>
 	
-	<baseMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
-		<baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
-        <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <baseMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
-        <baseMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <baseMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <baseMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <baseMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <baseMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <baseMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <baseMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-        <baseMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
-		<baseMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
-		<baseMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
-		<baseMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<baseMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
-		<baseMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<baseMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<baseMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<baseMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<baseMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<baseMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
-		<baseMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<baseMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
-		<baseMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
-        <baseMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
+	<bodyBizMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <bodyBizMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<bodyBizMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<bodyBizMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<bodyBizMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<bodyBizMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<bodyBizMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<bodyBizMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<bodyBizMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<bodyBizMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<bodyBizMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<bodyBizMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<bodyBizMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<bodyBizMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<bodyBizMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<bodyBizMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<bodyBizMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <bodyBizMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
 		<material name="z056_mat" shaderParameter="colorMat0" />
 		<material name="z058_mat" shaderParameter="colorMat0" />
 		<material name="giga_mat" shaderParameter="colorMat0" />
@@ -1074,7 +1315,7 @@
 		<material name="z056ChainBelt_mat" shaderParameter="colorMat1"/>
 		<material name="Daszek_mat" shaderParameter="colorMat0"/>
 		<material name="DecalsSmall_mat" shaderParameter="colorMat0"/>
-    </baseMaterialConfigurations>
+    </bodyBizMaterialConfigurations>
 	
 	<ruraBizMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
 		<ruraBizMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
@@ -1167,60 +1408,60 @@
 		<material name="Daszek_mat" shaderParameter="colorMat2"/>
     </dachBizMaterialConfigurations>
 	
-	<designMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
-		<designMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <designMaterialConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />
-        <designMaterialConfiguration  name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <designMaterialConfiguration  name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <designMaterialConfiguration  name="$l10n_Red" color="0.32 0.03 0.01 6" />
-        <designMaterialConfiguration  name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <designMaterialConfiguration  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <designMaterialConfiguration  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <designMaterialConfiguration  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <designMaterialConfiguration  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <designMaterialConfiguration  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <designMaterialConfiguration  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-        <designMaterialConfiguration  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.561 0.03 0.007" />
-		<designMaterialConfiguration  name="$l10n_Pink" color="0.861 0.1 0.08" />
-		<designMaterialConfiguration  name="$l10n_Pink" color="0.661 0.2 0.1" />
-		<designMaterialConfiguration  name="$l10n_Beige" color="0.861 0.25 0.1" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.29 0.03 0.007" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.24 0.04 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.17 0.04 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.20 0.04 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.22 0.04 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.19 0.07 0.007" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.21 0.01 0" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<designMaterialConfiguration  name="$l10n_Yellow" color="0.99 0.29 0" />
-		<designMaterialConfiguration  name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<designMaterialConfiguration  name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.18 0.02 0.02" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<designMaterialConfiguration  name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<designMaterialConfiguration  name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<designMaterialConfiguration  name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<designMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<designMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<designMaterialConfiguration  name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<designMaterialConfiguration  name="$l10n_Green" color="0.161 0.5 0.1" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.899 0.012 0.033" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.530 0.037 0.012" />
-		<designMaterialConfiguration  name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<designMaterialConfiguration  name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.394 0.018 0.010" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.099 0.006 0.010" />
-		<designMaterialConfiguration  name="$l10n_Red" color="0.243 0.007 0.012" />
-        <designMaterialConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
+	<dodatkiBizMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+		<dodatkiBizMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.561 0.03 0.007" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.29 0.03 0.007" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.21 0.01 0" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Yellow" color="0.99 0.29 0" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.18 0.02 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<dodatkiBizMaterialConfiguration  name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Green" color="0.161 0.5 0.1" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.899 0.012 0.033" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.530 0.037 0.012" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.394 0.018 0.010" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.099 0.006 0.010" />
+		<dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.243 0.007 0.012" />
+        <dodatkiBizMaterialConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
 		<material name="Choppers_mat" shaderParameter="colorMat0" />
 		<material name="ChopperWheels" shaderParameter="colorMat0" />
 		<material name="z056_mat" shaderParameter="colorMat2"/>
-    </designMaterialConfigurations>
+    </dodatkiBizMaterialConfigurations>
 
 
 	<rimColorConfigurations useDefaultColors="false" >

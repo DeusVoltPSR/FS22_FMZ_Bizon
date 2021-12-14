@@ -18,30 +18,30 @@
     <File fileId="47" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="45" filename="$data/shared/window_specular.dds"/>
     <File fileId="78" filename="$data/shared/wire_diffuse.dds"/>
-    <File fileId="4"  filename="Textures/bizonZ056Lights_normal.png"/>
-    <File fileId="5"  filename="Textures/bizonZ056Lights_specular.png"/>
-    <File fileId="19" filename="Textures/z056ChainBelt_diffuse.png"/>
-    <File fileId="20" filename="Textures/z056ChainBelt_normal.png"/>
-    <File fileId="21" filename="Textures/z056ChainBelt_specular.png"/>
-    <File fileId="14" filename="Textures/z056Chain_diffuse.dds"/>
-    <File fileId="15" filename="Textures/z056Chain_normal.dds"/>
-    <File fileId="16" filename="Textures/z056Chain_specular.dds"/>
-    <File fileId="56" filename="Textures/z056Decals_normal.dds"/>
-    <File fileId="39" filename="Textures/z056Grid_diffuse.dds"/>
-    <File fileId="40" filename="Textures/z056Grid_normal.dds"/>
-    <File fileId="41" filename="Textures/z056Grid_specular.dds"/>
-    <File fileId="52" filename="Textures/z056Stairs_diffuse.dds"/>
-    <File fileId="53" filename="Textures/z056Stairs_normal.dds"/>
-    <File fileId="54" filename="Textures/z056Stairs_specular.dds"/>
-    <File fileId="12" filename="Textures/z056_normal.dds"/>
-    <File fileId="48" filename="Textures/z056_specular.png"/>
-    <File fileId="28" filename="Textures/z056Header_normal.dds"/>
-    <File fileId="29" filename="Textures/z056Header_specular.dds"/>
-    <File fileId="33" filename="Textures/gigant_normal_1.dds"/>
-    <File fileId="34" filename="Textures/gigant_specular_2.dds"/>
-    <File fileId="101" filename="Textures/gigantel_specular_4.dds"/>
-    <File fileId="91" filename="Textures/logoOLD.dds"/>
-    <File fileId="92" filename="Textures/untitled_specular.dds"/>
+    <File fileId="4" filename="$data/vehicles/bizon/z056/bizonZ056Lights_normal.png"/>
+    <File fileId="5" filename="$data/vehicles/bizon/z056/bizonZ056Lights_specular.png"/>
+    <File fileId="19" filename="$data/vehicles/bizon/z056/z056ChainBelt_diffuse.png"/>
+    <File fileId="20" filename="$data/vehicles/bizon/z056/z056ChainBelt_normal.png"/>
+    <File fileId="21" filename="$data/vehicles/bizon/z056/z056ChainBelt_specular.png"/>
+    <File fileId="14" filename="$data/vehicles/bizon/z056/z056Chain_diffuse.dds"/>
+    <File fileId="15" filename="$data/vehicles/bizon/z056/z056Chain_normal.dds"/>
+    <File fileId="16" filename="$data/vehicles/bizon/z056/z056Chain_specular.dds"/>
+    <File fileId="56" filename="$data/vehicles/bizon/z056/z056Decals_normal.dds"/>
+    <File fileId="39" filename="$data/vehicles/bizon/z056/z056Grid_diffuse.dds"/>
+    <File fileId="40" filename="$data/vehicles/bizon/z056/z056Grid_normal.dds"/>
+    <File fileId="41" filename="$data/vehicles/bizon/z056/z056Grid_specular.dds"/>
+    <File fileId="52" filename="$data/vehicles/bizon/z056/z056Stairs_diffuse.dds"/>
+    <File fileId="53" filename="$data/vehicles/bizon/z056/z056Stairs_normal.dds"/>
+    <File fileId="54" filename="$data/vehicles/bizon/z056/z056Stairs_specular.dds"/>
+    <File fileId="12" filename="$data/vehicles/bizon/z056/z056_normal.dds"/>
+    <File fileId="48" filename="$data/vehicles/bizon/z056/z056_specular.png"/>
+    <File fileId="28" filename="$data/vehicles/bizon/z056Header/z056Header_normal.dds"/>
+    <File fileId="29" filename="$data/vehicles/bizon/z056Header/z056Header_specular.dds"/>
+    <File fileId="33" filename="../FS19_BizonGigant/Textures/gigant_normal_1.dds"/>
+    <File fileId="34" filename="../FS19_BizonGigant/Textures/gigant_specular_2.dds"/>
+    <File fileId="101" filename="../FS19_BizonGigant/Textures/gigantel_specular_4.dds"/>
+    <File fileId="91" filename="../FS19_BizonGigant/Textures/logoOLD.dds"/>
+    <File fileId="92" filename="../FS19_BizonGigant/Textures/untitled_specular.dds"/>
     <File fileId="64" filename="Textures/ChopperWheels_normal.dds"/>
     <File fileId="74" filename="Textures/Kabina_normal.dds"/>
     <File fileId="75" filename="Textures/Kabina_specular.dds"/>
@@ -70,8 +70,8 @@
     <File fileId="38" filename="Textures/sw400_specular.dds"/>
     <File fileId="58" filename="Textures/woda_old.dds"/>
     <File fileId="13" filename="Textures/z056_specular.dds"/>
-    <File fileId="93" filename="Textures/naklejki_setIII.dds"/>
-    <File fileId="95" filename="Textures/naklejki_setIV.dds"/>
+    <File fileId="93" filename="../FS_19_FMZ_Harvesters_Pack/Naklejki/naklejki_setIII.dds"/>
+    <File fileId="95" filename="../FS_19_FMZ_Harvesters_Pack/Naklejki/naklejki_setIV.dds"/>
     <File fileId="89" filename="../FS_19_FMZ_Harvesters_Pack/textures/korpus_normal.dds"/>
     <File fileId="90" filename="../FS_19_FMZ_Harvesters_Pack/textures/korpus_specular.dds"/>
     <File fileId="94" filename="../FS_19_FMZ_Harvesters_Pack/textures/specular.dds"/>
