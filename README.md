@@ -11,4 +11,11 @@ Fixed misssing textures
 Unified wheels configuration
 Fixed some of the visual errors in Z056.
 
+Changelog 0.5.0.2:
+Fixed knife animation in 4m header.
+Added new type of 4m header
+Added transaltions
+Improved straw animations
+Unified colors configurations
+
 Nie pozdrawiam
