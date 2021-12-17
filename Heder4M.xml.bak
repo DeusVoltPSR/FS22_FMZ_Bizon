@@ -6,7 +6,7 @@
         <name>Bizon 4.2m Header</name>
         <specs>
             <workingWidth>4.20</workingWidth>
-            <combination xmlFilename="BizonTrailer4.xml"/>
+            <combination xmlFilename="BizonTrailer4M.xml.xml"/>
 			<combination xmlFilename="z056.xml"/>
         </specs>
         <functions>
