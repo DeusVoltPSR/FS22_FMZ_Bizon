@@ -10,7 +10,11 @@
 			<pl>Bizon 5m Wózek na heder</pl>
 		</name>
 		<specs>
-            <combination>Z083H</combination>
+            <combination xmlFilename="Heder5M.xml"/>
+			<combination xmlFilename="z060.xml"/>
+			<combination xmlFilename="z0601.xml"/>
+			<combination xmlFilename="z061.xml"/>
+			<combination xmlFilename="z083.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutterTrailer</function>

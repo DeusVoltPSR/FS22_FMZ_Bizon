@@ -6,7 +6,8 @@
         <name>Bizon 4.2m Header</name>
         <specs>
             <workingWidth>4.20</workingWidth>
-            <combination>5043,5058H</combination>
+            <combination xmlFilename="BizonTrailer4M.xml.xml"/>
+			<combination xmlFilename="z056.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutter</function>
@@ -228,41 +229,54 @@
     </baseMaterial>
 	
 	<baseMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
-        <baseMaterialConfiguration color="0.55 0.04 0.02 6" />
-        <baseMaterialConfiguration color="0.4 0.01 0 6" />
-        <baseMaterialConfiguration color="0.4 0.06 0 6" />
-        <baseMaterialConfiguration color="0.38 0.06 0.04 6" />
-        <baseMaterialConfiguration color="0.32 0.03 0.01 6" />
-        <baseMaterialConfiguration color="0.27 0.05 0.03 6" />
-        <baseMaterialConfiguration color="0.45 0.1 0.03 6" />
-        <baseMaterialConfiguration color="0.3 0.1 0.03 6" />
-        <baseMaterialConfiguration color="0.35 0.18 0.08 6" />
-        <baseMaterialConfiguration color="0.42 0.2 0.06 6" />
-        <baseMaterialConfiguration color="0.09 0.17 0.28 6" />
-        <baseMaterialConfiguration color="0.07 0.18 0.32 6" />
-        <baseMaterialConfiguration color="0.05 0.18 0.5 6" />
-		<baseMaterialConfiguration color="0.561 0.03 0.007" />
-		<baseMaterialConfiguration color="0.29 0.03 0.007" />
-		<baseMaterialConfiguration color="0.24 0.04 0.02" />
-		<baseMaterialConfiguration color="0.17 0.04 0.02" />
-		<baseMaterialConfiguration color="0.20 0.04 0.02" />
-		<baseMaterialConfiguration color="0.22 0.04 0.02" />
-		<baseMaterialConfiguration color="0.19 0.07 0.007" />
-		<baseMaterialConfiguration color="0.21 0.01 0" />
-		<baseMaterialConfiguration color="0.21 0.09 0.02" />
-		<baseMaterialConfiguration color="0.191 0.057 0.034" />
-		<baseMaterialConfiguration color="0.109 0.052 0.045" />
-		<baseMaterialConfiguration color="0.99 0.29 0" />
-		<baseMaterialConfiguration color="0.56 0.23 0.03" />
-		<baseMaterialConfiguration color="0.18 0.03 0.007" />
-		<baseMaterialConfiguration color="0.18 0.02 0.02" />
-		<baseMaterialConfiguration color="0.1 0.02 0.02"/>
-		<baseMaterialConfiguration color="0.43 0.02 0.02"/>
-		<baseMaterialConfiguration color="0.48 0.1 0.02" />
-		<baseMaterialConfiguration color="0.22 0.1 0.02" />		
-		<baseMaterialConfiguration color="0.06 0.15 0.47" />
-		<baseMaterialConfiguration color="0.06 0.15 0.37" />
-		<baseMaterialConfiguration color="0.01 0.07 0.5" />
+       <baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<baseMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<baseMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
 		
 		
         <material name="HederMain_mat" shaderParameter="colorMat0" />
@@ -274,41 +288,54 @@
 	
 	<designMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
         <designMaterialConfiguration color="0.8 0.8 0.8 0" />
-		<designMaterialConfiguration color="0.55 0.04 0.02 6" />
-        <designMaterialConfiguration color="0.4 0.01 0 6" />
-        <designMaterialConfiguration color="0.4 0.06 0 6" />
-        <designMaterialConfiguration color="0.38 0.06 0.04 6" />
-        <designMaterialConfiguration color="0.32 0.03 0.01 6" />
-        <designMaterialConfiguration color="0.27 0.05 0.03 6" />
-        <designMaterialConfiguration color="0.45 0.1 0.03 6" />
-        <designMaterialConfiguration color="0.3 0.1 0.03 6" />
-        <designMaterialConfiguration color="0.35 0.18 0.08 6" />
-        <designMaterialConfiguration color="0.42 0.2 0.06 6" />
-        <designMaterialConfiguration color="0.09 0.17 0.28 6" />
-        <designMaterialConfiguration color="0.07 0.18 0.32 6" />
-        <designMaterialConfiguration color="0.05 0.18 0.5 6" />
-		<designMaterialConfiguration color="0.561 0.03 0.007" />
-		<designMaterialConfiguration color="0.29 0.03 0.007" />
-		<designMaterialConfiguration color="0.24 0.04 0.02" />
-		<designMaterialConfiguration color="0.17 0.04 0.02" />
-		<designMaterialConfiguration color="0.20 0.04 0.02" />
-		<designMaterialConfiguration color="0.22 0.04 0.02" />
-		<designMaterialConfiguration color="0.19 0.07 0.007" />
-		<designMaterialConfiguration color="0.21 0.01 0" />
-		<designMaterialConfiguration color="0.21 0.09 0.02" />
-		<designMaterialConfiguration color="0.191 0.057 0.034" />
-		<designMaterialConfiguration color="0.109 0.052 0.045" />
-		<designMaterialConfiguration color="0.99 0.29 0" />
-		<designMaterialConfiguration color="0.56 0.23 0.03" />
-		<designMaterialConfiguration color="0.18 0.03 0.007" />
-		<designMaterialConfiguration color="0.18 0.02 0.02" />
-		<designMaterialConfiguration color="0.1 0.02 0.02"/>
-		<designMaterialConfiguration color="0.43 0.02 0.02"/>
-		<designMaterialConfiguration color="0.48 0.1 0.02" />
-		<designMaterialConfiguration color="0.22 0.1 0.02" />		
-		<designMaterialConfiguration color="0.06 0.15 0.47" />
-		<designMaterialConfiguration color="0.06 0.15 0.37" />
-		<designMaterialConfiguration color="0.01 0.07 0.5" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <designMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <designMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <designMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<designMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<designMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<designMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<designMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<designMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<designMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<designMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<designMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<designMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<designMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<designMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<designMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<designMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <designMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
 		
 		
         <material name="HederMain_mat" shaderParameter="colorMat1" />

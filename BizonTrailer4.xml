@@ -10,7 +10,9 @@
 			<pl>Bizon 4m Wózek na heder</pl>
 		</name>
 		<specs>
-            <combination>Z056H</combination>
+            <combination xmlFilename="Heder4M.xml"/>
+			<combination xmlFilename="Heder4M_Nowy.xml"/>
+			<combination xmlFilename="z056.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutterTrailer</function>
@@ -137,7 +139,7 @@
     </designConfigurations>
 	
 	<baseMaterialConfigurations price="1500" useDefaultColors="false" defaultColorIndex="0">
-	    <baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+	   <baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
         <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
         <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
         <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
@@ -189,59 +191,61 @@
     </baseMaterialConfigurations>
 	
 	<rimColorConfigurations useDefaultColors="false" >
-        <rimColorConfiguration  name="$l10n_Beige" color="BIZON_BEIGE1" />
-		<rimColorConfiguration  name="$l10n_Beige" color="0.7 0.7 0.5 0" />
-		<rimColorConfiguration  name="$l10n_White" color="0.8 0.8 0.8 0" />
-		<rimColorConfiguration  name="$l10n_Beige" color="1 1 0.5 0" />
-		<rimColorConfiguration  name="$l10n_Grey" color="0.5 0.5 0.5 0" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />
-        <rimColorConfiguration  name="$l10n_Orange" color="0.4 0.06 0 6" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.38 0.06 0.04 6" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.32 0.03 0.01 6" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.27 0.05 0.03 6" />
-        <rimColorConfiguration  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
-        <rimColorConfiguration  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
-        <rimColorConfiguration  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
-		<rimColorConfiguration  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.561 0.03 0.007" />
-        <rimColorConfiguration  name="$l10n_Pink" color="0.861 0.1 0.08" />
-        <rimColorConfiguration  name="$l10n_Pink" color="0.661 0.2 0.1" />
-        <rimColorConfiguration  name="$l10n_Beige" color="0.861 0.25 0.1" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.29 0.03 0.007" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.24 0.04 0.02" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.17 0.04 0.02" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.20 0.04 0.02" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.22 0.04 0.02" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.19 0.07 0.007" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.21 0.01 0" />
-        <rimColorConfiguration  name="$l10n_Brown" color="0.21 0.09 0.02" />
-		<rimColorConfiguration  name="$l10n_Brown" color="0.191 0.057 0.034" />
-		<rimColorConfiguration  name="$l10n_Brown" color="0.109 0.052 0.045" />
-		<rimColorConfiguration  name="$l10n_Yellow" color="0.99 0.29 0" />
-		<rimColorConfiguration  name="$l10n_Yellow" color="0.56 0.23 0.03" />
-		<rimColorConfiguration  name="$l10n_Brown" color="0.18 0.03 0.007" />
-		<rimColorConfiguration  name="$l10n_Yellow" color="0.5 0.2 0.01" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.18 0.02 0.02" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.1 0.02 0.02"/>
-		<rimColorConfiguration  name="$l10n_Red" color="0.43 0.02 0.02"/>
-		<rimColorConfiguration  name="$l10n_Orange" color="0.48 0.1 0.02" />
-		<rimColorConfiguration  name="$l10n_Brown" color="0.22 0.1 0.02" />		
-		<rimColorConfiguration  name="$l10n_Blue" color="0.06 0.15 0.47" />
-		<rimColorConfiguration  name="$l10n_Blue" color="0.06 0.15 0.37" />
-		<rimColorConfiguration  name="$l10n_Blue" color="0.01 0.07 0.5" />
-		<rimColorConfiguration  name="$l10n_Green" color="0.161 0.5 0.1" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.899 0.012 0.033" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.530 0.037 0.012" />
-		<rimColorConfiguration  name="$l10n_Orange" color="0.767 0.157 0.002" />
-		<rimColorConfiguration  name="$l10n_Orange" color="0.737 0.085 0.000" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.394 0.018 0.010" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.099 0.006 0.010" />
-		<rimColorConfiguration  name="$l10n_Red" color="0.243 0.007 0.012" />
-        <rimColorConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
+       <rimColorConfiguration material="16"  name="$l10n_Beige" color="BIZON_BEIGE1" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="0.7 0.7 0.5 0" />
+		<rimColorConfiguration material="16"  name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<rimColorConfiguration material="8"  name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="1 1 0.5 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Beige" color="0.82 0.749 0.502 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Grey" color="0.5 0.5 0.5 0" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.4 0.01 0 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.32 0.03 0.01 6" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.561 0.03 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Pink" color="0.861 0.1 0.08" />
+        <rimColorConfiguration material="16"  name="$l10n_Pink" color="0.661 0.2 0.1" />
+        <rimColorConfiguration material="16"  name="$l10n_Beige" color="0.861 0.25 0.1" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.29 0.03 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.24 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.17 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.20 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.22 0.04 0.02" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.19 0.07 0.007" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.21 0.01 0" />
+        <rimColorConfiguration material="16"  name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.99 0.29 0" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<rimColorConfiguration material="16"  name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.18 0.02 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<rimColorConfiguration material="16"  name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<rimColorConfiguration material="16"  name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<rimColorConfiguration material="16"  name="$l10n_Green" color="0.161 0.5 0.1" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.899 0.012 0.033" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.530 0.037 0.012" />
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<rimColorConfiguration material="16"  name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.394 0.018 0.010" />
+		<rimColorConfiguration material="16"  name="$l10n_Red" color="0.099 0.006 0.010" />
+		<rimColorConfiguration material="16" name="$l10n_Red" color="0.243 0.007 0.012" />
+        <rimColorConfiguration material="16"  name="$l10n_Red" color="0.334 0.013 0.013" />
 		</rimColorConfigurations>
 
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>

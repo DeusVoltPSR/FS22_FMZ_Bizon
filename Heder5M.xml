@@ -6,7 +6,11 @@
         <name>Bizon 5.2m Header</name>
         <specs>
             <workingWidth>5.20</workingWidth>
-            <combination xmlFilename="z061.xml" />
+            <combination xmlFilename="BizonTrailer5M.xml"/>
+			<combination xmlFilename="z060.xml"/>
+			<combination xmlFilename="z0601.xml"/>
+			<combination xmlFilename="z061.xml"/>
+			<combination xmlFilename="z083.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutter</function>
@@ -273,6 +277,7 @@
 	
 	<designMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
         <designMaterialConfiguration name="$l10n_White" color="0.8 0.8 0.8 0" />
+		<designMaterialConfiguration color="0.8 0.8 0.8 0" />
 		<designMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
         <designMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
         <designMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />

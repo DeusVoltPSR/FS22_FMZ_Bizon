@@ -18,9 +18,9 @@
     <File fileId="24" filename="Textures/z056Chain_diffuse.dds"/>
     <File fileId="25" filename="Textures/z056Chain_normal.dds"/>
     <File fileId="26" filename="Textures/z056Chain_specular.dds"/>
-    <File fileId="11" filename="Textures/z056HeaderDecalChains_specular.png"/>
-    <File fileId="9" filename="Textures/z056HeaderDecals_diffuse.png"/>
-    <File fileId="10" filename="Textures/z056HeaderDecals_normal.png"/>
+    <File fileId="11" filename="Textures/z056HeaderDecalChains_specular.dds"/>
+    <File fileId="9" filename="Textures/z056HeaderDecals_diffuse.dds"/>
+    <File fileId="10" filename="Textures/z056HeaderDecals_normal.dds"/>
     <File fileId="3" filename="Textures/z056Header_normal.dds"/>
     <File fileId="4" filename="Textures/z056Header_specular.dds"/>
     <File fileId="22" filename="Textures/z056_normal.dds"/>
@@ -306,10 +306,11 @@
                   <Shape shapeId="22" name="trzepacz" translation="-0.0125377 -2.27676e-09 2.56386e-10" rotation="90 -57.0331 90" nodeId="186" materialIds="11" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="knifeRotationPart" translation="2.238 0.399 -0.79" rotation="-0.000368435 -0 0" nodeId="187">
-                <TransformGroup name="knifeConnArmRef" translation="0.053 -0.0041593 -0.018433" rotation="179.943 16.045 -89.993" scale="1.00001 1.00007 0.992464" clipDistance="300" nodeId="188"/>
+              <TransformGroup name="knifeRotationPart" translation="2.238 0.416 -0.747" rotation="-0.000368435 -0 0" nodeId="187">
+                <TransformGroup name="knifeConnArmRef" translation="0.0529988 0.00829912 -0.0144987" rotation="179.943 16.045 -89.993" scale="1.00001 1.00007 0.992464" clipDistance="300" nodeId="188"/>
               </TransformGroup>
               <TransformGroup name="knifeRef" translation="-2.123 0.118 0.159" rotation="90 -71.423 -90" nodeId="189"/>
+              <TransformGroup name="transform" translation="2.1814 0.416 -0.747" nodeId="299"/>
             </TransformGroup>
             <TransformGroup name="reelArmHydraulic" translation="2.15 0.199 -0.075" rotation="97.9109 -5.00896e-06 -180" clipDistance="125" nodeId="190">
               <TransformGroup name="reelArmHydraulicPunch" translation="1.00933e-11 -9.04987e-17 0.716791" clipDistance="75" nodeId="191">
@@ -366,7 +367,7 @@
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="effects" translation="-0.106838 -0.697708 0.934771" rotation="0 180 0" clipDistance="300" nodeId="230">
-            <TransformGroup name="cutterEffectLinkNode" translation="1.05209e-07 0.0179599 1.14496" rotation="-156.139 -5.00895e-06 -180" nodeId="231"/>
+            <TransformGroup name="cutterEffectLinkNode" translation="1.05209e-07 0.0179599 1.14496" rotation="-162.395 -5.00895e-06 180" nodeId="231"/>
             <Shape shapeId="27" name="smokeEmitter" translation="-4.71173e-16 0.0412591 0.624412" rotation="180 2.69403e-36 -180" visibility="false" nodeId="232" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </TransformGroup>
           <TransformGroup name="zieglerRapeseedModule" translation="-0.106838 -0.6977 1.236" rotation="0.000368435 180 0" nodeId="233"/>
