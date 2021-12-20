@@ -511,7 +511,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="266">
             <TransformGroup name="outdoorCameraTarget" translation="-3.27805e-08 1.60988 -0.453516" rotation="-24 180 0" nodeId="267">
-              <Camera name="outdoorCamera" translation="-0.985598 1.03916 -3.70769" rotation="135.148 -43.123 -155.059" nodeId="268" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-3.85331 1.85776 -2.87806" rotation="145.202 -45.1933 -153.054" nodeId="268" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <Camera name="indoorCamera" translation="-2.41364e-08 3.56184 1.84153" rotation="-15 180 0" nodeId="269" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="cameraRaycastNode1" translation="1.26192e-15 3.9155 2.908" nodeId="270"/>
@@ -1032,7 +1032,7 @@
               <Shape shapeId="196" name="Cube.003" translation="-0.525 3.71768 -2.06701" nodeId="665" materialIds="11" castsShadows="true" receiveShadows="true">
                 <TransformGroup name="IC_node" translation="0.476 0.00297061 -0.154459" nodeId="666"/>
               </Shape>
-              <Shape shapeId="197" name="Oslony" nodeId="667" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="197" name="Oslony" visibility="false" nodeId="667" materialIds="11" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
             <TransformGroup name="simpleIC" translation="-0.105411 0 0" nodeId="668">
               <Shape shapeId="198" name="playerTrigger" translation="0 -1.23619 -0.207" scale="11.3173 3.03425 17.5396" kinematic="true" trigger="true" collisionMask="1048576" nodeId="669" materialIds="25" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

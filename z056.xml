@@ -2491,38 +2491,38 @@
 	</vehicleTypeConfigurations>
 	
 	
-	<SkrzynkaConfigurations>
-		<SkrzynkaConfiguration name="Bez" price="0" >
+	<design2Configurations>
+		<design2Configuration name="Bez" price="0" >
 			<objectChange node="0>0|13|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|4|1" visibilityActive="false" />
-        </SkrzynkaConfiguration>
-		<SkrzynkaConfiguration name="Gorna" price="200" >
+        </design2Configuration>
+		<design2Configuration name="Gorna" price="200" >
 			<objectChange node="0>0|13|4|0" visibilityActive="true" />
 			<objectChange node="0>0|13|4|1" visibilityActive="false" />
-        </SkrzynkaConfiguration>
-		<SkrzynkaConfiguration name="Dolna" price="200" >
+        </design2Configuration>
+		<design2Configuration name="Dolna" price="200" >
 			<objectChange node="0>0|13|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|4|1" visibilityActive="true" />
-        </SkrzynkaConfiguration>
-    </SkrzynkaConfigurations>
+        </design2Configuration>
+    </design2Configurations>
 	
-	<MataConfigurations>
-		<MataConfiguration name="Nie" price="0" >
+	<design3Configurations title="$l10n_Mata">
+		<design3Configuration name="Nie" price="0" >
 			<objectChange node="0>0|13|0|13|0" visibilityActive="false" />
-        </MataConfiguration>
-		<MataConfiguration name="Tak" price="50" >
+        </design3Configuration>
+		<design3Configuration name="Tak" price="50" >
 			<objectChange node="0>0|13|0|13|0" visibilityActive="true" />
-        </MataConfiguration>
-    </MataConfigurations>
+        </design3Configuration>
+    </design3Configurations>
 	
-	<OsloneBizConfigurations>
-		<OsloneBizConfiguration name="Nie" price="0" >
+	<design4Configurations title="$l10n_Oslony">
+		<design4Configuration name="Nie" price="0" >
 			<objectChange node="0>0|13|0|10|0" visibilityActive="false" />
-        </OsloneBizConfiguration>
-		<OsloneBizConfiguration name="Tak" price="50" >
+        </design4Configuration>
+		<design4Configuration name="Tak" price="50" >
 			<objectChange node="0>0|13|0|10|0" visibilityActive="true" />
-        </OsloneBizConfiguration>
-    </OsloneBizConfigurations>
+        </design4Configuration>
+    </design4Configurations>
 	
     <baseMaterial>
         <material name="z056_mat" baseNode="0>0|16|3">
@@ -2576,6 +2576,9 @@
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
 		<material name="Z056Decals3_mat" baseNode="0>0|16|9|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="DecalsSmall_mat" baseNode="0>0|13|4|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
@@ -2642,47 +2645,48 @@
 		<material name="Daszek_mat" shaderParameter="colorMat0"/>
 		<material name="paipu_mat" shaderParameter="colorMat0" />
 		<material name="Z056Decals3_mat" shaderParameter="colorMat0" />
+		<material name="DecalsSmall_mat" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
 	
-	<kabinaBizMaterialConfigurations price="100" useDefaultColors="false" defaultColorIndex="0">
-		<kabinaBizMaterialConfiguration color="0.3 0.3 0.3 0"/>
-		<kabinaBizMaterialConfiguration color="0.03 0.03 0.03 0"/>
-		<kabinaBizMaterialConfiguration color="0.8 0.8 0.8 0"/>
-        <kabinaBizMaterialConfiguration  color="0.5 0.2 0.1 0"/>
-		<kabinaBizMaterialConfiguration  color="1 0.2 0.1 0"/>
-		<kabinaBizMaterialConfiguration color="0.239 0.004 0.004"/>
-		<kabinaBizMaterialConfiguration color="0.060 0.000 0.000"/>
-		<kabinaBizMaterialConfiguration color="0.289 0.037 0.037"/>
-		<kabinaBizMaterialConfiguration color="0.364 0.040 0.012"/>
-		<kabinaBizMaterialConfiguration color="0.119 0.000 0.000"/>
+	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
+		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
+		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
+        <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
+		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
+		<designMaterial3Configuration color="0.239 0.004 0.004"/>
+		<designMaterial3Configuration color="0.060 0.000 0.000"/>
+		<designMaterial3Configuration color="0.289 0.037 0.037"/>
+		<designMaterial3Configuration color="0.364 0.040 0.012"/>
+		<designMaterial3Configuration color="0.119 0.000 0.000"/>
 		
 
 		<material name="Kabina_mat" shaderParameter="colorMat0" />
-    </kabinaBizMaterialConfigurations>
+    </designMaterial3Configurations>
 	
-	<dachBizMaterialConfigurations price="100" useDefaultColors="false" defaultColorIndex="0">
-		<dachBizMaterialConfiguration color="0.3 0.3 0.3 0"/>
-		<dachBizMaterialConfiguration color="0.03 0.03 0.03 0"/>
-		<dachBizMaterialConfiguration color="0.8 0.8 0.8 0"/>
-        <dachBizMaterialConfiguration color="0.5 0.2 0.1 0"/>
-		<dachBizMaterialConfiguration color="1 0.2 0.1 0"/>
-		<dachBizMaterialConfiguration color="0.239 0.004 0.004"/>
-		<dachBizMaterialConfiguration color="0.060 0.000 0.000"/>
-		<dachBizMaterialConfiguration color="0.289 0.037 0.037"/>
-		<dachBizMaterialConfiguration color="0.364 0.040 0.012"/>
-		<dachBizMaterialConfiguration color="0.119 0.000 0.000"/>
+	<designMaterial2Configurations title="$l10n_Dach" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial2Configuration color="0.3 0.3 0.3 0"/>
+		<designMaterial2Configuration color="0.03 0.03 0.03 0"/>
+		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
+        <designMaterial2Configuration color="0.5 0.2 0.1 0"/>
+		<designMaterial2Configuration color="1 0.2 0.1 0"/>
+		<designMaterial2Configuration color="0.239 0.004 0.004"/>
+		<designMaterial2Configuration color="0.060 0.000 0.000"/>
+		<designMaterial2Configuration color="0.289 0.037 0.037"/>
+		<designMaterial2Configuration color="0.364 0.040 0.012"/>
+		<designMaterial2Configuration color="0.119 0.000 0.000"/>
 		<!--Do_Daszka_Bo_Qrwa_sie_nie_podoba-->
-		<dachBizMaterialConfiguration color="0.3 0.3 0.4 6"/>
-		<dachBizMaterialConfiguration color="0.55 0.04 0.02 6"/>
-		<dachBizMaterialConfiguration color="0.191 0.057 0.034"/>
-		<dachBizMaterialConfiguration color="0.5 0.2 0.01"/>
-		<dachBizMaterialConfiguration color="0.06 0.15 0.47"/>
+		<designMaterial2Configuration color="0.3 0.3 0.4 6"/>
+		<designMaterial2Configuration color="0.55 0.04 0.02 6"/>
+		<designMaterial2Configuration color="0.191 0.057 0.034"/>
+		<designMaterial2Configuration color="0.5 0.2 0.01"/>
+		<designMaterial2Configuration color="0.06 0.15 0.47"/>
 
 		<material name="Kabina_mat" shaderParameter="colorMat1" />
 		<material name="Kabina_mat" shaderParameter="colorMat4" />
 		<material name="Daszek_mat" shaderParameter="colorMat2"/>
-    </dachBizMaterialConfigurations>
+    </designMaterial2Configurations>
 	
 	<designMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
 		<designMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />

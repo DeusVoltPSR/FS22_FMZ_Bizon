@@ -786,14 +786,14 @@
         </vehicleTypeConfiguration>
     </vehicleTypeConfigurations>
 	
-	<lowerCoversDeusConfigurations>
-		<lowerCoversDeusConfiguration name="$l10n_configuration_valueYes" price="1000">
+	<design2Configurations>
+		<design2Configuration name="$l10n_configuration_valueYes" price="1000">
 			<objectChange node="0>0|14|1|5" visibilityActive="true" />
-        </lowerCoversDeusConfiguration>
-		<lowerCoversDeusConfiguration name="$l10n_configuration_valueNo" price="1000">
+        </design2Configuration>
+		<design2Configuration name="$l10n_configuration_valueNo" price="1000">
 			<objectChange node="0>0|14|1|5" visibilityActive="false" />
-        </lowerCoversDeusConfiguration>
-    </lowerCoversDeusConfigurations>
+        </design2Configuration>
+    </design2Configurations>
 	
 
     <baseMaterial>
@@ -838,8 +838,10 @@
             <shaderParameter name="colorMat1" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
         </material>
-		<material name="Kabina_mat" baseNode="0>0|11|0|0|5|0">
-			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
+		<material name="Kabina_mat" baseNode="0>0|11|0|0|2|0">
+			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat4" value="BIZON_RED1"/>
         </material>
 		<material name="chopper_mat" baseNode="0>0|11|1|1|4">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
@@ -917,7 +919,6 @@
 		<material name="piston_mat" shaderParameter="colorMat0" />
 		<material name="chopper_mat" shaderParameter="colorMat1" />
 		<material name="chopper_mat" shaderParameter="colorMat2" />
-		<material name="Kabina_mat" shaderParameter="colorMat2" />
 		<material name="hub_mat" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
@@ -973,6 +974,38 @@
         <designMaterialConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
 		<material name="chopper_mat" shaderParameter="colorMat0" />
     </designMaterialConfigurations>
+	
+	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
+		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
+		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
+        <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
+		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
+		<designMaterial3Configuration color="0.239 0.004 0.004"/>
+		<designMaterial3Configuration color="0.060 0.000 0.000"/>
+		<designMaterial3Configuration color="0.289 0.037 0.037"/>
+		<designMaterial3Configuration color="0.364 0.040 0.012"/>
+		<designMaterial3Configuration color="0.119 0.000 0.000"/>
+		
+
+		<material name="Kabina_mat" shaderParameter="colorMat0" />
+    </designMaterial3Configurations>
+	
+	<designMaterial2Configurations title="$l10n_Dach" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
+		<designMaterial2Configuration color="0.3 0.3 0.3 0"/>
+		<designMaterial2Configuration color="0.03 0.03 0.03 0"/>
+        <designMaterial2Configuration color="0.5 0.2 0.1 0"/>
+		<designMaterial2Configuration color="1 0.2 0.1 0"/>
+		<designMaterial2Configuration color="0.239 0.004 0.004"/>
+		<designMaterial2Configuration color="0.060 0.000 0.000"/>
+		<designMaterial2Configuration color="0.289 0.037 0.037"/>
+		<designMaterial2Configuration color="0.364 0.040 0.012"/>
+		<designMaterial2Configuration color="0.119 0.000 0.000"/>
+
+		<material name="Kabina_mat" shaderParameter="colorMat1" />
+		<material name="Kabina_mat" shaderParameter="colorMat4" />
+    </designMaterial2Configurations>
 	
 	<rimColorConfigurations useDefaultColors="false" >
        <rimColorConfiguration material="16"  name="$l10n_Beige" color="BIZON_BEIGE1" />

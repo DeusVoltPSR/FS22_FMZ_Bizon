@@ -533,7 +533,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="264">
             <TransformGroup name="outdoorCameraTarget" translation="-3.27805e-08 1.60988 -0.453516" rotation="-24 180 0" nodeId="265">
-              <Camera name="outdoorCamera" translation="-4.32304 3.13803 -3.41453" rotation="132.521 -48.5849 -149.476" nodeId="266" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-3.81394 3.19128 -4.8375" rotation="145.931 -36.8459 -160.344" nodeId="266" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <Camera name="indoorCamera" translation="-2.41364e-08 3.56184 1.84153" rotation="-15 180 0" nodeId="267" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="cameraRaycastNode1" translation="1.26192e-15 3.9155 2.908" nodeId="268"/>

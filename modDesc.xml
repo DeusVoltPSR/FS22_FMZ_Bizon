@@ -13,7 +13,6 @@
     <iconFilename>store/icon_Bizon.dds</iconFilename>
 	<multiplayer supported="true" />
 
-
     <storeItems>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>

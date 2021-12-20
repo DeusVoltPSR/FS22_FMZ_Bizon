@@ -622,7 +622,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="464">
             <TransformGroup name="outdoorCameraTarget" translation="2.50158e-15 1.44293 -0.0785513" rotation="-24 180 0" nodeId="465">
-              <Camera name="outdoorCamera" translation="-0.673584 2.13976 -1.61324" rotation="102.614 -64.661 -107.868" nodeId="466" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-3.11401 2.61795 -2.62997" rotation="142.682 -42.6686 -155.331" nodeId="466" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.000389914 3.399 2.11762" rotation="165 -9.68238e-06 -180" nodeId="467">
               <Camera name="indoorCamera" translation="2.52385e-15 0 0" visibility="false" nodeId="468" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
@@ -1469,7 +1469,7 @@
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="Krzynki" translation="-0.000390099 -0.3997 -0.000200033" visibility="false" nodeId="1097">
+            <TransformGroup name="Krzynki" translation="-0.000390099 -0.3997 -0.000200033" nodeId="1097">
               <Shape shapeId="279" name="Skszynka" translation="1.039 2.59851 2.66414" scale="1.78531 1.39524 1.36254" nodeId="1098" materialIds="14" castsShadows="true" receiveShadows="true"/>
               <Shape shapeId="279" name="Skszynka" translation="0.7691 1.41588 -1.54095" scale="1.58756 1.14733 1.0703" nodeId="1099" materialIds="14" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
