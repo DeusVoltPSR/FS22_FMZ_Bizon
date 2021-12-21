@@ -18,4 +18,12 @@ Added transaltions
 Improved straw animations
 Unified colors configurations
 
+Changelog 0.5.0.3:
+Fixed cutter attacher belts in Z056
+Added animations to attacher's wheels
+Added folding sounds for chopper in all combines
+Added Claas chopper for Z061, Z0601, Z083
+Fixed chopper work area in Z083
+Added stickers config in Z061
+Added Cabin soundproofing for Z083, Z061(optional), Z0601(optional, only in one model)
 Nie pozdrawiam

@@ -570,13 +570,13 @@
         </dashboards>
 		
 		<animationNodes>
-		<animationNode node="0>0|9|4|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|1" rotSpeed="1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|2" rotSpeed="1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|3" rotSpeed="-1000" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|4" rotSpeed="-900" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|5" rotSpeed="-1500" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-		<animationNode node="0>0|9|4|6" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+		<animationNode node="0>0|9|4|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|1" rotSpeed="1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|2" rotSpeed="1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|3" rotSpeed="-1000" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|4" rotSpeed="-900" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|5" rotSpeed="-1500" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|9|4|6" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 		</animationNodes>
 		
         
@@ -670,7 +670,7 @@
 			<part node="0>0|1|1" startTime="0.0" endTime="1.5" startTrans="0 3.399 2.118" endTrans="0 3.561 2.616"/>
 			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="0 0 0" endRot="57.226 0 0"/>
 		</animation>
-		<animation name="toggleChopper">
+		<animation name="toggleChopper" soundVolumeFactor="4.5">
 		    <part node="0>0|13|1|1|2|0" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 13"/>
 			<part node="0>0|13|1|1|2|3" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 -13"/>
 			
@@ -696,8 +696,21 @@
 			<part node="0>0|13|1|0|8|0" startTime="7.5" endTime="7.51" startScale="1 1 1" endScale="0 0 0"/>
 			<part node="0>0|13|1|1|3|0|3" startTime="7.5" endTime="7.51" startScale="0 0 0" endScale="1 1 1"/>
 			<part node="0>0|13|1|1|3|0|6" startTime="7.5" endTime="7.51" startScale="1 1 1" endScale="0 0 0"/>
-			
-			
+			<!--Male-->
+			<sound template="clackVar4"         startTime="0.5" volumeScale="2.0" pitchScale="0.9" linkNode="0>0|13|1|4"/>
+			<sound template="clickLong"         startTime="0.5" endTime="3.5" volumeScale="2.0" pitchScale="0.55" linkNode="0>0|13|1|4"/>
+			<sound template="sheetImp06"         startTime="3.49" volumeScale="2.0" pitchScale="0.4" linkNode="0>0|13|1|4"/>
+			<sound template="slideClose"         startTime="3.5" endTime="4.5" volumeScale="2.0" pitchScale="1.4" linkNode="0>0|13|1|4"/>
+			<sound template="hingeMedium"         startTime="4.5" endTime="7.5" volumeScale="1.8" pitchScale="0.2" linkNode="0>0|13|1|4"/>
+			<sound template="sheetImp04"         startTime="7.49" direction="1" volumeScale="2.0" pitchScale="0.9" linkNode="0>0|13|1|4"/>
+			<sound template="fabricCover1"         startTime="7.49" volumeScale="2.0" pitchScale="1" linkNode="0>0|13|1|4"/>
+			<!--Wagrowiec-->
+			<sound template="clackVar4"         startTime="0.01" volumeScale="2.0" pitchScale="0.9" linkNode="0>0|13|1|5"/>
+			<sound template="hingeMedium"         startTime="1.5" endTime="4.5" volumeScale="1.8" pitchScale="0.35" linkNode="0>0|13|1|5"/>
+			<sound template="clickLong"         startTime="0.1" endTime="2.5" volumeScale="2.0" pitchScale="0.45" linkNode="0>0|13|1|5"/>
+			<sound template="clickLong"         startTime="4.0" endTime="7.49" volumeScale="2.0" pitchScale="0.45" linkNode="0>0|13|1|5"/>
+			<sound template="sheetImp06"         startTime="3.1" volumeScale="2.0" pitchScale="1.1" linkNode="0>0|13|1|5"/>
+			<sound template="sheetImp06"         startTime="7.49" volumeScale="2.0" pitchScale="0.4" linkNode="0>0|13|1|5"/>
         </animation>
     </animations>
 
@@ -820,6 +833,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.032" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 -1000 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 -1000 -3.153" /> 
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Kolnierz">
                 <fillUnits>
@@ -855,6 +871,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.032" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-7.106 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 -1000 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 -1000 -3.153" /> 
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Kielecka">
                 <fillUnits>
@@ -889,6 +908,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 1.233 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 -1000 -3.153" /> 
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="Plocka">
                 <fillUnits>
@@ -923,6 +945,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-5 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 1.233 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 -1000 -3.153" /> 
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Plocka_Drut">
                 <fillUnits>
@@ -957,6 +982,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.305 -2.432" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-37.818 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 1.233 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 -1000 -3.153" /> 
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Wagrowiec">
                 <fillUnits>
@@ -992,6 +1020,9 @@
 			<objectChange node="0>0|8|3|0|1|1" translationActive="0 0.67 -3.01" />
 			<objectChange node="0>0|8|3|0|0|1" rotationActive="-15.667 0 0" /> 
 			<objectChange node="0>0|8|3|0|1|1" rotationActive="-14.612 0 0" />
+			<!--Dzwieki-->
+			<objectChange node="0>0|13|1|4" translationActive="0 -1000 -3.153" /> 
+			<objectChange node="0>0|13|1|5" translationActive="0 1.233 -3.153" /> 
             </fillUnitConfiguration>
         </fillUnitConfigurations>
     </fillUnit>
@@ -1037,7 +1068,7 @@
         </unloadingTriggers>
 
         <animationNodes>
-            <animationNode node="0>0|9|2|0|0|6|0|0" rotSpeed="300" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="3"/>
+            <animationNode node="0>0|9|2|0|0|6|0|0" rotSpeed="300" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="1"/>
         </animationNodes>
     </pipe>
 
@@ -1067,66 +1098,76 @@
         </strawEffect>
 
         <animationNodes>
-            <animationNode node="0>0|5|0|1|0|3|2" class="ScrollingAnimation" scrollSpeed="6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="2" toggleVisibility="false" turnOnFadeTime="4" turnOffFadeTime="3"/>
-            <animationNode node="0>0|5|0|1|0|3|0" class="ScrollingAnimation" scrollSpeed="-6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" toggleVisibility="false" turnOnFadeTime="4" turnOffFadeTime="3"/>
+            <animationNode node="0>0|5|0|1|0|3|2" class="ScrollingAnimation" scrollSpeed="6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="2" toggleVisibility="false" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="0>0|5|0|1|0|3|0" class="ScrollingAnimation" scrollSpeed="-6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" toggleVisibility="false" turnOnFadeTime="1" turnOffFadeTime="1"/>
             
-			<animationNode node="0>0|9|1|2" rotSpeed="-700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|2" rotSpeed="-700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|9|1|3|0|0" rotSpeed="-700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|0|0" rotSpeed="-700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|9|1|3|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|1" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|2" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|3" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|4" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|5" rotSpeed="600" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|6" rotSpeed="600" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|7" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|8" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|9" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|10" rotSpeed="1100" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|11" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|12" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|13" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|14" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|15" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|16" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|17" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|18" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|19" rotSpeed="1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|20" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|21" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|22" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|23" rotSpeed="1500" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|24" rotSpeed="900" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|25" rotSpeed="950" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|1|3|26" rotSpeed="-950" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|1|3|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|1" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|2" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|3" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|4" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|5" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|6" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|7" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|8" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|9" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|10" rotSpeed="1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|11" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|12" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|13" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|14" rotSpeed="-950" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|15" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|16" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|17" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|18" rotSpeed="-950" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|19" rotSpeed="1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|20" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|21" rotSpeed="-950" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|22" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|23" rotSpeed="1500" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|24" rotSpeed="900" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|25" rotSpeed="950" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|1|3|26" rotSpeed="-950" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|9|5|1|1" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|5|1|1|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|5|1|1|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|9|5|1|1|2" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|9|5|1|1" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|5|1|1|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|5|1|1|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|9|5|1|1|2" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 
 
 			
-			<animationNode node="0>0|13|0|3|0|0" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|0|3|1|0" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|0|3|0|0" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|0|3|1|0" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|13|1|1|3|0|4" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|0|7" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|3|0|4" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|0|7" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|13|1|1|3|0|3" rotSpeed="800" rotAxis="2" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|1|4|0" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|1|4|1" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|1|4|2" rotSpeed="-900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|1|4|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|1|3|0|3" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|1|4|0" rotSpeed="-1000" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|1|4|1" rotSpeed="700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|1|4|2" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|1|4|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
-			<animationNode node="0>0|13|1|0|6|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|0|6|1" rotSpeed="1200" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
-			<animationNode node="0>0|13|1|0|6|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+			<animationNode node="0>0|13|1|0|6|0" rotSpeed="700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|0|6|1" rotSpeed="1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|13|1|0|6|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
             
 
-            <animationNode node="0>0|5|0|1|0|3|1" rotSpeed="-300" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3"/>
+            <animationNode node="0>0|5|0|1|0|3|1" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			
+			<animationNode node="0>0|5|0|1|0|6|0|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			  
+			<animationNode node="0>0|5|0|1|0|6|1|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|5|0|1|0|6|1|1" rotSpeed="1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+				
+			<animationNode node="0>0|5|0|1|0|6|2|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|5|0|1|0|6|2|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+				   
+			<animationNode node="0>0|5|0|1|0|6|3|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
         </animationNodes>
 
         <!-- WORK SOUNDS -->
@@ -2164,7 +2205,7 @@
 		<objectChange node="0>1|3" translationActive="0 1.377 -1.782"/><!--Pozycja-->
 		<!--PasekGardzieli-->
 		<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="false"/><!--Z050-->
-		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="true"/><!--Z056-->
+		<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false"/><!--Z056-->
 		<objectChange node="0>0|5|0|1|0|9|2" visibilityActive="true"/>
 		<!--Kogut-->
 		<objectChange node="0>0|2|5" translationActive="0.925 3.296 1.173"/><!--Pozycja-->

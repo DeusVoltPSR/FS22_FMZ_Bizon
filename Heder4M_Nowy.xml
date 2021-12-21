@@ -160,6 +160,7 @@
 			<animationNode node="0>0|7|2|4" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|7|2|9" rotSpeed="700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|7|2|10" rotSpeed="700" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|7|2|11" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			
 			
 			<animationNode node="0>0|7|2|5" class="ScrollingAnimation" scrollSpeed="-6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" toggleVisibility="false" turnOnFadeTime="4" turnOffFadeTime="3"/>
@@ -196,6 +197,16 @@
         <bendingNode minX="-2.3" maxX="2.5" minZ="-0.8" maxZ="0.2" yOffset="0.2" />
     </foliageBending>
 	
+	<designConfigurations title="Model">
+		<designConfiguration name="Z056 III" price="0">
+			<objectChange node="0>0|7|2|4" visibilityActive="false" />
+			<objectChange node="0>0|7|2|11" visibilityActive="true" />
+        </designConfiguration>
+		<designConfiguration name="Z056 IV-V" price="1500">
+			<objectChange node="0>0|7|2|4" visibilityActive="true" />
+			<objectChange node="0>0|7|2|11" visibilityActive="false" />
+        </designConfiguration>
+    </designConfigurations>
 	
     <baseMaterial>
         <material name="HederMain_mat" baseNode="0>0|1|2|0|0|4|0">

@@ -420,12 +420,22 @@
             <part node="0>0|14|1|4" startTime="0.0" endTime="2.0" startRot="0 0 0" endRot="180 0 0"/>
         </animation>
 		<animation name="toggleChopper">
-            <part node="0>0|11|1|1|7" startTime="0.6" endTime="0.61" startScale="0 0 0" endScale="1 1 1"/>
-			<part node="0>0|11|1|1|8" startTime="0.6" endTime="0.61" startScale="1 1 1" endScale="0 0 0"/>
 			<part node="0>0|11|1|1|1" startTime="0.6" endTime="0.61" startScale="0 0 0" endScale="1 1 1"/>
+			<part node="0>0|11|1|3|5" startTime="0.6" endTime="0.61" startScale="0 0 0" endScale="1 1 1"/>
 			
-			<sound template="loopLayer4"         startTime="0.01" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|1|3"/>
-			<sound template="loopLayer4"         startTime="0.01" direction="-1" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|1|3"/>
+			<part node="0>0|11|1|3|3|0"   startTime="0.0" endTime="2.0" startRot="109.659 0 0" endRot="150.545 0 0"/>
+			<part node="0>0|11|1|3|3|0|0" startTime="0.0" endTime="2.0" startRot="-6.63 0 0" endRot="-23.358 0 0"/>
+			<part node="0>0|11|1|3|3|1"   startTime="0.0" endTime="2.0" startRot="158.098 0 0" endRot="107.043 0 0"/>
+			
+			<sound template="loopLayer4"         startTime="0.01" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|4"/>
+			<sound template="loopLayer4"         startTime="0.01" direction="-1" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|4"/>
+			
+			<sound template="loopLayer4"         startTime="0.01" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|5"/>
+			<sound template="loopLayer4"         startTime="0.01" direction="-1" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|5"/>
+			<sound template="clackVar4"         startTime="0.0" volumeScale="1.0" pitchScale="1" linkNode="0>0|11|1|5"/>
+			<sound template="clickLong"         startTime="0.01" endTime="1.99" volumeScale="2.0" pitchScale="0.5" linkNode="0>0|11|1|5"/>
+			<sound template="slideClose"         startTime="0.01" endTime="1.99" volumeScale="2.3" pitchScale="0.8" linkNode="0>0|11|1|5"/>
+			<sound template="sheetImp06"         startTime="1.99" volumeScale="1.0" pitchScale="0.6" linkNode="0>0|11|1|5"/>
         </animation>
 		<animation name="cover">
             <part node="0>0|14|1|3|0" startTime="0.0" endTime="2.0" startRot="-180 0 92.84" endRot="-180 0 -90"/>
@@ -696,11 +706,44 @@
 			<objectChange node="0>0|11|1|0" visibilityActive="true" />
 			<objectChange node="0>0|11|1|2" visibilityActive="false" />
 			<objectChange node="0>0|11|1|1" visibilityActive="false" />
+			<objectChange node="0>0|11|1|3" visibilityActive="false" />
+			
+			<objectChange node="0>0|8|2|0|0|1" translationActive="0 1.415 -4.67" />
+			<objectChange node="0>0|8|2|0|0|1" rotationActive="-10.721 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" translationActive="0.01 2.216 -4" />
+			<objectChange node="0>0|8|2|0|1|1" rotationActive="6.102 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" scaleActive="0.8 1 1" />
+			
+			<objectChange node="0>0|11|1|4" translationActive="0 -1000 -4.92" /> <!--Fold1-->
+			<objectChange node="0>0|11|1|5" translationActive="0 -1000 -4.92" /> <!--Fold2-->
         </vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_Sieczkarnia" price="1900" vehicleType="combineDrivable">
+		<vehicleTypeConfiguration name="$l10n_Sieczkarnia_I" price="1900" vehicleType="combineDrivable">
 			<objectChange node="0>0|11|1|0" visibilityActive="false" />
 			<objectChange node="0>0|11|1|2" visibilityActive="true" />
 			<objectChange node="0>0|11|1|1" visibilityActive="true" />
+			<objectChange node="0>0|11|1|3" visibilityActive="false" />
+			
+			<objectChange node="0>0|8|2|0|0|1" translationActive="0 1.415 -4.67" />
+			<objectChange node="0>0|8|2|0|0|1" rotationActive="-10.721 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" translationActive="0.01 2.216 -4" />
+			<objectChange node="0>0|8|2|0|1|1" rotationActive="6.102 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" scaleActive="0.8 1 1" />
+			<objectChange node="0>0|11|1|4" translationActive="0 1.541 -4.92" /> <!--Fold1-->
+			<objectChange node="0>0|11|1|5" translationActive="0 -1000 -4.92" /> <!--Fold2-->
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_Sieczkarnia_II" price="2400" vehicleType="combineDrivable">
+			<objectChange node="0>0|11|1|0" visibilityActive="false" />
+			<objectChange node="0>0|11|1|2" visibilityActive="false" />
+			<objectChange node="0>0|11|1|1" visibilityActive="false" />
+			<objectChange node="0>0|11|1|3" visibilityActive="true" />
+			
+			<objectChange node="0>0|8|2|0|0|1" translationActive="0 1.538 -4.289" />
+			<objectChange node="0>0|8|2|0|0|1" rotationActive="-17.857 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" translationActive="0.01 2.061 -4.708" />
+			<objectChange node="0>0|8|2|0|1|1" rotationActive="31.6 0 0" />
+			<objectChange node="0>0|8|2|0|1|1" scaleActive="0.9 1 0.6" />
+			<objectChange node="0>0|11|1|4" translationActive="0 -1000 -4.92" /> <!--Fold1-->
+			<objectChange node="0>0|11|1|5" translationActive="0 1.541 -4.92" /> <!--Fold2-->
         </vehicleTypeConfiguration>
     </vehicleTypeConfigurations>
 	
@@ -765,6 +808,7 @@
 		<material name="Kabina_mat" baseNode="0>0|11|0|0|2|0">
 			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat4" value="BIZON_RED1"/>
         </material>
 		<material name="hub_mat" baseNode="1>0|0|0|0|0">
@@ -777,6 +821,9 @@
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
+        </material>
+		<material name="Claas_mat" baseNode="0>0|11|1|3|3|0">
+			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
 	
@@ -847,12 +894,13 @@
 		<material name="chopper_mat" shaderParameter="colorMat2" />
 		<material name="hub_mat" shaderParameter="colorMat0" />
 		<material name="decals_mat" shaderParameter="colorMat0" />
+		<material name="Kabina_mat" shaderParameter="colorMat2" />
     </baseMaterialConfigurations>
 	
 	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
 		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
-		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
         <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
 		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
 		<designMaterial3Configuration color="0.239 0.004 0.004"/>
@@ -866,9 +914,9 @@
     </designMaterial3Configurations>
 	
 	<designMaterial2Configurations title="$l10n_Dach" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial2Configuration color="0.3 0.3 0.3 0"/>
 		<designMaterial2Configuration color="0.03 0.03 0.03 0"/>
-		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
         <designMaterial2Configuration color="0.5 0.2 0.1 0"/>
 		<designMaterial2Configuration color="1 0.2 0.1 0"/>
 		<designMaterial2Configuration color="0.239 0.004 0.004"/>
@@ -932,6 +980,7 @@
 		<designMaterialConfiguration  name="$l10n_Red" color="0.243 0.007 0.012" />
         <designMaterialConfiguration  name="$l10n_Red" color="0.334 0.013 0.013" />
 		<material name="chopper_mat" shaderParameter="colorMat0" />
+		<material name="Claas_mat" shaderParameter="colorMat0" />
     </designMaterialConfigurations>
 	
 	<rimColorConfigurations useDefaultColors="false" >

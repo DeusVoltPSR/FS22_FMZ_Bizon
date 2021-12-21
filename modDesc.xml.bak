@@ -13,20 +13,6 @@
     <iconFilename>store/icon_Bizon.dds</iconFilename>
 	<multiplayer supported="true" />
 
-    <specializations>
-        <specialization name="addConfig" className="AddConfig" filename="Scripts/AddConfig.lua"/>
-    </specializations>
-    <vehicleTypes>
-        <type name="AddConfigCombineDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" parent="combineDrivable">
-            <specialization name="addConfig"/>
-        </type>
-    </vehicleTypes>
-    <newConfigurations>
-		<newConfiguration configName="modelDeus" isColorConfig="false" />
-        <newConfiguration configName="lowerCoversDeus" isColorConfig="false" />
-        <newConfiguration configName="RozdzielaczeDeus" isColorConfig="false" />
-    </newConfigurations>
-
     <storeItems>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>

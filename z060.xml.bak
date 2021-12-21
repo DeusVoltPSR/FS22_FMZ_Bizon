@@ -677,10 +677,8 @@
 		<material name="Kabina_mat" baseNode="0>0|11|0|0|2|0">
 			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
+			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat4" value="BIZON_RED1"/>
-        </material>
-		<material name="Plasek_mat" baseNode="0>0|14|0|24">
-			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
 	
@@ -766,7 +764,6 @@
 		
 
 		<material name="Kabina_mat" shaderParameter="colorMat0" />
-		<material name="Plasek_mat" shaderParameter="colorMat0" />
     </designMaterial3Configurations>
 	
 	<designMaterial2Configurations title="$l10n_Dach" price="100" useDefaultColors="false" defaultColorIndex="0">
