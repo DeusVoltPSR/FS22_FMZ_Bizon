@@ -153,8 +153,8 @@
           <Shape shapeId="12" name="Rama5m" translation="0 0.312975 -0.00621739" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="Typ" nodeId="69">
             <TransformGroup name="Stary" nodeId="70">
-              <Shape shapeId="13" name="ZaczepStaryTyp" translation="0 0.315039 4.23559" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="14" name="SrubaStaryTyp" translation="0.093 0.002 -0.1" nodeId="72" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="13" name="ZaczepStaryTyp" translation="0 0.315039 4.23559" rotation="-6.83019e-06 -0 0" nodeId="147" materialIds="10" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="14" name="SrubaStaryTyp" translation="0.000938857 0.00182363 -0.0999999" rotation="6.83019e-06 -0 0" nodeId="148" materialIds="10" castsShadows="true" receiveShadows="true"/>
               </Shape>
               <Shape shapeId="15" name="Cylinder.003" translation="0.126666 0.367868 4.17717" nodeId="73" materialIds="10" castsShadows="true" receiveShadows="true">
                 <Shape shapeId="16" name="Cylinder.001" translation="0 -0.059 0" nodeId="74" materialIds="10" castsShadows="true" receiveShadows="true">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="62">
     <author>Deus Szmeus Volteus</author>
-    <version>0.5.0.2</version>
+    <version>0.5.0.3</version>
 	
 	<title>
         <en>Bizon Pack</en>
@@ -78,6 +78,46 @@
 		<text name="Kabina">
 			<en>Cabin</en>
 			<pl>Kabina</pl>
+		</text>
+		<text name="Old">
+			<en>Old Type</en>
+			<pl>Stary Typ</pl>
+		</text>
+		<text name="New">
+			<en>New Type</en>
+			<pl>Nowy Typ</pl>
+		</text>
+		<text name="skrzynka">
+			<en>Toolbox</en>
+			<pl>Skrzynka Narzędziowa</pl>
+		</text>
+		<text name="Dolna">
+			<en>Lower</en>
+			<pl>Dolna</pl>
+		</text>
+		<text name="Gorna">
+			<en>Upper</en>
+			<pl>Górna</pl>
+		</text>
+		<text name="Pipe_Color">
+			<en>Pipe Color</en>
+			<pl>Kolor Rury</pl>
+		</text>
+		<text name="Prawy">
+			<en>Right</en>
+			<pl>Left</pl>
+		</text>
+		<text name="Lewy">
+			<en>Left</en>
+			<pl>Lewy</pl>
+		</text>
+		<text name="All">
+			<en>All</en>
+			<pl>Wszystkie</pl>
+		</text>
+		<text name="Dach">
+			<en>Roof</en>
+			<pl>Dach</pl>
 		</text>
 		<text name="Red">
 		<en>Red</en>

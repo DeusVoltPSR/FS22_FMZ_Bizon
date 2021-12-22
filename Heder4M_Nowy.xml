@@ -208,6 +208,44 @@
         </designConfiguration>
     </designConfigurations>
 	
+	<design2Configurations title="$l10n_Cover">
+		<design2Configuration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="0>0|1|2|6|0|0|0" visibilityActive="false"/>
+			<objectChange node="0>0|7|1|0|0|0" visibilityActive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_Dolna" price="200">
+			<objectChange node="0>0|1|2|6|0|0|0" visibilityActive="false"/>
+			<objectChange node="0>0|7|1|0|0|0" visibilityActive="true"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_Gorna" price="200">
+			<objectChange node="0>0|1|2|6|0|0|0" visibilityActive="true"/>
+			<objectChange node="0>0|7|1|0|0|0" visibilityActive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_All" price="400">
+			<objectChange node="0>0|1|2|6|0|0|0" visibilityActive="true"/>
+			<objectChange node="0>0|7|1|0|0|0" visibilityActive="true"/>
+		</design2Configuration>
+	</design2Configurations>
+	
+	<vehicleTypeConfigurations>
+		<vehicleTypeConfiguration name="$l10n_configuration_valueNo" price="0" vehicleType="cutter">
+            <objectChange node="0>0|7|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|7|1|4|1" visibilityActive="false" />
+		</vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_Prawy" price="100" vehicleType="cutter">
+            <objectChange node="0>0|7|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|7|1|4|1" visibilityActive="true" />
+		</vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_Lewy" price="100" vehicleType="cutter">
+            <objectChange node="0>0|7|1|4|0" visibilityActive="true" />
+			<objectChange node="0>0|7|1|4|1" visibilityActive="false" />
+		</vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_All" price="200" vehicleType="cutter">
+            <objectChange node="0>0|7|1|4|0" visibilityActive="true" />
+			<objectChange node="0>0|7|1|4|1" visibilityActive="true" />
+		</vehicleTypeConfiguration>
+    </vehicleTypeConfigurations>
+	
     <baseMaterial>
         <material name="HederMain_mat" baseNode="0>0|1|2|0|0|4|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>

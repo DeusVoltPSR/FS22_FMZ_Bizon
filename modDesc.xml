@@ -79,6 +79,54 @@
 			<en>Cabin</en>
 			<pl>Kabina</pl>
 		</text>
+		<text name="Old">
+			<en>Old Type</en>
+			<pl>Stary Typ</pl>
+		</text>
+		<text name="New">
+			<en>New Type</en>
+			<pl>Nowy Typ</pl>
+		</text>
+		<text name="skrzynka">
+			<en>Toolbox</en>
+			<pl>Skrzynka Narzędziowa</pl>
+		</text>
+		<text name="Dolna">
+			<en>Lower</en>
+			<pl>Dolna</pl>
+		</text>
+		<text name="Gorna">
+			<en>Upper</en>
+			<pl>Górna</pl>
+		</text>
+		<text name="Pipe_Color">
+			<en>Pipe Color</en>
+			<pl>Kolor Rury</pl>
+		</text>
+		<text name="Prawy">
+			<en>Right</en>
+			<pl>Left</pl>
+		</text>
+		<text name="Lewy">
+			<en>Left</en>
+			<pl>Lewy</pl>
+		</text>
+		<text name="All">
+			<en>All</en>
+			<pl>Wszystkie</pl>
+		</text>
+		<text name="Dach">
+			<en>Roof</en>
+			<pl>Dach</pl>
+		</text>
+		<text name="Cover">
+			<en>Covers</en>
+			<pl>Osłony</pl>
+		</text>
+		<text name="Mata">
+			<en>Rubber Mat</en>
+			<pl>Gumowy Mata</pl>
+		</text>
 		<text name="Red">
 		<en>Red</en>
 		<pl>Czerwony</pl>

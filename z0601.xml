@@ -520,7 +520,7 @@
 
 
     <fillUnit>
-        <fillUnitConfigurations title="Pipe_Color">
+        <fillUnitConfigurations title="$l10n_Pipe_Color">
             <fillUnitConfiguration name="$l10n_White">
                 <fillUnits>
                     <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="5740" >
@@ -555,7 +555,7 @@
     </fillUnit>
 
     <fillVolume>
-        <fillVolumeConfigurations>
+        <fillVolumeConfigurations title="Model">
             <fillVolumeConfiguration name="Z060 I">
                 <volumes>
                     <volume node="0>0|12|4" maxDelta="0.28" maxAllowedHeapAngle="20" fillUnitIndex="1" />
@@ -795,7 +795,7 @@
 			<objectChange node="0>0|11|1|4" translationActive="0 -1000 -4.92" /> <!--Fold1-->
 			<objectChange node="0>0|11|1|5" translationActive="0 -1000 -4.92" /> <!--Fold2-->
         </vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_Sieczkarnia_I" price="1900" vehicleType="combineDrivable">
+		<vehicleTypeConfiguration name="$l10n_Sieczkarnia" price="1900" vehicleType="combineDrivable">
 			<objectChange node="0>0|11|1|0" visibilityActive="false" />
 			<objectChange node="0>0|11|1|2" visibilityActive="true" />
 			<objectChange node="0>0|11|1|1" visibilityActive="true" />
@@ -809,7 +809,7 @@
 			<objectChange node="0>0|11|1|4" translationActive="0 1.541 -4.92" /> <!--Fold1-->
 			<objectChange node="0>0|11|1|5" translationActive="0 -1000 -4.92" /> <!--Fold2-->
         </vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_Sieczkarnia_II" price="2400" vehicleType="combineDrivable">
+		<vehicleTypeConfiguration name="$l10n_Sieczkarnia" price="2400" vehicleType="combineDrivable">
 			<objectChange node="0>0|11|1|0" visibilityActive="false" />
 			<objectChange node="0>0|11|1|2" visibilityActive="false" />
 			<objectChange node="0>0|11|1|1" visibilityActive="false" />
@@ -825,15 +825,43 @@
         </vehicleTypeConfiguration>
     </vehicleTypeConfigurations>
 	
-	<design2Configurations>
-		<design2Configuration name="$l10n_configuration_valueYes" price="1000">
+	<design2Configurations title="$l10n_Cover">
+		<design2Configuration name="$l10n_Old" price="500">
 			<objectChange node="0>0|14|1|5" visibilityActive="true" />
+			<objectChange node="0>0|14|1|6" visibilityActive="false" />
         </design2Configuration>
-		<design2Configuration name="$l10n_configuration_valueNo" price="1000">
+		<design2Configuration name="$l10n_New" price="500">
+			<objectChange node="0>0|14|1|5" visibilityActive="true" />
+			<objectChange node="0>0|14|1|6" visibilityActive="true" />
+        </design2Configuration>
+		<design2Configuration name="$l10n_configuration_valueNo" price="0">
 			<objectChange node="0>0|14|1|5" visibilityActive="false" />
+			<objectChange node="0>0|14|1|6" visibilityActive="false" />
         </design2Configuration>
     </design2Configurations>
 	
+	<design4Configurations title="$l10n_skrzynka">
+		<design4Configuration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="0>0|11|3|0" visibilityActive="false" />
+			<objectChange node="0>0|11|3|1" visibilityActive="false" />
+			<objectChange node="0>0|11|3|2" visibilityActive="false" />
+        </design4Configuration>
+		<design4Configuration name="$l10n_Gorna" price="100">
+			<objectChange node="0>0|11|3|0" visibilityActive="true" />
+			<objectChange node="0>0|11|3|1" visibilityActive="false" />
+			<objectChange node="0>0|11|3|2" visibilityActive="false" />
+        </design4Configuration>
+		<design4Configuration name="$l10n_Dolna" price="100">
+			<objectChange node="0>0|11|3|0" visibilityActive="false" />
+			<objectChange node="0>0|11|3|1" visibilityActive="true" />
+			<objectChange node="0>0|11|3|2" visibilityActive="false" />
+        </design4Configuration>
+		<design4Configuration name="$l10n_Dolna" price="100">
+			<objectChange node="0>0|11|2|0" visibilityActive="false" />
+			<objectChange node="0>0|11|2|1" visibilityActive="false" />
+			<objectChange node="0>0|11|2|2" visibilityActive="true" />
+        </design4Configuration>
+    </design4Configurations>
 
     <baseMaterial>
         <material name="z056_mat" baseNode="0>0|14|0|3">
@@ -892,6 +920,9 @@
 			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
 		<material name="Claas_mat" baseNode="0>0|11|1|3|3|0">
+			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="DecalsSmall_mat" baseNode="0>0|11|3|0">
 			<shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
@@ -964,9 +995,10 @@
 		<material name="chopper_mat" shaderParameter="colorMat2" />
 		<material name="hub_mat" shaderParameter="colorMat0" />
 		<material name="Kabina_mat" shaderParameter="colorMat2" />
+		<material name="DecalsSmall_mat" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
-	<designMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+	<designMaterialConfigurations title="$l10n_Sieczkarnia" price="500" useDefaultColors="false" defaultColorIndex="0">
 		<designMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />
 		<designMaterialConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
         <designMaterialConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />

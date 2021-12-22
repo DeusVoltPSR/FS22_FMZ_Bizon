@@ -2532,16 +2532,16 @@
 	</vehicleTypeConfigurations>
 	
 	
-	<design2Configurations>
-		<design2Configuration name="Bez" price="0" >
+	<design2Configurations title="$l10n_skrzynka">
+		<design2Configuration name="$l10n_configuration_valueNo" price="0" >
 			<objectChange node="0>0|13|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|4|1" visibilityActive="false" />
         </design2Configuration>
-		<design2Configuration name="Gorna" price="200" >
+		<design2Configuration name="$l10n_Gorna" price="200" >
 			<objectChange node="0>0|13|4|0" visibilityActive="true" />
 			<objectChange node="0>0|13|4|1" visibilityActive="false" />
         </design2Configuration>
-		<design2Configuration name="Dolna" price="200" >
+		<design2Configuration name="$l10n_Dolna" price="200" >
 			<objectChange node="0>0|13|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|4|1" visibilityActive="true" />
         </design2Configuration>
@@ -2557,10 +2557,10 @@
     </design3Configurations>
 	
 	<design4Configurations title="$l10n_Oslony">
-		<design4Configuration name="Nie" price="0" >
+		<design4Configuration name="$l10n_configuration_valueNo" price="0" >
 			<objectChange node="0>0|13|0|10|0" visibilityActive="false" />
         </design4Configuration>
-		<design4Configuration name="Tak" price="50" >
+		<design4Configuration name="$l10n_configuration_valueYes" price="50" >
 			<objectChange node="0>0|13|0|10|0" visibilityActive="true" />
         </design4Configuration>
     </design4Configurations>
@@ -2729,7 +2729,7 @@
 		<material name="Daszek_mat" shaderParameter="colorMat2"/>
     </designMaterial2Configurations>
 	
-	<designMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+	<designMaterialConfigurations title="$l10n_Sieczkarnia" price="500" useDefaultColors="false" defaultColorIndex="0">
 		<designMaterialConfiguration  name="$l10n_Grey" color="0.3 0.3 0.4 6" />
 		<designMaterialConfiguration  name="$l10n_Red" color="0.55 0.04 0.02 6" />
         <designMaterialConfiguration  name="$l10n_Red" color="0.4 0.01 0 6" />
