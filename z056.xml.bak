@@ -2556,7 +2556,7 @@
         </design3Configuration>
     </design3Configurations>
 	
-	<design4Configurations title="$l10n_Cover">
+	<design4Configurations title="$l10n_Oslony">
 		<design4Configuration name="$l10n_configuration_valueNo" price="0" >
 			<objectChange node="0>0|13|0|10|0" visibilityActive="false" />
         </design4Configuration>

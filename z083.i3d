@@ -46,7 +46,7 @@
     <File fileId="46" filename="Textures/polywood_normal.dds"/>
     <File fileId="59" filename="Textures/specular.dds"/>
     <File fileId="69" filename="Textures/stickers_diffuse.dds"/>
-    <File fileId="11" filename="Textures/untitled_specular.png"/>
+    <File fileId="11" filename="Textures/untitled_specular.dds"/>
     <File fileId="15" filename="Textures/z056Chain_diffuse.dds"/>
     <File fileId="16" filename="Textures/z056Chain_normal.dds"/>
     <File fileId="17" filename="Textures/z056Chain_specular.dds"/>

@@ -119,6 +119,14 @@
 			<en>Roof</en>
 			<pl>Dach</pl>
 		</text>
+		<text name="Cover">
+			<en>Covers</en>
+			<pl>Osłony</pl>
+		</text>
+		<text name="Mata">
+			<en>Rubber Mat</en>
+			<pl>Gumowy Mata</pl>
+		</text>
 		<text name="Red">
 		<en>Red</en>
 		<pl>Czerwony</pl>

@@ -105,7 +105,7 @@
 		</text>
 		<text name="Prawy">
 			<en>Right</en>
-			<pl>Left</pl>
+			<pl>Prawy</pl>
 		</text>
 		<text name="Lewy">
 			<en>Left</en>
@@ -126,6 +126,10 @@
 		<text name="Mata">
 			<en>Rubber Mat</en>
 			<pl>Gumowy Mata</pl>
+		</text>
+		<text name="Wygloszenie">
+			<en>Soundproofing</en>
+			<pl>Wygłuszenie Kabiny</pl>
 		</text>
 		<text name="Red">
 		<en>Red</en>
