@@ -831,7 +831,7 @@
 			<objectChange node="0>0|14|1|6" visibilityActive="false" />
         </design2Configuration>
 		<design2Configuration name="$l10n_New" price="500">
-			<objectChange node="0>0|14|1|5" visibilityActive="true" />
+			<objectChange node="0>0|14|1|5" visibilityActive="false" />
 			<objectChange node="0>0|14|1|6" visibilityActive="true" />
         </design2Configuration>
 		<design2Configuration name="$l10n_configuration_valueNo" price="0">
