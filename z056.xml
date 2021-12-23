@@ -406,16 +406,20 @@
 
         <turnLights>
             <turnLightLeft shaderNode="0>0|13|0|5|1|9" />
-            <turnLightLeft shaderNode="0>0|13|0|5|0|0" />
+            <turnLightLeft shaderNode="0>0|13|0|5|0|4" />
 			<turnLightLeft shaderNode="0>0|13|0|4|0|6" />
 			<turnLightLeft shaderNode="0>0|13|0|4|1|6" />
 			<turnLightLeft shaderNode="0>0|13|0|4|2|6" />
+			<!--Boczne-->
+			<turnLightLeft shaderNode="0>0|2|0|0|0" />
 			
             <turnLightRight shaderNode="0>0|13|0|5|1|10" />
             <turnLightRight shaderNode="0>0|13|0|5|0|5" />
 			<turnLightRight shaderNode="0>0|13|0|4|0|7" />
 			<turnLightRight shaderNode="0>0|13|0|4|1|7" />
 			<turnLightRight shaderNode="0>0|13|0|4|2|7" />
+			<!--Boczne-->
+			<turnLightRight shaderNode="0>0|2|0|1|0" />
         </turnLights>
 
         <brakeLights>

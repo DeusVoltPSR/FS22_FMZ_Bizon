@@ -227,10 +227,10 @@
         </defaultLights>
 
         <turnLights>
-            <turnLightLeft shaderNode="0>0|14|0|9|2" />
+            <turnLightLeft shaderNode="0>0|14|0|9|6" />
 			<turnLightLeft shaderNode="0>0|14|0|7|4" />
 			
-			<turnLightRight shaderNode="0>0|14|0|9|3" />
+			<turnLightRight shaderNode="0>0|14|0|9|7" />
 			<turnLightRight shaderNode="0>0|14|0|7|0" />
         </turnLights>
 

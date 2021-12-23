@@ -229,11 +229,11 @@
         <turnLights>
             <turnLightLeft shaderNode="0>0|14|0|10|2" />
 			<turnLightLeft shaderNode="0>0|14|0|8|4" />
-			<turnLightLeft shaderNode="0>0|2|0|0" />
+			<turnLightLeft shaderNode="0>0|2|0|0|0" />
 			
 			<turnLightRight shaderNode="0>0|14|0|10|3" />
 			<turnLightRight shaderNode="0>0|14|0|8|0" />
-			<turnLightRight shaderNode="0>0|14|1|0|1" />
+			<turnLightRight shaderNode="0>0|14|1|0|1|0" />
         </turnLights>
 
         <brakeLights>
@@ -702,7 +702,7 @@
 			<objectChange node="0>0|11|1|1" visibilityActive="true" />
 			<objectChange node="0>0|11|1|3" visibilityActive="false" />
 			
-			<objectChange node="0>0|8|2|0|0|1" translationActive="0 1.415 -4.67" />
+			<objectChange node="0>0|8|2|0|0|1" translationActive="0 1.395 -4.5" />
 			<objectChange node="0>0|8|2|0|0|1" rotationActive="-10.721 0 0" />
 			<objectChange node="0>0|8|2|0|1|1" translationActive="0.01 2.216 -4" />
 			<objectChange node="0>0|8|2|0|1|1" rotationActive="6.102 0 0" />
