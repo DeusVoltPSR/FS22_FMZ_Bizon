@@ -275,7 +275,6 @@
             <high>
                 <light node="0>0|2|1|2"     lightTypes="0" excludedLightTypes="3"/>
                 <light node="0>0|2|4|0"     lightTypes="0"/>
-				<light node="0>0|13|0|1|0|3"   lightTypes="0" />
 				<light node="0>0|13|3|1|2|1|2"     lightTypes="0"/>
                 <light node="0>0|2|2|0" lightTypes="2"/>
                 <light node="0>0|2|1|3"       lightTypes="3"/>
@@ -304,8 +303,6 @@
 			<defaultLight shaderNode="0>0|13|0|4|1|4"         lightTypes="0 3" />
             <defaultLight shaderNode="0>0|13|0|4|1|5"         lightTypes="0 3" />
 									  
-			<defaultLight shaderNode="0>0|13|0|4|2|4"         lightTypes="0 3" />
-            <defaultLight shaderNode="0>0|13|0|4|2|5"         lightTypes="0 3" />
 			<!--Tylne-->
             <defaultLight shaderNode="0>0|13|0|5|1|8"           lightTypes="0" />
             <defaultLight shaderNode="0>0|13|0|5|1|13"          lightTypes="0" />
@@ -334,7 +331,6 @@
             <turnLightLeft shaderNode="0>0|13|0|5|0|4" />
 			<turnLightLeft shaderNode="0>0|13|0|4|0|6" />
 			<turnLightLeft shaderNode="0>0|13|0|4|1|6" />
-			<turnLightLeft shaderNode="0>0|13|0|4|2|6" />
 			<!--Boczne-->
 			<turnLightLeft shaderNode="0>0|2|0|0|0" />
 			
@@ -342,7 +338,6 @@
             <turnLightRight shaderNode="0>0|13|0|5|0|5" />
 			<turnLightRight shaderNode="0>0|13|0|4|0|7" />
 			<turnLightRight shaderNode="0>0|13|0|4|1|7" />
-			<turnLightRight shaderNode="0>0|13|0|4|2|7" />
 			<!--Boczne-->
 			<turnLightRight shaderNode="0>0|2|0|1|0" />
         </turnLights>
@@ -355,7 +350,8 @@
         </brakeLights>
 
         <beaconLights>
-            <beaconLight node="0>0|2|5" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+            <beaconLight node="0>0|2|5|0" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
+			<beaconLight node="0>0|2|5|1" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
         </beaconLights>
         <sounds>
             <switchLight template="SWITCH_01" />
@@ -401,7 +397,7 @@
         </characterTargetNodeModifier>
 		
 		<characterTargetNodeModifier node="0>0|6|0|0|1|0" transitionTime="0.1" >
-            <state node="0>0|6|0|0|1|1"   referenceNode="0>0|16|4|0|2"  />
+            <state node="0>0|6|0|0|1|1"   referenceNode="0>0|16|4|0|0|0"  />
         </characterTargetNodeModifier>
         <mirrors>
            
@@ -430,11 +426,8 @@
                     <torque normRpm="0.86" torque="0.88"/>
                     <torque normRpm="1" torque="0.72"/>
                 </motor>
-                <transmission autoGearChangeTime="1.2" gearChangeTime="0.5" name="$l10n_info_transmission_manualWithPowerShiftGroups">
+                <transmission autoGearChangeTime="1.0" gearChangeTime="0.4" name="$l10n_info_transmission_manual">
                     <directionChange useGear="true" reverseGearIndex="1" changeTime="1.2"/>
-                    <groups type="DEFAULT" changeTime="0.0">
-                        <group ratio="1.000" name="A" isDefault="true"/>
-                    </groups>
 
                     <forwardGear maxSpeed="9.1" />
                     <forwardGear maxSpeed="14.2" />
@@ -445,7 +438,7 @@
         </motorConfigurations>
 
 		<gearLevers>
-            <gearLever node="0>0|16|3|1" centerAxis="3" changeTime="0.5" handsOnDelay="0.25">
+            <gearLever node="0>0|16|4|0|0" centerAxis="3" changeTime="0.5" handsOnDelay="0.25">
                 <state gear="-1" xRot="-17" zRot="-8" />
                 <state gear="0" xRot="0" zRot="0" />
                 <state gear="1" xRot="17" zRot="-8" />
@@ -539,6 +532,7 @@
         </animation>
         <animation name="pipeAnimation">
             <part node="0>0|9|2|0|0"      startTime="0.0"  endTime="5.0" startRot="0 0 0" endRot="-91 0 0"/>
+			<part node="0>0|9|2|0|0|13"    startTime="0.0"  endTime="5.0" startRot="-90 73.89 -180" endRot="-90 87.017 -168"/>
 
             <sound template="hydraulicLayerTone2" startTime="0.01" endTime="4.99" volumeScale="0.9" pitchScale="1.4" linkNode="0>0|9|3|0"/>
 			<sound template="hydraulicLayerTone" startTime="0.01" endTime="4.99" volumeScale="1.1" pitchScale="0.7" linkNode="0>0|9|3|0"/>
@@ -650,7 +644,6 @@
             <movingTool node="0>0|5|0|1">
                 <dependentPart node="0>0|5|0|1|0|1"/>
                 <dependentPart node="0>0|9|0|0"/>
-				<dependentPart node="0>0|9|0|2"/>
             </movingTool>
         </movingTools>
 
@@ -662,9 +655,6 @@
 
             <movingPart node="0>0|5|0|1|0|1" referencePoint="0>0|9|0|1" referenceFrame="0>0|9|0|1">
                 <translatingPart node="0>0|5|0|1|0|1|0"/>
-            </movingPart>
-            <movingPart node="0>0|9|0|2" referencePoint="0>0|5|0|1|0|8" referenceFrame="0>0|5|0|1|0|8">
-                <translatingPart node="0>0|9|0|2|0"/>
             </movingPart>
 			<movingPart node="0>0|9|0|0" referencePoint="0>0|5|0|1|0|2" referenceFrame="0>0|5|0|1|0|2">
                 <translatingPart node="0>0|9|0|0|0"/>
@@ -954,18 +944,12 @@
 			<animationNode node="0>0|13|1|1|4|2" rotSpeed="-900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|13|1|1|4|3" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
             
-
-            <animationNode node="0>0|5|0|1|0|3|1" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
-			
-			<animationNode node="0>0|5|0|1|0|6|0|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			  
 			<animationNode node="0>0|5|0|1|0|6|1|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|5|0|1|0|6|1|1" rotSpeed="1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 				
-			<animationNode node="0>0|5|0|1|0|6|2|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
-			<animationNode node="0>0|5|0|1|0|6|2|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
-				   
-			<animationNode node="0>0|5|0|1|0|6|3|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|5|0|1|0|6|0|0" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|5|0|1|0|6|0|1" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
         </animationNodes>
 
         <!-- WORK SOUNDS -->
@@ -1019,6 +1003,62 @@
         <bendingNode minX="-0.9" maxX="0.9" minZ="-2.5" maxZ="3.0" yOffset="0.6" />
     </foliageBending>
 	
+	<designConfigurations title="Model">
+		<designConfiguration name="Z058 I" price="0">
+			<!--Mostek-->
+			<objectChange node="0>0|13|0|1|0" visibilityActive="true" />
+			<objectChange node="0>0|13|0|1|1" visibilityActive="false" />
+			<!--Naklejki-->
+			<objectChange node="0>0|13|2|0" visibilityActive="true" />
+			<objectChange node="0>0|13|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|2|2|0" visibilityActive="true" /><!--Naklejki_Instrukcja_Silnik-->
+			<objectChange node="0>0|13|2|2|1" visibilityActive="false" />
+			<!--Prund-->
+			<objectChange node="0>0|13|0|11|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|11|1" visibilityActive="true" />
+			<objectChange node="0>0|13|0|11|2" visibilityActive="true" />
+			<objectChange node="0>0|13|0|11|3" visibilityActive="false" />
+			<!--Gardziel-->
+			<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="true" />
+			<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="false" />
+			<!--PasekGardzieli-->
+			<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="true" />
+			<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="false" />
+			<!--Swiatla_Tylne-->
+			<objectChange node="0>0|13|0|5|0" visibilityActive="true" />
+			<objectChange node="0>0|13|0|5|1" visibilityActive="false" />
+			<!--Lampy_Przednie-->
+			<objectChange node="0>0|13|0|4|0" visibilityActive="true" />
+			<objectChange node="0>0|13|0|4|1" visibilityActive="false" />
+		</designConfiguration>
+		<designConfiguration name="Z058 II" price="0">
+			<!--Mostek-->
+			<objectChange node="0>0|13|0|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|1|1" visibilityActive="true" />
+			<!--Naklejki-->
+			<objectChange node="0>0|13|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|2|1" visibilityActive="true" />
+			<objectChange node="0>0|13|2|2|0" visibilityActive="false" /><!--Naklejki_Instrukcja_Silnik-->
+			<objectChange node="0>0|13|2|2|1" visibilityActive="true" />
+			<!--Prund-->
+			<objectChange node="0>0|13|0|11|0" visibilityActive="true" />
+			<objectChange node="0>0|13|0|11|1" visibilityActive="false" />
+			<objectChange node="0>0|13|0|11|2" visibilityActive="false" />
+			<objectChange node="0>0|13|0|11|3" visibilityActive="true" />
+			<!--Gardziel-->
+			<objectChange node="0>0|5|0|1|0|6|0" visibilityActive="false" />
+			<objectChange node="0>0|5|0|1|0|6|1" visibilityActive="true" />
+			<!--PasekGardzieli-->
+			<objectChange node="0>0|5|0|1|0|9|0" visibilityActive="false" />
+			<objectChange node="0>0|5|0|1|0|9|1" visibilityActive="true" />
+			<!--Swiatla_Tylne-->
+			<objectChange node="0>0|13|0|5|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|5|1" visibilityActive="true" />
+			<!--Lampy_Przednie-->
+			<objectChange node="0>0|13|0|4|0" visibilityActive="false" />
+			<objectChange node="0>0|13|0|4|1" visibilityActive="true" />
+		</designConfiguration>
+	</designConfigurations>
 	
 	
 	<design2Configurations title="$l10n_skrzynka">
@@ -1059,7 +1099,7 @@
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
 			<shaderParameter name="colorMat2" value="BIZON_RED1"/>
         </material>
-		<material name="z058_mat" baseNode="0>0|16|11|8">
+		<material name="z058_mat" baseNode="0>0|16|11|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
 		<material name="Daszek_mat" baseNode="0>0|13|3|0">
