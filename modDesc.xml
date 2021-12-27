@@ -15,6 +15,7 @@
 
     <storeItems>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="z058.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z0601.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z060.xml"/>

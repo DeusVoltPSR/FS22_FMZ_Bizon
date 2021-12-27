@@ -12,5 +12,10 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.6 51.5"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="49.5 50.9"/>
         </configuration>
+		<configuration id="Rekord" >
+            <tire filename="$data/shared/wheels/tires/trelleborg/TM600/R34_TM600.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.071" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.6 51.5"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="49.5 50.9"/>
+        </configuration>
     </configurations>
 </wheel>

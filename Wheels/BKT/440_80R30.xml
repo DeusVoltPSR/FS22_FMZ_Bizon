@@ -12,5 +12,10 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="33.1 45.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="46.5 45.7"/>
         </configuration>
+		<configuration id="Rekord" >
+           <tire filename="$data/shared/wheels/tires/bkt/TR135/R30_tr135.i3d" nodeLeft="5|0" nodeRight="5|0" maxDeformation="0.07" isCareWheel="false" tireTrackAtlasIndex="8" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="33.1 45.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="46.5 45.7"/>
+        </configuration>
     </configurations>
 </wheel>

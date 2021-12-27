@@ -12,5 +12,10 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="40.1 45.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="46.5 45.9"/>
         </configuration>
+		<configuration id="Rekord" >
+            <tire filename="$data/shared/wheels/tires/mitas/HC2000/R30_HC2000.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.083" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="40.1 45.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="46.5 45.9"/>
+        </configuration>
     </configurations>
 </wheel>

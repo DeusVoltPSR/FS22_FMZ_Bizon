@@ -13,5 +13,10 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="35.1 52.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="49 52.9"/>
         </configuration>
+		<configuration id="Rekord" >
+            <tire filename="$data/shared/wheels/tires/michelin/multibib/R34_multibib.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.072" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="35.1 52.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="49 52.9"/>
+        </configuration>
     </configurations>
 </wheel>
