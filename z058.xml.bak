@@ -481,6 +481,7 @@
 		<animationNode node="0>0|9|4|4" rotSpeed="-900" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
 		<animationNode node="0>0|9|4|5" rotSpeed="-1500" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
 		<animationNode node="0>0|9|4|6" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+		<animationNode node="0>0|16|9" rotSpeed="500" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 		</animationNodes>
 		
         
@@ -557,12 +558,14 @@
             <part node="0>0|16|5|0|2|0" startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="175 0 0"/>
         </animation>
 		<animation name="cover">
-            <part node="0>0|16|5|0|3|0" startTime="0.0" endTime="1.0" startRot="13.895 0 0" endRot="89.985 0 0"/>
-			<part node="0>0|16|5|0|3|0|0" startTime="0.0" endTime="1.0" startRot="-42.701 0 0" endRot="-1.789 0 0"/>
-			<part node="0>0|16|5|0|3|0|0" startTime="1.0" endTime="1.2" startRot="-36.844 0 0" endRot="-42.701 0 0"/>
+            <part node="0>0|16|11|2" startTime="0.0" endTime="2.0" startRot="0 0 -190" endRot="0 0 0"/>
+			<part node="0>0|16|11|3" startTime="2.0" endTime="4.0" startRot="0 0 190" endRot="0 0 0"/>
 
-			<sound template="clickLong"   startTime="0.02"   endTime="0.9"   volumeScale="5"   pitchScale="1.7" linkNode="0>0|16|5|0|3|0"/>
-			<sound template="slideOpen"   startTime="0.0"   endTime="0.9"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|16|5|0|3|0|0"/>
+            <sound template="clickLong"         startTime="0.02"   endTime="1.99"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|16|11|2"/>
+            <sound template="sheetImp06"        startTime="2.0"                   volumeScale="3"   pitchScale="1.0" linkNode="0>0|16|11|2"/>
+
+            <sound template="clickLong"         startTime="2.02"   endTime="3.99"   volumeScale="5"   pitchScale="1.0" linkNode="0>0|16|11|3"/>
+            <sound template="sheetImp06"        startTime="4.0"                   volumeScale="3"   pitchScale="1.0" linkNode="0>0|16|11|3"/>
         </animation>
 		<animation name="klapa_Akum">
             <part node="0>0|16|5|0|4|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="90 0 -40"/>
@@ -571,9 +574,9 @@
             <part node="0>0|16|5|0|5|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="-89.874 6.404 172.982"/>
         </animation>
 		<animation name="cleaningSartAnimation">
-            <part node="0>0|16|4|3|0" startTime="0.0" endTime="1.5" startRot="0 0 0" endRot="59.461 0 0"/>
-			<part node="0>0|1|1" startTime="0.0" endTime="1.5" startTrans="0 3.399 2.118" endTrans="0 3.561 2.616"/>
-			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="0 0 0" endRot="57.226 0 0"/>
+            <part node="0>0|16|4|3|0" startTime="0.0" endTime="1.5" startRot="6 0 0" endRot="59.461 0 0"/>
+			<part node="0>0|1|1" startTime="0.0" endTime="1.5" startTrans="0 3.466 2.271" endTrans="0 3.561 2.616"/>
+			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="6 0 0" endRot="57.226 0 0"/>
 		</animation>
 		<animation name="toggleChopper" soundVolumeFactor="4.5">
 		    <part node="0>0|13|1|1|2|0" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 13"/>
@@ -640,6 +643,7 @@
             </movingTool>
 			<movingTool node="0>0|9|2|0|0" playSound="false">
                 <dependentPart node="0>0|9|2|1"/>
+				<dependentPart node="0>0|9|2|5|0"/>
             </movingTool>
             <movingTool node="0>0|5|0|1">
                 <dependentPart node="0>0|5|0|1|0|1"/>
@@ -656,11 +660,12 @@
             <movingPart node="0>0|5|0|1|0|1" referencePoint="0>0|9|0|1" referenceFrame="0>0|9|0|1">
                 <translatingPart node="0>0|5|0|1|0|1|0"/>
             </movingPart>
-            <movingPart node="0>0|9|0|2" referencePoint="0>0|5|0|1|0|8" referenceFrame="0>0|5|0|1|0|8">
-                <translatingPart node="0>0|9|0|2|0"/>
-            </movingPart>
 			<movingPart node="0>0|9|0|0" referencePoint="0>0|5|0|1|0|2" referenceFrame="0>0|5|0|1|0|2">
                 <translatingPart node="0>0|9|0|0|0"/>
+            </movingPart>
+			
+			<movingPart node="0>0|9|2|5|0" referencePoint="0>0|9|2|0|0|4" referenceFrame="0>0|9|2|0|0|4">
+                <translatingPart node="0>0|9|2|5|0|0"/>
             </movingPart>
 
             <movingPart node="1>1|0|1" referencePoint="1>0|0|1" referenceFrame="1>0|0|1" scaleZ="true" isActiveDirty="true"  maxUpdateDistance="50"/>
@@ -1016,6 +1021,16 @@
 			<objectChange node="0>0|13|2|1" visibilityActive="false" />
 			<objectChange node="0>0|13|2|2|0" visibilityActive="true" /><!--Naklejki_Instrukcja_Silnik-->
 			<objectChange node="0>0|13|2|2|1" visibilityActive="false" />
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="true" /><!--NaklejkiJakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="false" />
+			<objectChange node="0>0|13|0|16|13" visibilityActive="true" /><!--Tabliczka-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="false" />
+			<objectChange node="0>0|13|0|16|11" visibilityActive="true" /><!--Woda-->
+			<objectChange node="0>0|13|0|16|12" visibilityActive="false" />
+			<objectChange node="0>0|13|0|16|3" visibilityActive="false" /><!--Informacyjne-->
+			<objectChange node="0>0|13|0|16|4" visibilityActive="false" />
+			<objectChange node="0>0|13|0|16|0" visibilityActive="false" />
+			
 			<!--Prund-->
 			<objectChange node="0>0|13|0|11|0" visibilityActive="false" />
 			<objectChange node="0>0|13|0|11|1" visibilityActive="true" />
@@ -1033,6 +1048,8 @@
 			<!--Lampy_Przednie-->
 			<objectChange node="0>0|13|0|4|0" visibilityActive="true" />
 			<objectChange node="0>0|13|0|4|1" visibilityActive="false" />
+			<!--BoczneKierunki-->
+			<objectChange node="0>0|2|0" visibilityActive="false" />
 		</designConfiguration>
 		<designConfiguration name="Z058 II" price="0">
 			<!--Mostek-->
@@ -1043,6 +1060,15 @@
 			<objectChange node="0>0|13|2|1" visibilityActive="true" />
 			<objectChange node="0>0|13|2|2|0" visibilityActive="false" /><!--Naklejki_Instrukcja_Silnik-->
 			<objectChange node="0>0|13|2|2|1" visibilityActive="true" />
+			<objectChange node="0>0|13|0|16|14|0" visibilityActive="false" /><!--NaklejkiJakosc-->
+			<objectChange node="0>0|13|0|16|14|1" visibilityActive="true" />
+			<objectChange node="0>0|13|0|16|13" visibilityActive="false" /><!--Tabliczka-->
+			<objectChange node="0>0|13|0|16|1" visibilityActive="true" />
+			<objectChange node="0>0|13|0|16|11" visibilityActive="false" /><!--Woda-->
+			<objectChange node="0>0|13|0|16|12" visibilityActive="true" />
+			<objectChange node="0>0|13|0|16|3" visibilityActive="true" /><!--Informacyjne-->
+			<objectChange node="0>0|13|0|16|4" visibilityActive="true" />
+			<objectChange node="0>0|13|0|16|0" visibilityActive="true" />
 			<!--Prund-->
 			<objectChange node="0>0|13|0|11|0" visibilityActive="true" />
 			<objectChange node="0>0|13|0|11|1" visibilityActive="false" />
@@ -1060,9 +1086,32 @@
 			<!--Lampy_Przednie-->
 			<objectChange node="0>0|13|0|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|0|4|1" visibilityActive="true" />
+			<!--BoczneKierunki-->
+			<objectChange node="0>0|2|0" visibilityActive="true" />
+			<!--Odblaski-->
+			<objectChange node="0>0|16|11|4|0" visibilityActive="true" />
+			<objectChange node="0>0|16|11|5|0" visibilityActive="true" />
 		</designConfiguration>
 	</designConfigurations>
 	
+	<vehicleTypeConfigurations title="$l10n_Kabina">
+		<vehicleTypeConfiguration name="$l10n_Kabina" price="0" vehicleType="combineDrivable">
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="false" />
+			
+			<objectChange node="0>0|13|3|1|5|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_Kabina" price="500" vehicleType="combineDrivable">
+			<objectChange node="0>0|13|3|1|2|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|2|2" visibilityActive="true" />
+			
+			<objectChange node="0>0|13|3|1|5|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|5|3" visibilityActive="true" />
+        </vehicleTypeConfiguration>
+    </vehicleTypeConfigurations>
 	
 	<design2Configurations title="$l10n_skrzynka">
 		<design2Configuration name="$l10n_configuration_valueNo" price="0" >
@@ -1096,6 +1145,21 @@
 			<objectChange node="0>0|13|0|10|0" visibilityActive="true" />
         </design4Configuration>
     </design4Configurations>
+	
+	<design5Configurations title="$l10n_CoverChopper">
+		<design5Configuration name="$l10n_configuration_valueNo" price="0" >
+			<objectChange node="0>0|13|1|1|1|0" visibilityActive="false" />
+			<objectChange node="0>0|13|1|1|1|1" visibilityActive="false" />
+        </design5Configuration>
+		<design5Configuration name="$l10n_CoverChopper" price="150" >
+			<objectChange node="0>0|13|1|1|1|0" visibilityActive="true" />
+			<objectChange node="0>0|13|1|1|1|1" visibilityActive="false" />
+        </design5Configuration>
+		<design5Configuration name="$l10n_All" price="350" >
+			<objectChange node="0>0|13|1|1|1|0" visibilityActive="true" />
+			<objectChange node="0>0|13|1|1|1|1" visibilityActive="true" />
+        </design5Configuration>
+    </design5Configurations>
 	
     <baseMaterial>
         <material name="z056_mat" baseNode="0>0|16|3">
