@@ -670,9 +670,9 @@
             <part node="0>0|16|5|0|5|0" startTime="0.0" endTime="1.0" startRot="90 0 0" endRot="-89.874 6.404 172.982"/>
         </animation>
 		<animation name="cleaningSartAnimation">
-            <part node="0>0|16|4|3|0" startTime="0.0" endTime="1.5" startRot="0 0 0" endRot="59.461 0 0"/>
+            <part node="0>0|16|4|3|0" startTime="0.0" endTime="1.5" startRot="0 0 0" endRot="71.447 0 0"/>
 			<part node="0>0|1|1" startTime="0.0" endTime="1.5" startTrans="0 3.399 2.118" endTrans="0 3.561 2.616"/>
-			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="0 0 0" endRot="57.226 0 0"/>
+			<part node="0>0|16|4|3|1" startTime="2.5" endTime="4.0" startRot="0 0 0" endRot="86 0 0"/>
 		</animation>
 		<animation name="toggleChopper" soundVolumeFactor="4.5">
 		    <part node="0>0|13|1|1|2|0" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 13"/>
@@ -1537,6 +1537,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="true" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="false" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="true" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="false" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="false" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration> 
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z050 II" price="0">
 		<!--Mostek-->
@@ -1680,6 +1690,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="true" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="false" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="true" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="false" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="false" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration >
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z050 III" price="0">
 		<!--Mostek-->
@@ -1822,6 +1842,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="true" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="false" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="true" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="false" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="false" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 I" price="0">
 		<!--Mostek-->
@@ -1964,6 +1994,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="true" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="false" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="false" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 II" price="0">
 		<!--Mostek-->
@@ -1980,7 +2020,7 @@
 		<objectChange node="0>0|13|0|2|0" visibilityActive="false"/>
 		<objectChange node="0>0|13|0|2|1" visibilityActive="true"/>
 		<objectChange node="0>0|8|0" translationActive="1.019 3.327 -0.832"/> <!--Particle-->
-<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
+		<objectChange node="0>0|8|0" rotationActive="-62.967 -7.17 -3.644"/>
 		<!--NapemdGardzieli-->
 		<objectChange node="0>0|13|0|3|0" visibilityActive="true"/>
 		<objectChange node="0>0|13|0|3|1" visibilityActive="false"/>
@@ -2106,6 +2146,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="true" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="false" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="true" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="false" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 III" price="0">
 		<!--Mostek-->
@@ -2248,6 +2298,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="false" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="true" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="true" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="true" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 IV" price="0">
 		<!--Mostek-->
@@ -2390,6 +2450,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="false" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="true" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="true" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="false" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="true" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	<vehicleTypeConfiguration vehicleType="combineDrivable" name="z056 V" price="0">
 		<!--Mostek-->
@@ -2532,6 +2602,16 @@
 			<!--Fotel-->
 			<objectChange node="0>0|6|0|0|2|0" visibilityActive="false" />
 			<objectChange node="0>0|6|0|0|2|1" visibilityActive="true" />
+			<!--Obudowa_Mloc_Heder-->
+			<objectChange node="0>0|13|0|18|0" visibilityActive="false" /><!--Obudowa-->
+			<objectChange node="0>0|13|0|18|1" visibilityActive="true" />
+			<!--Wajchy_Mloc-->
+			<objectChange node="0>0|16|4|3|0|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|0|1" visibilityActive="false" /><!--Z056III-Z056IV-->
+			<objectChange node="0>0|16|4|3|0|2" visibilityActive="true" /><!--Z056V-->
+			<!--Wajchy_Heder-->
+			<objectChange node="0>0|16|4|3|1|0" visibilityActive="false" /><!--Z050-Z056II-->
+			<objectChange node="0>0|16|4|3|1|1" visibilityActive="true" /><!--Z056III-Z056V-->
 	</vehicleTypeConfiguration>
 	</vehicleTypeConfigurations>
 	

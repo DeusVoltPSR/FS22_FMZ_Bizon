@@ -694,7 +694,7 @@
         <fillUnitConfigurations title="$l10n_Wyposazenie">
 			 <fillUnitConfiguration name="$l10n_Kolnierz">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -728,7 +728,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Kielecka">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -761,7 +761,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="Plocka">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -794,7 +794,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Plocka_Drut">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -1050,6 +1050,9 @@
 			<objectChange node="0>0|13|0|4|1" visibilityActive="false" />
 			<!--BoczneKierunki-->
 			<objectChange node="0>0|2|0" visibilityActive="false" />
+			<!--Odblaski-->
+			<objectChange node="0>0|16|11|4|0" visibilityActive="false" />
+			<objectChange node="0>0|16|11|5|0" visibilityActive="false" />
 		</designConfiguration>
 		<designConfiguration name="Z058 II" price="0">
 			<!--Mostek-->

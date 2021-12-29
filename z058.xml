@@ -412,7 +412,7 @@
     <motorized>
         <consumerConfigurations>
             <consumerConfiguration>
-                <consumer fillUnitIndex="2" usage="40"  fillType="diesel" />  <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="45"  fillType="diesel" />  <!-- usage is per hour at max load and max rpm -->
             </consumerConfiguration>
         </consumerConfigurations>
 
@@ -694,7 +694,7 @@
         <fillUnitConfigurations title="$l10n_Wyposazenie">
 			 <fillUnitConfiguration name="$l10n_Kolnierz">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -728,7 +728,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Kielecka">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -761,7 +761,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="Plocka">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -794,7 +794,7 @@
             </fillUnitConfiguration>
 			 <fillUnitConfiguration name="$l10n_Plocka_Drut">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3920" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
