@@ -26,4 +26,11 @@ Added Claas chopper for Z061, Z0601, Z083
 Fixed chopper work area in Z083
 Added stickers config in Z061
 Added Cabin soundproofing for Z083, Z061(optional), Z0601(optional, only in one model)
+
+Changelog 0.5.0.4:
+Added Bizon Rekord Z058 combine harvester
+Improved normlas quality on Gigant harvesters
+Unified rims material and textures
+Delete a few unused textures
+
 Nie pozdrawiam
