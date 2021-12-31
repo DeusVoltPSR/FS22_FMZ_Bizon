@@ -9,6 +9,10 @@
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
     <File fileId="19" filename="../Stomile/tire/opona_substancja_specular.dds"/>
     <File fileId="18" filename="../Stomile/tire/tireNew_normal.dds"/>
+    <File fileId="24" filename="../Textures/Tire_normal.png"/>
+    <File fileId="25" filename="../Textures/Tire_specular.png"/>
+    <File fileId="2" filename="../Textures/felgy_normal.png"/>
+    <File fileId="3" filename="../Textures/felgy_specular.png"/>
     <File fileId="12" filename="../Textures/poponaWaska_normal.dds"/>
     <File fileId="13" filename="../Textures/poponaWaska_specular.dds"/>
     <File fileId="20" filename="New/BKT_AS504_12_5_80_R18_normal_dds.dds"/>
@@ -19,10 +23,6 @@
     <File fileId="10" filename="New/untitled_specular_1.dds"/>
     <File fileId="15" filename="tire03_normal.dds"/>
     <File fileId="16" filename="tire03_specular.dds"/>
-    <File fileId="24" filename="../Textures/Tire_normal.png"/>
-    <File fileId="25" filename="../Textures/Tire_specular.png"/>
-    <File fileId="2" filename="../Textures/felgy_normal.png"/>
-    <File fileId="3" filename="../Textures/felgy_specular.png"/>
   </Files>
 
 
