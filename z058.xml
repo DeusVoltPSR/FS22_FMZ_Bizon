@@ -37,8 +37,8 @@
 		<sounds filename="sounds/6CT107.xml" />
         <size width="4.5" length="7" height="3.9" lengthOffset="-0.3"/>
         <components>
-            <component centerOfMass="0 0.92 -0.5" solverIterationCount="20" mass="5000"/>
-            <component centerOfMass="0 0 0" solverIterationCount="20" mass="2000"/>
+            <component centerOfMass="0 0.92 -0.5" solverIterationCount="20" mass="7200"/>
+            <component centerOfMass="0 0 0" solverIterationCount="20" mass="1000"/>
             <joint component1="1" component2="2" node="0>0|0|2" rotLimit="0 0 10" rotLimitSpring="0 0 4000" rotLimitDamping="0 0 75" maxRotDriveForce="0 0 10" rotDriveRotation="0 0 0" rotDriveSpring="0 0 20" rotDriveDamping="0 0 10" breakable="false"/>
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="HARVESTER" />
@@ -427,8 +427,10 @@
                     <torque normRpm="1" torque="0.72"/>
                 </motor>
                 <transmission autoGearChangeTime="1.0" gearChangeTime="0.4" name="$l10n_info_transmission_manual">
-                    <directionChange useGear="true" reverseGearIndex="1" changeTime="1.2"/>
-
+                    <directionChange useGear="true" changeTime="0.8"/>
+					
+					<backwardGear maxSpeed="15" name="R"/>
+					
                     <forwardGear maxSpeed="9.1" />
                     <forwardGear maxSpeed="14.2" />
                     <forwardGear maxSpeed="21.2" />

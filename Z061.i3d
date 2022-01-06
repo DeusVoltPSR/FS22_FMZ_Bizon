@@ -12,12 +12,12 @@
     <File fileId="55" filename="$data/shaders/mirrorShader.xml"/>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
     <File fileId="52" filename="$data/shared/clearGlass_diffuse.dds"/>
-    <File fileId="66" filename="$data/shared/clearPlastic_diffuse.dds"/>
     <File fileId="68" filename="$data/shared/default_normal.dds"/>
     <File fileId="39" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="40" filename="$data/shared/window_specular.dds"/>
     <File fileId="37" filename="Textures/Kabina_normal.dds"/>
     <File fileId="38" filename="Textures/Kabina_specular.dds"/>
+    <File fileId="66" filename="Textures/LightPanel.dds"/>
     <File fileId="74" filename="Textures/Warnings.dds"/>
     <File fileId="71" filename="Textures/Znaczki.dds"/>
     <File fileId="61" filename="Textures/bizomBlendcopy_normal.dds"/>
@@ -28,6 +28,8 @@
     <File fileId="57" filename="Textures/chopper_specular.dds"/>
     <File fileId="32" filename="Textures/decals_normal.dds"/>
     <File fileId="33" filename="Textures/decals_specular.dds"/>
+    <File fileId="87" filename="Textures/felgy_normal.png"/>
+    <File fileId="88" filename="Textures/felgy_specular.png"/>
     <File fileId="18" filename="Textures/gigant_normal_1.dds"/>
     <File fileId="79" filename="Textures/gigant_normal_11.dds"/>
     <File fileId="65" filename="Textures/gigant_normal_9.dds"/>
@@ -66,8 +68,6 @@
     <File fileId="15" filename="Textures/z083ChainBelt_normal.dds"/>
     <File fileId="16" filename="Textures/z083ChainBelt_specular.dds"/>
     <File fileId="27" filename="Textures/z083Header_specular.dds"/>
-    <File fileId="87" filename="Wheels_Textures/rims_normal.dds"/>
-    <File fileId="88" filename="Wheels_Textures/rims_specular.dds"/>
   </Files>
 
 
@@ -153,9 +153,9 @@
       <Glossmap fileId="51"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
-      <CustomParameter name="colorMat0" value="1 1 1 0"/>
-      <CustomParameter name="colorMat1" value="0.93 0.25 0 0"/>
-      <CustomParameter name="colorMat2" value="0.5 0 0 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 16"/>
+      <CustomParameter name="colorMat1" value="0.93 0.25 0 16"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 16"/>
       <CustomParameter name="colorMat3" value="0.1 0.1 1 0"/>
       <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
@@ -306,13 +306,13 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="hub_mat" materialId="23" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="Hubs_mat" materialId="23" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="87"/>
       <Glossmap fileId="88"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
-      <CustomParameter name="colorMat0" value="0.561 0.03 0.007 16"/>
-      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat0" value="0.8 0.8 0.8 16"/>
+      <CustomParameter name="colorMat1" value="0.561 0.03 0.007 16"/>
       <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
       <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
       <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
@@ -391,9 +391,9 @@
       <Glossmap fileId="51"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
-      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
-      <CustomParameter name="colorMat1" value="1 0.1 0.1 0"/>
-      <CustomParameter name="colorMat2" value="0.8 0.8 0.8 6"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 16"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 16"/>
+      <CustomParameter name="colorMat2" value="0.8 0.8 0.8 16"/>
       <CustomParameter name="colorMat3" value="0.1 0.1 1 0"/>
       <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
@@ -581,7 +581,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="275">
             <TransformGroup name="outdoorCameraTarget" translation="-3.27805e-08 1.60988 -0.453516" rotation="-24 180 0" nodeId="276">
-              <Camera name="outdoorCamera" translation="-2.28986 1.70155 -2.66451" rotation="155.823 -34.3978 -161.998" nodeId="277" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-2.98903 1.09962 -2.26297" rotation="129.255 -49.2531 -148.513" nodeId="277" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <Camera name="indoorCamera" translation="-2.41364e-08 3.56184 1.84153" rotation="-15 180 0" nodeId="278" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
             <TransformGroup name="cameraRaycastNode1" translation="1.26192e-15 3.9155 2.908" nodeId="279"/>
@@ -1166,7 +1166,7 @@
           <TransformGroup name="axisBackLeft" translation="-1.5099e-16 0 0" rotation="-3.10601e-18 -7.76503e-19 2.08113e-15" clipDistance="300" nodeId="723">
             <TransformGroup name="wheelBackLeftRot" translation="0.0873832 -0.00123006 0.005" rotation="0.103647 1.52582e-10 0" nodeId="724">
               <TransformGroup name="wheelBackLeft" translation="0.152215 0.03 -7.494e-11" rotation="0 2.82097e-08 0" nodeId="725">
-                <Shape shapeId="213" name="Hub" rotation="90 0 0" nodeId="726" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="213" name="Cylinder.001" rotation="90 0 0" nodeId="726" materialIds="23" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
             </TransformGroup>
             <TransformGroup name="steeringBarRef" translation="-0.0353018 0 0.174" rotation="180 0 0" nodeId="727"/>
@@ -1178,7 +1178,7 @@
           <TransformGroup name="axisBackRight" translation="1.93104e-09 0 0" clipDistance="300" nodeId="731">
             <TransformGroup name="wheelBackRightRot" translation="-0.07097 -0.00800646 -0.00147672" rotation="0.103647 0 0" nodeId="732">
               <TransformGroup name="wheelBackRight" translation="-0.152 0.03 -7.83561e-05" rotation="0 -2.82098e-08 0" nodeId="733">
-                <Shape shapeId="213" name="Hub" rotation="90 180 3.90301e-07" nodeId="734" materialIds="23" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="213" name="Cylinder.001" rotation="90 180 3.90301e-07" nodeId="734" materialIds="23" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
             </TransformGroup>
             <Shape shapeId="215" name="Cylinder.013" translation="0.0467191 -6.4037e-09 0.174" nodeId="735" materialIds="15" castsShadows="true" receiveShadows="true"/>

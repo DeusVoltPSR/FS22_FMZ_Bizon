@@ -12,7 +12,7 @@
     <File fileId="75" filename="$data/shared/assets/wire_normal.dds"/>
     <File fileId="76" filename="$data/shared/assets/wire_vmask.dds"/>
     <File fileId="42" filename="$data/shared/clearGlass_diffuse.dds"/>
-    <File fileId="9" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="9" filename="Textures/LightPanel.dds"/>
     <File fileId="21" filename="$data/shared/default_normal.dds"/>
     <File fileId="71" filename="$data/shared/window_diffuse.dds"/>
     <File fileId="49" filename="$data/shared/window_specular.dds"/>
@@ -374,7 +374,7 @@
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
       <CustomParameter name="colorMat1" value="1 0.1 0.1 0"/>
-      <CustomParameter name="colorMat2" value="0.8 0.8 0.8 6"/>
+      <CustomParameter name="colorMat2" value="0.8 0.8 0.8 16"/>
       <CustomParameter name="colorMat3" value="0.1 0.1 1 0"/>
       <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>

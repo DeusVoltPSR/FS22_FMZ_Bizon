@@ -105,7 +105,7 @@
 			<part node="0>10|1|1|1" startTime="0.2" duration="1.1" startRot="42.765 0 0" endRot="0 0 0" />
 			<part node="0>10|1|0|1" startTime="0.2" duration="1.1" startRot="84.709 0 0" endRot="0 0 0" />
 			<part node="0>10|1|1|0|0" startTime="1.1" duration="1.2" startTrans="0.098 -0.131 -1.105" endTrans="0 -0.131 -1.105" />
-			<part node="0>10|1|0|0|0" startTime="1.1" duration="1.2" startTrans="0.093 0.002 0.002" endTrans="0.001 0.001 0.001" />
+			<part node="0>10|1|0|0|0" startTime="1.1" duration="1.2" startTrans="0.093 0.002 -0.1" endTrans="0.001 0.001 -0.1" />
 			<part node="0>10|1|1|1|0" startTime="1.2" duration="1.5" startTrans="0 -0.005 0" endTrans="0 -0.161 0" />
 			<part node="0>10|1|0|1|0" startTime="1.2" duration="1.5" startTrans="0 -0.059 0" endTrans="0 -0.151 0" />
 

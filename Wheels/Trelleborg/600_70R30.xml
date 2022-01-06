@@ -4,18 +4,18 @@
         <physics radius="0.804" width="0.6" mass="0.216" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
         <tire filename="$data/shared/wheels/tires/trelleborg/TM900/R30_TM900.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.085" isCareWheel="false" tireTrackAtlasIndex="0" />
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="42.5 48.2"/>
-        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" />
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" widthAndDiam="49.5 54.9"/>
     </default>
 	<configurations>
         <configuration id="dual" >
             <tire filename="$data/shared/wheels/tires/trelleborg/TM900/R30_TM900.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.085" isCareWheel="false" tireTrackAtlasIndex="0" />
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="42.5 48.2"/>
-        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="49.5 47.9"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|7|0" nodeRight="1|7|1" widthAndDiam="49.5 54.9"/>
         </configuration>
 		<configuration id="Rekord" >
             <tire filename="$data/shared/wheels/tires/trelleborg/TM900/R30_TM900.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.085" isCareWheel="false" tireTrackAtlasIndex="0" />
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="42.5 48.2"/>
-        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="49.5 47.9"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="49.5 54.9"/>
         </configuration>
     </configurations>
 </wheel>
