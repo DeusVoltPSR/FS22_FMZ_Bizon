@@ -27,6 +27,16 @@
         <storeItem rootNode="vehicle" xmlFilename="BizonTrailer4.xml"/>
     </storeItems>
 	
+	<specializations>
+        <specialization name="toggleAnimation"		className="toggleAnimation"	filename="Scripts/toggleAnimation.lua"/>
+    </specializations>
+	
+	<vehicleTypes>
+		<type name="combineDrivableKeyAnim" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua"  parent="combineDrivable">
+			<specialization name="toggleAnimation" />
+		</type>
+	</vehicleTypes>
+	
 	<l10n>
 		<text name="Kabina">
 			<en>Cabin</en>
@@ -192,5 +202,35 @@
 		<de>Grün</de>
 		<fr>Vert</fr>
 		</text>
+		<text name="input_TA_anim1">
+			<en>Cover Left</en>
+			<pl>Klapa Lewa</pl>
+		</text>
+		<text name="input_TA_anim2">
+			<en>Cover Right</en>
+			<de>Klapa Prawa</de>
+		</text>
+		<text name="input_TA_anim3">
+			<en>Side Cover Small</en>
+			<de>Klapa Boczna</de>
+		</text>
 	</l10n>
+	
+	<actions>
+		<action name="TA_anim1" category="VEHICLE" axisType="HALF"/>
+		<action name="TA_anim2" category="VEHICLE" axisType="HALF"/>
+		<action name="TA_anim3" category="VEHICLE" axisType="HALF"/>
+	</actions>
+	
+	<inputBinding>
+		<actionBinding action="TA_anim1">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_u" axisComponent="+" neutralInput="0" index="1"/>
+		</actionBinding>
+		<actionBinding action="TA_anim2">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_y" axisComponent="+" neutralInput="0" index="1"/>
+		</actionBinding>
+		<actionBinding action="TA_anim3">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_t" axisComponent="+" neutralInput="0" index="1"/>
+		</actionBinding>
+	</inputBinding>
 </modDesc>

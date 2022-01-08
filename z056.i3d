@@ -628,7 +628,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="473">
             <TransformGroup name="outdoorCameraTarget" translation="2.50158e-15 1.44293 -0.0785513" rotation="-24 180 0" nodeId="474">
-              <Camera name="outdoorCamera" translation="-2.24415 0.497566 -3.29307" rotation="135.033 -51.6344 -145.031" nodeId="475" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-3.3598 -1.56841 4.20564" rotation="37.7166 -51.0768 -34.2036" nodeId="475" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.000389914 3.399 2.11762" rotation="165 -9.68238e-06 -180" nodeId="476">
               <Camera name="indoorCamera" translation="2.52385e-15 0 0" visibility="false" nodeId="477" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
@@ -1185,7 +1185,7 @@
               <Shape shapeId="155" name="DodatkiNiechBedzie" translation="-0.000390099 0.000299841 0" rotation="90 -0 0" visibility="false" nodeId="892" materialIds="51" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
             <TransformGroup name="Sieczkarnie" translation="-0.0252488 0 0" nodeId="893">
-              <TransformGroup name="wagrowiec" translation="0.0216498 1.435 -2.093" visibility="false" nodeId="894">
+              <TransformGroup name="wagrowiec" translation="0.0216498 1.435 -2.093" nodeId="894">
                 <Shape shapeId="156" name="Wongier" translation="-0.0385012 0.00471496 -0.715487" nodeId="895" materialIds="8" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="157" name="Ramaa" nodeId="896" materialIds="8" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="158" name="Cube.024" translation="0 0.763734 -1.31713" nodeId="897" materialIds="8" castsShadows="true" receiveShadows="true">
@@ -1222,7 +1222,7 @@
                   <Shape shapeId="177" name="Cylinder.028" translation="-5.73345e-09 0 0" nodeId="921" materialIds="40" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="PlockaKieleckaItd" translation="0.025 1.443 -1.81" nodeId="922">
+              <TransformGroup name="PlockaKieleckaItd" translation="0.025 1.443 -1.81" visibility="false" nodeId="922">
                 <TransformGroup name="Baza" nodeId="923">
                   <Shape shapeId="178" name="Rama_PrawieWszystkie" translation="0 0 -1.002" nodeId="924" materialIds="8" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="179" name="statyw_krajowy" translation="0 0 -1.002" nodeId="925" materialIds="8" castsShadows="true" receiveShadows="true"/>
@@ -1235,7 +1235,7 @@
                     <Shape shapeId="184" name="Plane.002" translation="-0.602736 -0.311 -0.078" rotation="-79.566 0 0" scale="0.06 1 0.147" nodeId="932" materialIds="49" castsShadows="true" receiveShadows="true"/>
                   </Shape>
                 </TransformGroup>
-                <TransformGroup name="Oslony" visibility="false" nodeId="933">
+                <TransformGroup name="Oslony" nodeId="933">
                   <Shape shapeId="185" name="Cube.020" translation="0.672174 0.320067 0.0120474" nodeId="934" materialIds="8" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="186" name="Plane.006" translation="0.849969 0.139079 -0.191454" rotation="0 -0 -90" nodeId="935" materialIds="8" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
@@ -1271,12 +1271,12 @@
                   </TransformGroup>
                 </TransformGroup>
                 <TransformGroup name="Mala" translation="-0.025 -1.843 1.81" nodeId="960">
-                  <Shape shapeId="204" name="Cylinder.020" translation="0.836639 1.8424 -0.770671" nodeId="961" materialIds="9" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="205" name="Cylinder.019" translation="0.727881 1.87006 -1.14999" nodeId="962" materialIds="9" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="204" name="Cylinder.020" translation="0.890065 1.8424 -0.770671" nodeId="961" materialIds="9" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="205" name="Cylinder.019" translation="0.734739 1.87006 -1.14999" scale="1.45271 1 1" nodeId="962" materialIds="9" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="206" name="Cylinder.018" translation="0.727984 1.78171 -1.49044" nodeId="963" materialIds="9" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="207" name="Cylinder.021" translation="0.727984 1.77249 -1.90934" nodeId="964" materialIds="9" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="208" name="Cube.022" translation="0.728717 1.763 -3.311" nodeId="965" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="209" name="Cube.025" translation="0.837025 1.76296 1.00872" nodeId="966" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="209" name="Cube.025" translation="0.89327 1.76296 1.00872" nodeId="966" materialIds="7" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
               </TransformGroup>
               <Shape shapeId="210" name="Szmata" translation="0.012541 -0.4 0" rotation="90 -0 0" visibility="false" nodeId="967" materialIds="51" castsShadows="true" receiveShadows="true" skinBindNodeIds="1334 1337 1340 1346 1343"/>
