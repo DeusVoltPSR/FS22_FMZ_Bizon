@@ -638,6 +638,8 @@
 			<part node="0>0|9|2|0|0|10"   startTime="0.0"  endTime="5.0" startRot="1.645 7.48 0.62" endRot="16.327 6.043 28.884"/>
             <part node="0>0|9|2|2|0" startTime="5.00" endTime="5.2" startRot="0 0 0" endRot="89.444 0 0"/>
             <part node="0>0|9|2|0|0|3|0"  startTime="5.20" endTime="5.2" startRot="0 0 0" endRot="93 0 0"/>
+			<part node="0>0|16|4|6|0"  startTime="5.25" endTime="5.45" startRot="0 0 0" endRot="65 0 0"/>
+			
 			<sound template="slideOpen"  startTime="2.5"  direction="1"  volumeScale="0.9" pitchScale="0.8"  linkNode="0>0|19|3"/>
 			
 			<sound template="sheetImp06"            startTime="0.0"                   volumeScale="5"   pitchScale="0.8" linkNode="0>0|19|2"/>

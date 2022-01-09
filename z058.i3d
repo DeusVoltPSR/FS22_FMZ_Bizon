@@ -175,6 +175,23 @@
       <CustomParameter name="lightControl" value="0 0 0 0"/>
       <CustomParameter name="blinkOffset" value="0 0 1 0"/>
     </Material>
+    <Material name="clearPlastic_mat" materialId="1189" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="9"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 16"/>
+      <CustomParameter name="colorMat1" value="0.93 0.25 0 16"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 16"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 16"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
     <Material name="Daszek_mat" materialId="13" diffuseColor="0.854902 0.921569 0.00392157 1" customShaderId="5" customShaderVariation="colorMask">
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
@@ -372,10 +389,10 @@
       <Glossmap fileId="4"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
-      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
-      <CustomParameter name="colorMat1" value="1 0.1 0.1 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 16"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 16"/>
       <CustomParameter name="colorMat2" value="0.8 0.8 0.8 16"/>
-      <CustomParameter name="colorMat3" value="0.1 0.1 1 0"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 16"/>
       <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
@@ -680,7 +697,7 @@
           </TransformGroup>
           <TransformGroup name="cameras" translation="-0.0226099 -2.7183 -2.0928" nodeId="421">
             <TransformGroup name="outdoorCameraTarget" translation="2.50158e-15 1.44293 -0.0785513" rotation="-24 180 0" nodeId="422">
-              <Camera name="outdoorCamera" translation="-2.24258 1.27259 -3.35633" rotation="135.284 -49.6474 -147.699" nodeId="423" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+              <Camera name="outdoorCamera" translation="-1.66058 -1.75437 3.54501" rotation="39.0503 -29.3689 -14.9665" nodeId="423" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
             </TransformGroup>
             <TransformGroup name="insideCameraRoot" translation="-0.000389914 3.46554 2.27062" rotation="165 -9.68238e-06 -180" nodeId="424">
               <Camera name="indoorCamera" translation="2.52385e-15 0 0" visibility="false" nodeId="425" fov="75" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
@@ -772,16 +789,16 @@
                     <Shape shapeId="12" name="Gardziel_NowyTyp01" rotation="90 -0 0" nodeId="486" materialIds="55" castsShadows="true" receiveShadows="true">
                       <Shape shapeId="13" name="BodyReference.009" translation="1.66692 0.872142 0.60748" scale="0.407175 0.927425 0.927425" nodeId="487" materialIds="55" castsShadows="true" receiveShadows="true"/>
                       <Shape shapeId="14" name="BodyReference.013" translation="1.66846 1.11325 0.942794" scale="0.407175 0.985636 0.985636" nodeId="488" materialIds="55" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="15" name="PasekGardziel_Nowec.003" translation="0.84061 -1.66607 1.7507" rotation="-4.07111e-13 -0 0" nodeId="495" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="15" name="PasekGardziel_Nowec.003" translation="0.84061 -1.66607 1.7507" rotation="-4.07111e-13 -0 0" nodeId="489" materialIds="7" castsShadows="true" receiveShadows="true"/>
                     </Shape>
-                    <Shape shapeId="16" name="Gardziel_NowyTyp" rotation="90 -0 0" visibility="false" nodeId="489" materialIds="55" castsShadows="true" receiveShadows="true">
-                      <Shape shapeId="13" name="BodyReference.007" translation="1.66931 0.6093 0.21769" rotation="1.70755e-06 -0 0" scale="0.407175 0.676886 0.676886" nodeId="490" materialIds="55" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="13" name="BodyReference.008" translation="1.66931 0.45066 0.13586" rotation="1.70755e-06 -0 0" scale="0.407175 0.676886 0.676886" nodeId="491" materialIds="55" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="16" name="Gardziel_NowyTyp" rotation="90 -0 0" visibility="false" nodeId="490" materialIds="55" castsShadows="true" receiveShadows="true">
+                      <Shape shapeId="13" name="BodyReference.007" translation="1.66931 0.6093 0.21769" rotation="1.70755e-06 -0 0" scale="0.407175 0.676886 0.676886" nodeId="491" materialIds="55" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="13" name="BodyReference.008" translation="1.66931 0.45066 0.13586" rotation="1.70755e-06 -0 0" scale="0.407175 0.676886 0.676886" nodeId="492" materialIds="55" castsShadows="true" receiveShadows="true"/>
                     </Shape>
                   </TransformGroup>
-                  <TransformGroup name="pelikanReatrederGardziel" nodeId="492"/>
-                  <TransformGroup name="feederHydraulic2Ref" translation="0.105116 -0.679664 1.21909" rotation="-16.7258 -5.95415e-05 1.70422e-05" clipDistance="300" nodeId="493"/>
-                  <TransformGroup name="AttachableBelts" translation="0 -2.13884 -1.126" rotation="-15.972 0 0" visibility="false" nodeId="494">
+                  <TransformGroup name="pelikanReatrederGardziel" nodeId="493"/>
+                  <TransformGroup name="feederHydraulic2Ref" translation="0.105116 -0.679664 1.21909" rotation="-16.7258 -5.95415e-05 1.70422e-05" clipDistance="300" nodeId="494"/>
+                  <TransformGroup name="AttachableBelts" translation="0 -2.13884 -1.126" rotation="-15.972 0 0" visibility="false" nodeId="495">
                     <Shape shapeId="17" name="PasekGardziel_Nowec.001" translation="-0.000390099 -0.00426626 0.00500161" rotation="90 -0 0" nodeId="496" materialIds="7" castsShadows="true" receiveShadows="true"/>
                   </TransformGroup>
                   <TransformGroup name="Bone.001" translation="0.772372 0.0971833 1.1429" rotation="163.985 -0.717832 1.29709" scale="0.999176 1 1" nodeId="497"/>
@@ -1080,8 +1097,8 @@
                   <Shape shapeId="87" name="Male" translation="-1.54895 -1.77702 -1.94344" rotation="-2.03555e-13 -2.54444e-14 0" scale="0.895 1 0.895" nodeId="714" materialIds="47" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="89" name="turnlightLeftGlassStatic" translation="1.49732 -1.81573 -1.94846" rotation="0 -0 9.93923e-17" scale="0.895 1 0.895" nodeId="715" materialIds="12" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="89" name="turnlightLeftGlassStatic" translation="-1.55125 -1.81275 -1.94403" rotation="0 -0 9.93923e-17" scale="0.895 1 0.895" nodeId="716" materialIds="12" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.38695 -1.81485 -1.94815" scale="0.895 1 0.895" nodeId="717" materialIds="12" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.44272 -1.81943 -1.94697" scale="0.895 1 0.895" nodeId="718" materialIds="12" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.38695 -1.81485 -1.94815" scale="0.895 1 0.895" nodeId="1195" materialIds="1189" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.44272 -1.81943 -1.94697" scale="0.895 1 0.895" nodeId="1194" materialIds="1189" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="93" name="odblask" translation="1.48479 -1.78003 -1.81084" rotation="-180 3.18055e-14 0" scale="1.351 1 1.351" nodeId="719" materialIds="41" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="93" name="odblask" translation="-1.53317 -1.78003 -1.81084" rotation="-180 3.18055e-14 0" scale="1.351 1 1.351" nodeId="720" materialIds="41" castsShadows="true" receiveShadows="true"/>
                 </Shape>
@@ -1094,12 +1111,12 @@
                   <Shape shapeId="87" name="Male" translation="-1.53076 -3.13052 -1.81491" rotation="-2.03555e-13 -2.54444e-14 0" scale="0.895 1 0.895" nodeId="727" materialIds="47" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="93" name="odblask" translation="1.4817 -3.13425 -1.68449" rotation="180 3.18055e-14 0" scale="1.351 1 1.351" nodeId="728" materialIds="41" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="93" name="odblask" translation="-1.53338 -3.13425 -1.68449" rotation="180 3.18055e-14 0" scale="1.351 1 1.351" nodeId="729" materialIds="41" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.39028 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="730" materialIds="12" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.39028 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="1197" materialIds="1189" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="89" name="turnlightLeftGlassStatic" translation="1.48931 -3.16587 -1.81487" rotation="0 -0 9.93923e-17" scale="0.895 1 0.895" nodeId="731" materialIds="12" castsShadows="true" receiveShadows="true"/>
                   <Shape shapeId="89" name="turnlightLeftGlassStatic" translation="-1.53212 -3.16587 -1.81487" rotation="0 -0 9.93923e-17" scale="0.895 1 0.895" nodeId="732" materialIds="12" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.28572 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="733" materialIds="12" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.32865 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="734" materialIds="12" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.43229 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="735" materialIds="12" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="1.28572 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="1193" materialIds="1189" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.32865 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="1196" materialIds="1189" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="brakelightGlassStatic2" translation="-1.43229 -3.16802 -1.81534" scale="0.895 1 0.895" nodeId="1198" materialIds="1189" castsShadows="true" receiveShadows="true"/>
                 </Shape>
               </TransformGroup>
               <TransformGroup name="Drabinka" nodeId="736">
