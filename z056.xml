@@ -352,6 +352,7 @@
                 <light node="0>0|2|4|0"     lightTypes="0"/>
 				<light node="0>0|13|0|1|0|3"   lightTypes="0" />
 				<light node="0>0|13|3|1|2|1|2"     lightTypes="0"/>
+				<light node="0>0|13|3|1|2|0|5"     lightTypes="0"/>
                 <light node="0>0|2|2|0" lightTypes="2"/>
                 <light node="0>0|2|1|3"       lightTypes="3"/>
                 <turnLightLeft node="0>0|2|3|0"/>
@@ -372,6 +373,7 @@
             <defaultLight shaderNode="0>0|13|0|0|2|1|0"         lightTypes="0 3" />
 			<!--w_srodku-->
 			<defaultLight shaderNode="0>0|13|3|1|2|1|0"         lightTypes="0 3" />
+			<defaultLight shaderNode="0>0|13|3|1|2|0|5"         lightTypes="0 3" />
 			<!--Pozycyjne-->
 			<defaultLight shaderNode="0>0|13|0|4|0|4"         lightTypes="0 3" />
             <defaultLight shaderNode="0>0|13|0|4|0|5"         lightTypes="0 3" />
@@ -1263,11 +1265,16 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="0 0 0" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
+
         </designConfiguration>
 		<designConfiguration name="$l10n_Daszek" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="true" />
@@ -1286,11 +1293,16 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="1 1 1" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
+			
         </designConfiguration>
 		<designConfiguration name="$l10n_Barierki" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
@@ -1309,11 +1321,15 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="0 0 0" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
         </designConfiguration>
 		<designConfiguration name="$l10n_Daszek_Barierki" price="300">
 			<objectChange node="0>0|13|3|0" visibilityActive="true" />
@@ -1332,11 +1348,15 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="1 1 1" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
         </designConfiguration>
 		<designConfiguration name="I" price="1000">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
@@ -1355,11 +1375,15 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="1 1 1" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
         </designConfiguration>
 		<designConfiguration name="II" price="1100">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
@@ -1378,11 +1402,15 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="false" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="1 1 1" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="true" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="false" />
         </designConfiguration>
 		<designConfiguration name="IV" price="1200">
 			<objectChange node="0>0|13|3|0" visibilityActive="false" />
@@ -1401,11 +1429,15 @@
 			<!--Drzwi-->
 			<objectChange node="0>0|13|3|1|4|0" visibilityActive="true" />
 			<objectChange node="0>0|13|3|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|4|2" visibilityActive="true" />
 			<!--Kolizja-->
 			<objectChange node="0>1|5" scaleActive="1 1 1" />
 			<!--Dodadtki-->
 			<objectChange node="0>0|13|3|1|5|2" visibilityActive="false" />
 			<objectChange node="0>0|13|3|1|5|3" visibilityActive="true" />
+			<!--Korpus-->
+			<objectChange node="0>0|13|3|1|0|0" visibilityActive="false" />
+			<objectChange node="0>0|13|3|1|0|1" visibilityActive="true" />
         </designConfiguration>
     </designConfigurations>
 	
@@ -2829,7 +2861,7 @@
 		<material name="Heder_mat" shaderParameter="colorMat0"/>
 		<material name="bar_mat" shaderParameter="colorMat0"/>
 		<material name="Siatka_mat" shaderParameter="colorMat0"/>
-		<material name="Kabina_mat" shaderParameter="colorMat2"/>
+		<material name="Kabina_mat" shaderParameter="colorMat4"/>
 		<material name="Piston_mat" shaderParameter="colorMat0"/>
 		<material name="DecalsTwo_mat" shaderParameter="colorMat0"/>
 		<material name="z056ChainBelt_mat" shaderParameter="colorMat1"/>
@@ -2875,7 +2907,7 @@
 		<designMaterial2Configuration color="0.06 0.15 0.47"/>
 
 		<material name="Kabina_mat" shaderParameter="colorMat1" />
-		<material name="Kabina_mat" shaderParameter="colorMat4" />
+		<material name="Kabina_mat" shaderParameter="colorMat2" />
 		<material name="Daszek_mat" shaderParameter="colorMat2"/>
     </designMaterial2Configurations>
 	

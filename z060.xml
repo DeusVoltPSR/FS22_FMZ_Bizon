@@ -409,9 +409,7 @@
             <sound template="metalClose" startTime="0.01"  volumeScale="0.5" pitchScale="1.7"  linkNode="0>0|9|4|0"/>
             <sound template="metalClose" startTime="1.89" direction="1"  volumeScale="0.4" pitchScale="0.7"  linkNode="0>0|9|4|0"/>
         </animation>
-		<animation name="Drzwi">
-			<part node="0>0|11|0|0|4|0" startTime="0.0" endTime="2.0" startTrans="-0.003 -0.077 0.486" endTrans="-0.003 -0.077 0.974"/>
-        </animation>
+
 		<animation name="klapa_Silnik">
             <part node="0>0|14|1|2|0" startTime="0.0" endTime="2.0" startRot="0 0 -45" endRot="0 0 142.11"/>
 			<part node="0>0|14|1|2|1" startTime="0.0" endTime="2.0" startRot="-180 0 90" endRot="-180 0 -92.84"/>
@@ -876,7 +874,7 @@
 		<material name="piston_mat" shaderParameter="colorMat0" />
 		<material name="Hubs_mat" shaderParameter="colorMat1" />
 		<material name="decals_mat" shaderParameter="colorMat0" />
-		<material name="Kabina_mat" shaderParameter="colorMat2" />
+		<material name="Kabina_mat" shaderParameter="colorMat4" />
 		<material name="DecalsSmall_mat" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
@@ -909,7 +907,7 @@
 		<designMaterial2Configuration color="0.119 0.000 0.000"/>
 
 		<material name="Kabina_mat" shaderParameter="colorMat1" />
-		<material name="Kabina_mat" shaderParameter="colorMat4" />
+		<material name="Kabina_mat" shaderParameter="colorMat2" />
     </designMaterial2Configurations>
 	
 	<rimColorConfigurations useDefaultColors="false" >
