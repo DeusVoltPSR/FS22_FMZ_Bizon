@@ -7,6 +7,7 @@
         <specs>
             <combination xmlFilename="Heder4M.xml"/>
 			<combination xmlFilename="Heder4M_Nowy.xml"/>
+			<combination xmlFilename="lizard4Rows.xml"/>
 			<combination xmlFilename="BizonTrailer4.xml"/>
             <power>110</power>
             <maxSpeed>20</maxSpeed>
@@ -380,7 +381,7 @@
                 <raycastNode node="0>0|1|2"/>
                 <raycastNode node="0>0|1|2"/>
             </camera>
-            <camera node="0>0|1|1|0" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" useOutdoorSounds="true" shadowFocusBox="0>0|1|5" />
+            <camera node="0>0|1|1|0" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" useOutdoorSounds="false" shadowFocusBox="0>0|1|5" />
         </cameras>
 
         <characterNode node="0>0|6|0|0|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
@@ -1343,9 +1344,9 @@
 	
 	
 	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
 		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
-		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
         <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
 		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
 		<designMaterial3Configuration color="0.239 0.004 0.004"/>

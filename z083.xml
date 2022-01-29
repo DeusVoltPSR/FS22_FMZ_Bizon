@@ -6,6 +6,7 @@
         <name>BIZON GIGANT Z083</name>
         <specs>
             <combination xmlFilename="Heder5M.xml"/>
+			<combination xmlFilename="lizard6Rows.xml"/>
 			<combination xmlFilename="BizonTrailer5.xml"/>
             <power>220</power>
             <maxSpeed>20</maxSpeed>
@@ -963,9 +964,9 @@
     </baseMaterialConfigurations>
 	
 	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
 		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
-		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
         <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
 		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
 		<designMaterial3Configuration color="0.239 0.004 0.004"/>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>4 Rows Cutter</name>
+        <specs>
+            <workingWidth>3.0</workingWidth>
+            <combination xmlFilename="z056.xml"/>
+			<combination xmlFilename="z058.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>store/4rows_store.dds</image>
+        <price>3500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>cornHeaders</category>
+        <shopFoldingState>1</shopFoldingState>
+        <shopTranslationOffset>0 0.389 -0.023</shopTranslationOffset>
+        <shopRotationOffset>8.946 0 0</shopRotationOffset>
+        <shopHeight>4</shopHeight>
+        <vertexBufferMemoryUsage>2657024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>441856</indexBufferMemoryUsage>
+        <textureMemoryUsage>1703936</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>lizard4Rows.i3d</filename>
+        <size width="4" length="3.5" lengthOffset="0.2"/>
+        <speedLimit value="7"/>
+        <components>
+            <component solverIterationCount="10" mass="2030"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0|0|0" jointType="cutter">
+                <heightNode node="0>0|0|0|0"/>
+                <distanceToGround lower="0.4" upper="1.8"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <powerConsumer ptoRpm="370" neededMaxPtoPower="30"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>0|3|2" threshold="0.4" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="0>0|3|0" widthNode="0>0|3|0|0" heightNode="0>0|3|0|1" />
+            <groundReferenceNode index="1" />
+			<testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="4" areaWidthScale="0.25"/>
+        </workArea>
+    </workAreas>
+
+    <cutter fruitTypeCategories="maizeHeader" strawRatio="0.3">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="0>0|4|0|0">
+                <motionPathEffect textureFilename="arrays/plantArray.dds" textureRealWidth="9.2" numRows="12" rowLength="8" minFade="0.19"/>
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" linkNode="0>0|4|0|1">
+                <motionPathEffect textureFilename="arrays/fruitArray.dds" textureRealWidth="9.2" numRows="12" rowLength="28" speedScale="0.23" verticalOffset="0" minFade="0.09" startDelay="0.4" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" linkNode="0>0|4|0|2">
+                <motionPathEffect textureFilename="arrays/threshingArray.dds" textureRealWidth="9.2" numRows="12" rowLength="10" verticalOffset="0" minFade="0.15" startDelay="0.2" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="0>0|4|1" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+
+        <animationNodes>
+            <animationNode node="0>0|1|0|0" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="0>0|1|4|0" rotSpeed="-200" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+
+        </animationNodes>
+
+        <sounds>
+            <cut template="cropCutting" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="forageHarvesterStart" volumeScale="0.7"/>
+            <work  template="forageHarvesterWork"  pitchScale="0.8" />
+            <stop  template="forageHarvesterStop"  pitchScale="1.5" volumeScale="0.4" />
+        </sounds>
+    </turnOnVehicle>
+
+    <dynamicMount forceLimitScale="1"/>
+
+    <ai>
+        <areaMarkers leftNode="0>0|5|0" rightNode="0>0|5|1" backNode="0>0|5|2"/>
+        <collisionTrigger node="0>0|5|3" width="3.2" height="1.5"/>
+        <agentAttachment width="3.2" height="2.2" length="3" lengthOffset="0.2"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.5" maxX="1.5" minZ="-1" maxZ="0.4" yOffset="-0.1" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="Przystawka_mat" baseNode="0>0|6|0|0">
+            <shaderParameter name="colorMat0" value="CAPELLO_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+	<baseMaterialConfigurations price="500" useDefaultColors="false" defaultColorIndex="0">
+		<baseMaterialConfiguration name="$l10n_Red" color="0.55 0.04 0.02 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.4 0.01 0 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.4 0.06 0 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.38 0.06 0.04 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.32 0.03 0.01 6" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.27 0.05 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Orange" color="0.45 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.3 0.1 0.03 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.35 0.18 0.08 6" />
+        <baseMaterialConfiguration name="$l10n_Brown" color="0.42 0.2 0.06 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.09 0.17 0.28 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.07 0.18 0.32 6" />
+        <baseMaterialConfiguration name="$l10n_Blue" color="0.05 0.18 0.5 6" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.561 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.861 0.1 0.08" />
+		<baseMaterialConfiguration name="$l10n_Pink" color="0.661 0.2 0.1" />
+		<baseMaterialConfiguration name="$l10n_Beige" color="0.861 0.25 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.29 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.24 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.17 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.20 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.04 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.19 0.07 0.007" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.21 0.01 0" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.21 0.09 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.191 0.057 0.034" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.109 0.052 0.045" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.99 0.29 0" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.56 0.23 0.03" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.18 0.03 0.007" />
+		<baseMaterialConfiguration name="$l10n_Yellow" color="0.5 0.2 0.01" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.18 0.02 0.02" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.1 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Red" color="0.43 0.02 0.02"/>
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.48 0.1 0.02" />
+		<baseMaterialConfiguration name="$l10n_Brown" color="0.22 0.1 0.02" />		
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.47" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.06 0.15 0.37" />
+		<baseMaterialConfiguration name="$l10n_Blue" color="0.01 0.07 0.5" />
+		<baseMaterialConfiguration name="$l10n_Green" color="0.161 0.5 0.1" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.899 0.012 0.033" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.530 0.037 0.012" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.767 0.157 0.002" />
+		<baseMaterialConfiguration name="$l10n_Orange" color="0.737 0.085 0.000" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.394 0.018 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.099 0.006 0.010" />
+		<baseMaterialConfiguration name="$l10n_Red" color="0.243 0.007 0.012" />
+        <baseMaterialConfiguration name="$l10n_Red" color="0.334 0.013 0.013" />
+		<material name="Przystawka_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+
+</vehicle>

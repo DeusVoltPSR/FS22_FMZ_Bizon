@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="diamant8" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/maps/textures/shared/metalGridGrating_diffuse.dds"/>
+    <File fileId="14" filename="$data/maps/textures/shared/metalGridGrating_normal.dds"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/vehicles/capello/diamant8/diamant8Chain_diffuse.png"/>
+    <File fileId="10" filename="$data/vehicles/capello/diamant8/diamant8Chain_normal.png"/>
+    <File fileId="11" filename="$data/vehicles/capello/diamant8/diamant8Chain_vmask.png"/>
+    <File fileId="3" filename="Textures/QQ_normal.dds"/>
+    <File fileId="4" filename="Textures/QQ_specular.dds"/>
+    <File fileId="16" filename="Textures/z056Header_normal.dds"/>
+    <File fileId="17" filename="Textures/z056Header_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.494118 1 0.494118">
+    </Material>
+    <Material name="diamant8Chain_mat" materialId="5" customShaderId="5" customShaderVariation="uvScroll_colorMask">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="colorMat0" value="0.6314 0.6314 0.6314 8"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="KorpusNew_mat" materialId="6" diffuseColor="0.556863 0.027451 0.00392157 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="16" bumpDepth="0"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.561 0.03 0.007 16"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Przystawka_mat" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.561 0.03 0.007 16"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="9">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lizard6Rows.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="L6R_main_component1" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="L6R_vis" nodeId="19">
+          <TransformGroup name="attachers" translation="0 2.66454e-17 0" nodeId="20">
+            <TransformGroup name="attacherJoint" translation="-1.08344e-08 0.777832 -0.730477" rotation="-90 -79.2749 90" nodeId="21">
+              <TransformGroup name="heightNode02" translation="2.42968 -1.4537 6.46461e-10" rotation="0.722492 90 0" nodeId="22"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="movingParts" translation="0 2.66454e-17 0" nodeId="23">
+            <TransformGroup name="drumCenterRot" translation="-0.0278489 0.452364 -0.48" nodeId="24">
+              <TransformGroup name="drumCenter" translation="6.93889e-20 0 0" clipDistance="300" nodeId="25">
+                <Shape shapeId="2" name="QQHederek.002" rotation="-6.83019e-06 -0 0" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="cutterCenter" translation="0 -2.66454e-17 0" nodeId="27">
+              <TransformGroup name="cutterCenter01" translation="1.28653 -0.185461 0.174635" clipDistance="300" nodeId="28"/>
+              <TransformGroup name="cutterCenter02" translation="0.534261 -0.185461 0.174635" clipDistance="300" nodeId="29"/>
+              <TransformGroup name="cutterCenter03" translation="-0.21557 -0.185461 0.174635" clipDistance="300" nodeId="30"/>
+              <TransformGroup name="cutterCenter04" translation="-0.963302 -0.185461 0.174635" clipDistance="300" nodeId="31"/>
+            </TransformGroup>
+            <TransformGroup name="gearsCenter" translation="0 -2.66454e-17 0" nodeId="32">
+              <TransformGroup name="gearCenter01Rot" translation="1.26516 -0.00468084 0.67646" rotation="9.87721 -4.5159 -4.98509e-17" nodeId="33">
+                <TransformGroup name="gearCenter01" translation="-2.84217e-16 3.55271e-17 -7.10543e-17" clipDistance="300" nodeId="34"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter02Rot" translation="0.984671 -0.00468084 0.67646" rotation="9.8772 4.51601 0" nodeId="35">
+                <TransformGroup name="gearCenter02" translation="0 1.77636e-17 0" clipDistance="300" nodeId="36"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter03Rot" translation="0.512893 -0.00468084 0.67646" rotation="9.8772 -4.51606 0" nodeId="37">
+                <TransformGroup name="gearCenter03" translation="0 1.77636e-17 -1.42109e-16" clipDistance="300" nodeId="38"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter04Rot" translation="0.23484 -0.00468084 0.67646" rotation="9.8772 4.51606 0" nodeId="39">
+                <TransformGroup name="gearCenter04" translation="-3.55271e-17 3.55271e-17 0" clipDistance="300" nodeId="40"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter05Rot" translation="-0.236938 -0.00468084 0.67646" rotation="9.8772 -4.51606 0" nodeId="41">
+                <TransformGroup name="gearCenter05" translation="3.55271e-17 1.77636e-17 0" clipDistance="300" nodeId="42"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter06Rot" translation="-0.512892 -0.00468084 0.67646" rotation="9.87721 4.51542 -9.97018e-17" nodeId="43">
+                <TransformGroup name="gearCenter06" translation="0 -3.55271e-17 0" clipDistance="300" nodeId="44"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter07Rot" translation="-0.984671 -0.00468084 0.67646" rotation="9.87721 -4.51542 0" nodeId="45">
+                <TransformGroup name="gearCenter07" translation="-2.84217e-16 0 0" clipDistance="300" nodeId="46"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter08Rot" translation="-1.26516 -0.00468084 0.67646" rotation="9.87721 4.51527 9.97018e-17" nodeId="47">
+                <TransformGroup name="gearCenter08" translation="2.84217e-16 0 0" clipDistance="300" nodeId="48"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter09Rot" translation="1.26445 0.141404 -0.1725" rotation="9.87719 -4.51558 4.98509e-17" nodeId="49">
+                <TransformGroup name="gearCenter09" translation="1.42109e-16 1.77636e-17 0" clipDistance="300" nodeId="50"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter10Rot" translation="0.985382 0.141404 -0.1725" rotation="9.87719 4.51543 0" nodeId="51">
+                <TransformGroup name="gearCenter10" translation="0 -1.77636e-17 -1.77636e-17" clipDistance="300" nodeId="52"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter11Rot" translation="0.512182 0.141404 -0.1725" rotation="9.87719 -4.51547 4.98509e-17" nodeId="53">
+                <TransformGroup name="gearCenter11" translation="0 0 -7.10543e-17" clipDistance="300" nodeId="54"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter12Rot" translation="0.235551 0.141404 -0.1725" rotation="9.87719 4.51543 0" nodeId="55">
+                <TransformGroup name="gearCenter12" translation="-3.55271e-17 0 3.55271e-17" clipDistance="300" nodeId="56"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter13Rot" translation="-0.237649 0.141404 -0.1725" rotation="9.87719 -4.51541 -4.98509e-17" nodeId="57">
+                <TransformGroup name="gearCenter13" translation="-3.55271e-17 1.77636e-17 3.55271e-17" clipDistance="300" nodeId="58"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter14Rot" translation="-0.512182 0.141404 -0.1725" rotation="9.87719 4.51547 -4.98509e-17" nodeId="59">
+                <TransformGroup name="gearCenter14" translation="0 0 -7.10543e-17" clipDistance="300" nodeId="60"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter15Rot" translation="-0.985382 0.141404 -0.1725" rotation="9.87719 -4.51543 0" nodeId="61">
+                <TransformGroup name="gearCenter15" translation="0 -1.77636e-17 0" clipDistance="300" nodeId="62"/>
+              </TransformGroup>
+              <TransformGroup name="gearCenter16Rot" translation="-1.26445 0.141404 -0.1725" rotation="9.87719 4.51558 -4.98509e-17" nodeId="63">
+                <TransformGroup name="gearCenter16" translation="-1.42109e-16 1.77636e-17 0" clipDistance="300" nodeId="64"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="rollsCenter" translation="0 -2.66454e-17 0" nodeId="65">
+              <TransformGroup name="rollCenter01Rot" translation="1.19557 0.0392532 -0.0644388" rotation="9.75411 -0.00288532 0" nodeId="66">
+                <TransformGroup name="rollCenter01" translation="-9.91869e-07 2.35557e-06 0.0337736" rotation="0.000252994 0.000106524 -1.8312e-05" clipDistance="300" nodeId="67"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter02Rot" translation="1.05356 0.0392531 -0.0644389" rotation="9.75409 -0.00290096 -4.85314e-20" nodeId="68">
+                <TransformGroup name="rollCenter02" translation="-1.2589e-06 2.67505e-06 0.0337737" rotation="0.000287307 0.000139301 -2.39465e-05" clipDistance="300" nodeId="69"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter03Rot" translation="0.443304 0.0392532 -0.0644388" rotation="9.75411 -0.0028775 4.85314e-20" nodeId="70">
+                <TransformGroup name="rollCenter03" translation="-9.91869e-07 2.35557e-06 0.0337736" rotation="0.000252994 0.000106524 -1.8312e-05" clipDistance="300" nodeId="71"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter04Rot" translation="0.304428 0.0392532 -0.0644388" rotation="9.75411 0.0028775 -4.85314e-20" nodeId="72">
+                <TransformGroup name="rollCenter04" translation="9.82332e-07 2.35557e-06 0.0337736" rotation="0.000252994 -0.000106524 1.8312e-05" clipDistance="300" nodeId="73"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter05Rot" translation="-0.305832 0.0392531 -0.0644389" rotation="9.75409 0.00287555 0" nodeId="74">
+                <TransformGroup name="rollCenter05" translation="1.22075e-06 2.67505e-06 0.0337737" rotation="0.000287307 -0.000133155 2.289e-05" clipDistance="300" nodeId="75"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter06Rot" translation="-0.443304 0.0392532 -0.0644388" rotation="9.75411 0.0028775 -4.85314e-20" nodeId="76">
+                <TransformGroup name="rollCenter06" translation="9.91869e-07 2.35557e-06 0.0337736" rotation="0.000252994 -0.000106524 1.8312e-05" clipDistance="300" nodeId="77"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter07Rot" translation="-1.05356 0.0392531 -0.0644389" rotation="9.75409 0.00290096 4.85314e-20" nodeId="78">
+                <TransformGroup name="rollCenter07" translation="1.2589e-06 2.67505e-06 0.0337737" rotation="0.000287307 -0.000139301 2.39465e-05" clipDistance="300" nodeId="79"/>
+              </TransformGroup>
+              <TransformGroup name="rollCenter08Rot" translation="-1.19557 0.0392532 -0.0644388" rotation="9.75411 0.00288532 0" nodeId="80">
+                <TransformGroup name="rollCenter08" translation="9.91869e-07 2.35557e-06 0.0337736" rotation="0.000252994 -0.000106524 1.8312e-05" clipDistance="300" nodeId="81"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="chainCenterRot" translation="0 -2.66454e-17 0" nodeId="82">
+              <Shape shapeId="3" name="chainCenter" translation="-0.00663907 0.114809 0.310271" rotation="20.616 -0.0702743 -7.76503e-19" scale="1.01228 1 1" clipDistance="300" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="flapsCenter" translation="0 -0.122425 -0.707682" clipDistance="300" nodeId="84"/>
+          </TransformGroup>
+          <TransformGroup name="cylindered" nodeId="85">
+            <TransformGroup name="armLeftCylinder" translation="1.38066 -0.165231 -0.867454" rotation="-79.6355 0.965825 0" clipDistance="300" nodeId="86">
+              <TransformGroup name="armLeftCylinderPunch" translation="8.52617e-16 5.25135e-14 0.948014" clipDistance="300" nodeId="87"/>
+            </TransformGroup>
+            <TransformGroup name="armRightCylinder" translation="-1.38066 -0.165231 -0.867454" rotation="-79.8944 -0.936255 0" clipDistance="300" nodeId="88">
+              <TransformGroup name="armRightCylinderPunch" translation="-4.3679e-09 -4.66157e-09 0.947996" clipDistance="300" nodeId="89"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="workArea" translation="0 -0.10311 0" nodeId="90">
+            <TransformGroup name="workAreaStart" translation="2.2196 -8.88178e-18 1.323" nodeId="91">
+              <TransformGroup name="workAreaWidth" translation="-4.45246 0 0.000298113" nodeId="92"/>
+              <TransformGroup name="workAreaHeight" translation="0 0 -0.591" nodeId="93"/>
+            </TransformGroup>
+            <TransformGroup name="workAreaStart" translation="2.22885 -8.88178e-18 0.894" nodeId="94">
+              <TransformGroup name="workAreaWidth" translation="-4.50364 0 0.000298113" nodeId="95"/>
+              <TransformGroup name="workAreaHeight" translation="0 0 -0.5906" nodeId="96"/>
+            </TransformGroup>
+            <TransformGroup name="groundReferenceNode" translation="0 -0.170895 1.71948" nodeId="97"/>
+            <TransformGroup name="testAreas" translation="-0.106838 -0.0244482 -0.0797686" clipDistance="300" nodeId="98">
+              <TransformGroup name="testArea1" translation="1.62771 0 1.13687e-15" clipDistance="300" nodeId="99">
+                <TransformGroup name="testAreaStart1" translation="-1.28891e-17 2.13163e-16 1.332" clipDistance="300" nodeId="100"/>
+                <TransformGroup name="testAreaWidth1" translation="-0.826794 -4.26326e-16 1.332" clipDistance="300" nodeId="101"/>
+                <TransformGroup name="testAreaHeight1" translation="-1.52818e-17 -2.13163e-16 0.62271" clipDistance="300" nodeId="102"/>
+              </TransformGroup>
+              <TransformGroup name="testArea1" translation="0.790683 0 1.13687e-15" clipDistance="300" nodeId="103">
+                <TransformGroup name="testAreaStart1" translation="-1.28891e-17 2.13163e-16 1.332" clipDistance="300" nodeId="104"/>
+                <TransformGroup name="testAreaWidth1" translation="-0.826794 -4.26326e-16 1.332" clipDistance="300" nodeId="105"/>
+                <TransformGroup name="testAreaHeight1" translation="-1.52818e-17 -2.13163e-16 0.62271" clipDistance="300" nodeId="106"/>
+              </TransformGroup>
+              <TransformGroup name="testArea1" translation="0.120931 0 1.13687e-15" clipDistance="300" nodeId="107">
+                <TransformGroup name="testAreaStart1" translation="-1.28891e-17 2.13163e-16 1.332" clipDistance="300" nodeId="108"/>
+                <TransformGroup name="testAreaWidth1" translation="-0.826794 -4.26326e-16 1.332" clipDistance="300" nodeId="109"/>
+                <TransformGroup name="testAreaHeight1" translation="-1.52818e-17 -2.13163e-16 0.62271" clipDistance="300" nodeId="110"/>
+              </TransformGroup>
+              <TransformGroup name="testArea1" translation="-0.660173 0 1.13687e-15" clipDistance="300" nodeId="111">
+                <TransformGroup name="testAreaStart1" translation="-1.28891e-17 2.13163e-16 1.332" clipDistance="300" nodeId="112"/>
+                <TransformGroup name="testAreaWidth1" translation="-0.826794 -4.26326e-16 1.332" clipDistance="300" nodeId="113"/>
+                <TransformGroup name="testAreaHeight1" translation="-1.52818e-17 -2.13163e-16 0.62271" clipDistance="300" nodeId="114"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="effects" translation="0 2.66454e-17 0" nodeId="115">
+            <TransformGroup name="CutterMotionPathEffect" translation="0 -0.430633 -0.877784" rotation="-4.32737 0 0" nodeId="116">
+              <TransformGroup name="effectNodePlant" translation="0 -0.25 0" nodeId="117"/>
+              <TransformGroup name="effectNodeFruit" translation="0 0.262 0" nodeId="118"/>
+              <TransformGroup name="effectNodeThreshing" translation="0 0.262 0" nodeId="119"/>
+            </TransformGroup>
+            <Shape shapeId="4" name="smokeEmitter" translation="0 0.0457764 0.25" clipDistance="300" nodeId="120" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="ai" translation="0 2.66454e-17 0" nodeId="121">
+            <TransformGroup name="aiMarkerLeft" translation="1.33128 -8.88178e-18 0.894" nodeId="122"/>
+            <TransformGroup name="aiMarkerRight" translation="-1.32155 -8.88178e-18 0.894" nodeId="123"/>
+            <TransformGroup name="aiMarkerBack" translation="0 -8.88178e-18 -0.892624" nodeId="124"/>
+            <TransformGroup name="aiCollisionNode" translation="0 -2.66454e-17 1.52593" nodeId="125"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" translation="0 0.30866 0.162647" nodeId="126">
+            <TransformGroup name="Heder6Rows" translation="0 -0.282 -1.115" rotation="-6.83019e-06 -0 0" nodeId="127">
+              <Shape shapeId="5" name="CornHubSuper.001" translation="0 -0.142 1.12665" rotation="-6.83019e-06 -0 0" nodeId="128" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="Wire" translation="-1.40648 1.05525 0.463721" rotation="145.601 -0 0" scale="1.36159 1 0.220738" nodeId="129" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false">
+                <Shape shapeId="6" name="plane" rotation="0 0 180" nodeId="130" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                <Shape shapeId="6" name="plane" translation="1.01635 5.96046e-08 2.38419e-07" scale="1.03263 1 1" nodeId="131" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false">
+                  <Shape shapeId="6" name="plane" rotation="0 0 180" nodeId="132" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </Shape>
+                <Shape shapeId="6" name="plane" translation="2.04773 5.96046e-08 2.38419e-07" scale="1.03263 1 1" nodeId="133" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false">
+                  <Shape shapeId="6" name="plane" rotation="0 0 180" nodeId="134" materialIds="9" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </Shape>
+              </Shape>
+              <Shape shapeId="7" name="Siemandero" translation="0.176725 0.495592 -0.0276681" nodeId="135" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

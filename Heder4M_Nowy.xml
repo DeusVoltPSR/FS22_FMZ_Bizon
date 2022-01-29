@@ -8,6 +8,7 @@
             <workingWidth>4.20</workingWidth>
             <combination xmlFilename="BizonTrailer4.xml"/>
 			<combination xmlFilename="z056.xml"/>
+			<combination xmlFilename="z058.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutter</function>

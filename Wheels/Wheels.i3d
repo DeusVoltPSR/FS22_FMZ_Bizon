@@ -210,7 +210,6 @@
           <Shape shapeId="32" name="OponaKradziez_low" translation="0 1.96667e-06 0" nodeId="91" materialIds="7" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
       </TransformGroup>
-      <Camera name="Camera" translation="0.949903 0.179473 -1.08796" rotation="178.54 39.8069 -180" nodeId="92" fov="50" nearClip="0.1" farClip="100" orthographicHeight="1"/>
   </Scene>
 
 </i3D>

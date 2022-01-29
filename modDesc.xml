@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="62">
+<modDesc descVersion="63">
     <author>Deus Szmeus Volteus</author>
-    <version>0.5.0.5</version>
+    <version>0.6.0.0</version>
 	
 	<title>
         <en>Bizon Pack</en>
@@ -14,6 +14,7 @@
 	<multiplayer supported="true" />
 
     <storeItems>
+		<storeItem rootNode="vehicle" xmlFilename="z040.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z058.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>
@@ -25,6 +26,8 @@
 		<storeItem rootNode="vehicle" xmlFilename="Heder5M.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="BizonTrailer5.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="BizonTrailer4.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="lizard4Rows.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="lizard6Rows.xml"/>
     </storeItems>
 	
 	<specializations>
@@ -233,4 +236,5 @@
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_t" axisComponent="+" neutralInput="0" index="1"/>
 		</actionBinding>
 	</inputBinding>
+	
 </modDesc>

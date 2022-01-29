@@ -6,6 +6,7 @@
         <name>BIZON GIGANT Z061</name>
         <specs>
             <combination xmlFilename="Heder5M.xml"/>
+			<combination xmlFilename="lizard6Rows.xml"/>
 			<combination xmlFilename="BizonTrailer5.xml"/>
             <power>220</power>
             <maxSpeed>20</maxSpeed>

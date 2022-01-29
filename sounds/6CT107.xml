@@ -9,20 +9,20 @@
 
 	<gearGroupLeverStart template="clackVar5" volumeScale="1.9" pitchScale="0.8"/>
     <gearGroupLeverEnd template="clackVar6"      volumeScale="1.9" pitchScale="0.8"/>
-	<retarder file="sounds/Transmission/Rekord_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>">	
+	<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>">	
 		<volume indoor="1.5" outdoor="4">
 			<modifier type="SPEED" value="0.0"  modifiedValue="0.05"/>
-			<modifier type="SPEED" value="5.0" modifiedValue="0.1"/>
-			<modifier type="SPEED" value="10.0" modifiedValue="0.35"/>
-			<modifier type="SPEED" value="15.0" modifiedValue="0.85"/>
-			<modifier type="SPEED" value="17.0" modifiedValue="0.9"/>
-			<modifier type="SPEED" value="20.0" modifiedValue="1.1"/>
+			<modifier type="SPEED" value="5.0" modifiedValue="0.2"/>
+			<modifier type="SPEED" value="10.0" modifiedValue="0.45"/>
+			<modifier type="SPEED" value="15.0" modifiedValue="0.95"/>
+			<modifier type="SPEED" value="17.0" modifiedValue="1.0"/>
+			<modifier type="SPEED" value="20.0" modifiedValue="1.2"/>
 		</volume>
         <pitch indoor="0.5" outdoor="0.5">
-           <modifier type="SPEED" value="0.0"  modifiedValue="0.6"/>
-		   <modifier type="SPEED" value="10.0"  modifiedValue="0.85"/>
-		   <modifier type="SPEED" value="15.0"  modifiedValue="1.0"/>
-           <modifier type="SPEED" value="20.0" modifiedValue="1.2"/>
+           <modifier type="SPEED" value="0.0"  modifiedValue="1.1"/>
+		   <modifier type="SPEED" value="10.0"  modifiedValue="1.35"/>
+		   <modifier type="SPEED" value="15.0"  modifiedValue="1.6"/>
+           <modifier type="SPEED" value="20.0" modifiedValue="1.9"/>
         </pitch>
         <lowpassGain indoor="0.6" outdoor="1.0"/>
 	</retarder>

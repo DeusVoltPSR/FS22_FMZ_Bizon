@@ -8,6 +8,7 @@
             <workingWidth>4.20</workingWidth>
             <combination xmlFilename="BizonTrailer4.xml"/>
 			<combination xmlFilename="z056.xml"/>
+			<combination xmlFilename="z040.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutter</function>
@@ -175,7 +176,7 @@
 			<animationNode node="0>0|7|2|9" rotSpeed="-1200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|7|2|15" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 			<animationNode node="0>0|7|2|16" rotSpeed="-1100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
-			
+			<animationNode node="0>0|7|2|17" rotSpeed="550" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
         </animationNodes>
 		<sounds>
             <cut template="cropCutting" />
@@ -206,7 +207,7 @@
     </foliageBending>
 	
 	<design2Configurations title="Model">
-		<design2Configuration name="Z050" price="0">
+		<design2Configuration name="Z040" price="0">
 			<!--Motowidla-->
 			<objectChange node="0>0|1|2|0|0|0|12" visibilityActive="false" />
 			<objectChange node="0>0|1|2|0|0|0|13" visibilityActive="true" />
@@ -224,6 +225,45 @@
 			<objectChange node="0>0|1|2|0|0|0|8"  visibilityActive="true" />
 			<objectChange node="0>0|1|2|0|0|0|9"  visibilityActive="true" />
 			<objectChange node="0>0|1|2|0|0|0|10" visibilityActive="true" />
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="false" />
+			<objectChange node="0>0|7|0|1" visibilityActive="true" />
+			<!--Listwa-->
+			<objectChange node="0>0|7|5" visibilityActive="false" />
+			<objectChange node="0>0|7|6" visibilityActive="true" />
+			<!--Oska-->
+			<objectChange node="0>0|7|2|6" visibilityActive="false" />
+			<objectChange node="0>0|7|2|17" visibilityActive="true" />
+        </design2Configuration>
+		
+		<design2Configuration name="Z050" price="500">
+			<!--Motowidla-->
+			<objectChange node="0>0|1|2|0|0|0|12" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|13" visibilityActive="true" />
+			<!--Listwy-->
+			<!--Nowe-->
+			<objectChange node="0>0|1|2|0|0|0|0" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|1" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|2" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|3" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|4" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|0|5" visibilityActive="false" />
+			<!--Stare-->
+			<objectChange node="0>0|1|2|0|0|0|6"  visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|0|7"  visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|0|8"  visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|0|9"  visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|0|10" visibilityActive="true" />
+			
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="true" />
+			<objectChange node="0>0|7|0|1" visibilityActive="false" />
+			<!--Listwa-->
+			<objectChange node="0>0|7|5" visibilityActive="true" />
+			<objectChange node="0>0|7|6" visibilityActive="false" />
+			<!--Oska-->
+			<objectChange node="0>0|7|2|6" visibilityActive="true" />
+			<objectChange node="0>0|7|2|17" visibilityActive="false" />
 			
         </design2Configuration>
 		<design2Configuration name="Z056 I-II" price="1500">
@@ -244,6 +284,15 @@
 			<objectChange node="0>0|1|2|0|0|0|8"  visibilityActive="false" />
 			<objectChange node="0>0|1|2|0|0|0|9"  visibilityActive="false" />
 			<objectChange node="0>0|1|2|0|0|0|10" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="true" />
+			<objectChange node="0>0|7|0|1" visibilityActive="false" />
+			<!--Listwa-->
+			<objectChange node="0>0|7|5" visibilityActive="true" />
+			<objectChange node="0>0|7|6" visibilityActive="false" />
+			<!--Oska-->
+			<objectChange node="0>0|7|2|6" visibilityActive="true" />
+			<objectChange node="0>0|7|2|17" visibilityActive="false" />
         </design2Configuration>
     </design2Configurations>
 	
@@ -305,6 +354,9 @@
 		<material name="KorpusNew_mat" baseNode="0>0|7|0|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
+		 <material name="Heder_Decals" baseNode="0>0|1|2|6|0|0|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
     </baseMaterial>
 	
 	<baseMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">
@@ -363,6 +415,7 @@
 		<material name="KorpusNew_mat" shaderParameter="colorMat0" />
 		<material name="piston_mat" shaderParameter="colorMat0" />
 		<material name="HederNowe_mat" shaderParameter="colorMat0" />
+		<material name="Heder_Decals" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
 	<designMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">

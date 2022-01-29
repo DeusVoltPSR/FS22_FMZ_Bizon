@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicle type="combineDrivableKeyAnimKeyAnim">
+<vehicle type="combineDrivableKeyAnim">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
@@ -7,6 +7,7 @@
         <specs>
             <combination xmlFilename="Heder4M.xml"/>
 			<combination xmlFilename="Heder4M_Nowy.xml"/>
+			<combination xmlFilename="lizard4Rows.xml"/>
 			<combination xmlFilename="BizonTrailer4.xml"/>
             <power>100</power>
             <maxSpeed>20</maxSpeed>
@@ -2873,9 +2874,9 @@
 	
 	
 	<designMaterial3Configurations title="$l10n_Kabina" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial3Configuration color="0.3 0.3 0.3 0"/>
 		<designMaterial3Configuration color="0.03 0.03 0.03 0"/>
-		<designMaterial3Configuration color="0.8 0.8 0.8 0"/>
         <designMaterial3Configuration  color="0.5 0.2 0.1 0"/>
 		<designMaterial3Configuration  color="1 0.2 0.1 0"/>
 		<designMaterial3Configuration color="0.239 0.004 0.004"/>
@@ -2889,9 +2890,9 @@
     </designMaterial3Configurations>
 	
 	<designMaterial2Configurations title="$l10n_Dach" price="100" useDefaultColors="false" defaultColorIndex="0">
+		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
 		<designMaterial2Configuration color="0.3 0.3 0.3 0"/>
 		<designMaterial2Configuration color="0.03 0.03 0.03 0"/>
-		<designMaterial2Configuration color="0.8 0.8 0.8 0"/>
         <designMaterial2Configuration color="0.5 0.2 0.1 0"/>
 		<designMaterial2Configuration color="1 0.2 0.1 0"/>
 		<designMaterial2Configuration color="0.239 0.004 0.004"/>
