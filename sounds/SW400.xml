@@ -42,7 +42,6 @@
                 <lowpassGain indoor="0.30" outdoor="1.00" />
                 <randomization maxVolume="0.2" isInside="true" isOutside="true"/>
             </fill>
-	
         </sounds>
     </combine>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <wheel>
     <default>
-        <physics radius="0.725" width="0.62" mass="0.209" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
-        <tire filename="Wheels/Wheels.i3d" nodeLeft="3|1|1" nodeRight="3|1|1" maxDeformation="0.093" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <physics radius="0.795" width="0.62" mass="0.209" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+        <tire filename="Wheels/Wheels.i3d" nodeLeft="3|1|2" nodeRight="3|1|2" maxDeformation="0.093" isCareWheel="false" tireTrackAtlasIndex="0" />
 		<outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="29.1 47.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|5|0" nodeRight="1|5|1" widthAndDiam="36.1 43.8"/>
     </default>

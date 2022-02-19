@@ -36,7 +36,7 @@
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
         <filename>z056.i3d</filename>
 		<sounds filename="sounds/SW400.xml" />
-        <size width="4.5" length="7" height="3.9" lengthOffset="-0.3"/>
+        <size width="4.5" length="7" height="3.7" lengthOffset="-0.3"/>
         <components>
             <component centerOfMass="0 0.92 -0.5" solverIterationCount="20" mass="6500"/>
             <component centerOfMass="0 0 0" solverIterationCount="20" mass="1000"/>
@@ -504,7 +504,7 @@
 
         <motorConfigurations>
             <motorConfiguration name="BIZON SUPER SW400" price="0">
-                <motor torqueScale="0.433" minRpm="850" maxRpm="2200" maxForwardSpeed="22" maxBackwardSpeed="15" brakeForce="2" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" >
+                <motor torqueScale="0.433" minRpm="850" maxRpm="2200" maxForwardSpeed="22" maxBackwardSpeed="7.65" brakeForce="2" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" >
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
                     <torque normRpm="0.59" torque="1"/>
@@ -515,11 +515,11 @@
                 <transmission autoGearChangeTime="1.2" gearChangeTime="0.5" name="$l10n_info_transmission_manual">
                     <directionChange useGear="true" changeTime="1.2"/>
 					
-					<backwardGear maxSpeed="15" name="R"/>
+					<backwardGear maxSpeed="7.65" name="W"/>
 					
-                    <forwardGear maxSpeed="9.1" />
-                    <forwardGear maxSpeed="14.2" />
-                    <forwardGear maxSpeed="21.2" />
+                    <forwardGear maxSpeed="3.9" />
+                    <forwardGear maxSpeed="8.8" />
+                    <forwardGear maxSpeed="22" />
                 </transmission>
 				
             </motorConfiguration>
@@ -636,11 +636,13 @@
 			<part node="0>0|16|4|1|0" startTime="2169" endTime="2199" startRot="5.865 0 -43.5" endRot="0 0 -43.5"/>
         </animation>
         <animation name="pipeAnimation" soundVolumeFactor="2.0">
+			<part node="0>0|16|4|8|0"      startTime="0.0"  endTime="0.01" startScale="1 1 1" endScale="0 0 0"/>
+			<part node="0>0|16|4|8|1"      startTime="0.0"  endTime="0.01" startScale="0 0 0" endScale="1 1 1"/>
             <part node="0>0|9|2|0|0"      startTime="0.0"  endTime="5.0" startRot="0 0 0" endRot="-91 0 0"/>
 			<part node="0>0|9|2|4|0"      startTime="0.0"  endTime="5.0" startRot="6.398 44.068 5.915" endRot="5.68 -36 -1.89"/>
 			<part node="0>0|9|2|0|0|10"   startTime="0.0"  endTime="5.0" startRot="1.645 7.48 0.62" endRot="16.327 6.043 28.884"/>
             <part node="0>0|9|2|2|0" startTime="5.00" endTime="5.2" startRot="0 0 0" endRot="89.444 0 0"/>
-            <part node="0>0|9|2|0|0|3|0"  startTime="5.20" endTime="5.2" startRot="0 0 0" endRot="93 0 0"/>
+            <part node="0>0|9|2|0|0|3|0"  startTime="4.99" endTime="5.2" startRot="0 0 0" endRot="93 0 0"/>
 			<part node="0>0|16|4|6|0"  startTime="5.25" endTime="5.45" startRot="0 0 0" endRot="65 0 0"/>
 			
 			<sound template="slideOpen"  startTime="2.5"  direction="1"  volumeScale="0.9" pitchScale="0.8"  linkNode="0>0|19|3"/>
@@ -665,7 +667,12 @@
 			<part node="0>0|1|1" startTime="0.5" endTime="1.5" startTrans="0 3.399 2.118" endTrans="0 3.561 2.616"/>
 			<part node="0>0|16|4|3|1" startTime="0.5" endTime="1.0" startRot="0 0 0" endRot="86 0 0"/>
 			
-			<sound file="sounds/Animations/Startwork.ogg"    startTime="0.01" direction="1"   volumeScale="6"   pitchScale="0.9" linkNode="0>0|19|2"/>
+			<sound file="sounds/Animations/Startwork_02.ogg"    startTime="0.01" direction="1"   volumeScale="3" fadeOut="0.5"  pitchScale="0.9" linkNode="0>0|19|2"/>
+		</animation>
+		
+		<animation name="cleaningLoopAnimation" looping="true">
+            <part node="0>0" startTime="0.0" endTime="0.1" startRot="0 0 0" endRot="0.1 0 0"/>
+			<part node="0>0" startTime="0.1" endTime="0.2" startRot="0.1 0 0" endRot="0 0 0"/>
 		</animation>
 		<animation name="toggleChopper" soundVolumeFactor="4.5">
 		    <part node="0>0|13|1|1|2|0" startTime="0.0" endTime="0.5" startRot="0 0 0" endRot="0 0 13"/>
@@ -751,8 +758,8 @@
 		
 	
 	<turnOnVehicle turnOffIfNotAllowed="true">
-        <turnedAnimation name="cleaningSartAnimation" speedScale="1.0" />
-		<turnedOnAnimation name="Body" speedScale="3.5" />
+		<turnedOnAnimation name="cleaningLoopAnimation" speedScale="1" fadeIn="1" fadeOut="1"/>
+		<turnedAnimation name="cleaningSartAnimation" speedScale="3.5" />
     </turnOnVehicle>
 
     <cylindered>
@@ -822,7 +829,7 @@
         <fillUnitConfigurations title="$l10n_Wyposazenie">
             <fillUnitConfiguration name="DEFAULT">
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="combine" capacity="3140" >
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="combine" capacity="2500" >
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="1" maxFillLevel="1" turnOffInTrigger="true"/>
                         </alarmTriggers>
@@ -1077,6 +1084,11 @@
                 <effectNode effectClass="PipeEffect" effectNode="0>0|9|2|0|0|0|0" materialType="pipe" materialTypeId="1" maxBending="0.8" positionUpdateNodes="0>0|9|2|0|0|0|1" delay="0"/>
                 <effectNode effectNode="0>0|9|2|0|0|0|1" materialType="smoke" materialTypeId="1" alignToWorldY="true" delay="0.1"/>
             </effects>
+			<dischargeSound file="sounds/Misc/extraction02.ogg" innerRadius="10.0" outerRadius="50.0" fadeIn="0.3" fadeOut="0.3" >
+                <volume indoor="3.20" outdoor="5.0" /> 
+                <pitch indoor="0.7" outdoor="1.00" /> 
+                <lowpassGain indoor="0.7" outdoor="1.00" /> 
+            </dischargeSound>
         </dischargeNode>
     </dischargeable>
 
@@ -1106,6 +1118,10 @@
             <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="CHOPPER" linkNode="0>0|8|3|0|0|1">
                 <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/chopperCenterEffectArray.dds" numRows="29" rowLength="31" minFade="0.04"/>
             </effectNode>
+			<effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="CHAFFER" linkNode="0>0|8|3|1">
+                <motionPathEffect textureFilename="arrays/chafferCenterArray.dds" numRows="16" rowLength="18" minFade="0.04"/>
+            </effectNode>
+			
 
             <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|0|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
         </chopperEffect>
@@ -1114,11 +1130,15 @@
             <effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="DROP" linkNode="0>0|8|3|0|1|1">
                 <motionPathEffect textureFilename="$data/vehicles/rostselmash/nova330/strawUnloadArray.dds" numRows="16" rowLength="12" minFade="0.04"/>
             </effectNode>
+			
+			<effectNode effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" materialType="CHAFFER" linkNode="0>0|8|3|1">
+                <motionPathEffect textureFilename="arrays/chafferCenterArray.dds" numRows="16" rowLength="18" minFade="0.04"/>
+            </effectNode>
 
             <effectNode effectClass="ParticleEffect" effectNode="0>0|8|3|0|1|0" particleType="smoke" materialType="smokeParticle" useFruitColor="true"/>
         </strawEffect>
 
-        <animationNodes>
+<animationNodes>
             <animationNode node="0>0|5|0|1|0|3|2" class="ScrollingAnimation" scrollSpeed="6" scrollLength="1" shaderParameterName="offsetUV" shaderComponentScale="0.1 0 0 0" toggleVisibility="false" turnOnFadeTime="1" turnOffFadeTime="1"/>
             <animationNode node="0>0|5|0|1|0|3|0" class="ScrollingAnimation" scrollSpeed="-6" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" toggleVisibility="false" turnOnFadeTime="1" turnOffFadeTime="1"/>
             
@@ -1204,15 +1224,20 @@
 
 			<animationNode node="0>0|16|7|13" rotSpeed="1000" scrollLength="1" shaderParameterName="offsetUV"  shaderComponentScale="0.1 0 0 0" toggleVisibility="false" turnOnFadeTime="1" turnOffFadeTime="1"/>
         </animationNodes>
+        
 		
 		<sounds>
-		<start file="sounds/Engines/SW400/bizonZ056_startwork.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1" fadeOut="0.03" >
+		<start file="sounds/Engines/SW400/bizonZ056_startwork.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1" fadeOut="0.03">
                 <volume indoor="1.1" outdoor="1.45"/>
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
             </start>
-		 <work file="sounds/Engines/SW400/work.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="1.0" fadeOut="0.3">
-                <volume indoor="1.1" outdoor="1.7"/>
+			<work file="sounds/Engines/SW400/work.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="1.0" fadeOut="0.3">
+                <volume indoor="1.1" outdoor="1.7">
+				<modifier type="MOTOR_RPM_REAL" value="850.0"  modifiedValue="0"/>
+				<modifier type="MOTOR_RPM_REAL" value="1050.0"  modifiedValue="0"/>
+				<modifier type="MOTOR_RPM_REAL" value="2000.0"  modifiedValue="1"/>
+				</volume>
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
             </work>
@@ -1221,9 +1246,23 @@
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
             </stop>
+			<!--<treshing file="sounds/Animations/workLoop01.ogg" innerRadius="12.0" outerRadius="60.0" fadeIn="1" fadeOut="0.5" >
+                <volume indoor="1.6" outdoor="2.7">
+				<modifier type="MOTOR_RPM_REAL" value="850.0"  modifiedValue="1"/>
+				<modifier type="MOTOR_RPM_REAL" value="1350.0"  modifiedValue="1"/>
+				<modifier type="MOTOR_RPM_REAL" value="2000.0"  modifiedValue="0"/>
+				</volume>
+                <pitch indoor="1.00" outdoor="1.00">
+				<modifier type="MOTOR_RPM_REAL" value="850.0"  modifiedValue="1"/>
+				<modifier type="MOTOR_RPM_REAL" value="2000.0"  modifiedValue="1.3"/>
+				</pitch>
+                <lowpassGain indoor="0.75" outdoor="1.00"/>
+            </treshing>-->
 		</sounds>
 
     </combine>
+	
+	<!--<treshing treshAnim="cleaningSartAnimation" treshAnimLoop="cleaningLoopAnimation"/>-->
 
     <honk>
         <sound template="HONK_IDEAL9T" />
@@ -2748,6 +2787,28 @@
         </design5Configuration>
     </design5Configurations>
 	
+	<design6Configurations title="$l10n_CoverCooler">
+		<design6Configuration name="$l10n_configuration_valueNo" price="0" >
+			<objectChange node="0>0|13|0|20|0" visibilityActive="false" />
+			
+        </design6Configuration>
+		<design6Configuration name="$l10n_configuration_valueYes" price="350" >
+			<objectChange node="0>0|13|0|20|0" visibilityActive="true" />
+			
+        </design6Configuration>
+    </design6Configurations>
+	
+	<design7Configurations title="$l10n_CoverPipe">
+		<design7Configuration name="$l10n_configuration_valueNo" price="0" >
+			<objectChange node="0>0|16|4|8" visibilityActive="false" />
+			<objectChange node="0>0|19|5" translationActive="0 -1000 0" />
+        </design7Configuration>
+		<design7Configuration name="$l10n_configuration_valueYes" price="50" >
+			<objectChange node="0>0|16|4|8" visibilityActive="true" />
+			<objectChange node="0>0|19|5" translationActive="1.347 -0.384 -0.404" />
+        </design7Configuration>
+    </design7Configurations>
+	
     <baseMaterial>
         <material name="z056_mat" baseNode="0>0|16|3">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
@@ -2804,6 +2865,10 @@
         </material>
 		<material name="DecalsSmall_mat" baseNode="0>0|13|4|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="Z5056Decals_mat" baseNode="0>0|13|0|20|0">
+            <shaderParameter name="colorMat0" value="0.461 0.03 0.007"/>
+			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
 	

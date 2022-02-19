@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicle type="cutter">
+<vehicle type="cutterAnimated">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
@@ -74,6 +74,23 @@
 			 <part node="0>0|7|1|1|6" startTime="0.5" endTime="1" startRot="45 -90 0" endRot="61 -90 0"/>
             <part node="0>0|7|1|1|7" startTime="0.5" endTime="1" startTrans="-0.181 -0.152 0.255" endTrans="-0.141 -0.152 0.255"/>
         </animation>
+		
+		<animation name="turnedOnAnimation" looping="true">
+            <part node="0>0|6|0|1|0" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="0.1 0 0"/>
+            <part node="0>0|6|0|1|0" startTime="0.5" endTime="1" startTrans="0.1 0 0" endTrans="0 0 0"/>
+
+            <part node="0>0|6|0|2|0" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="0 -0.06 0"/>
+            <part node="0>0|6|0|2|0" startTime="0.5" endTime="1" startTrans="0 -0.06 0" endTrans="0 0 0"/>
+            <part node="0>0|6|0|3|0" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="0 0.06 0"/>
+            <part node="0>0|6|0|3|0" startTime="0.5" endTime="1" startTrans="0 0.06 0" endTrans="0 0 0"/>
+
+        </animation>
+		<animation name="ReelAnim" looping="true">
+            <part node="0>0|1|2|0|0|0" startTime="0" endTime="0.5" startRot="0 0 0" endRot="180 0 0"/>
+			<part node="0>0|1|2|0|0|0" startTime="0.5" endTime="1.0" startRot="180 0 0" endRot="360 0 0"/>
+			<part node="0>0|1|2|0|0|4|0" startTime="0" endTime="0.5" startRot="0 0 180" endRot="-180 0 180"/>
+			<part node="0>0|1|2|0|0|4|0" startTime="0.5" endTime="1.0" startRot="-180 0 180" endRot="-360 0 180"/>
+        </animation>
     </animations>
 
     <cylindered>
@@ -137,6 +154,7 @@
 
     <cutter fruitTypeCategories="grainHeader">
 
+		<reel reelAnimLoop="ReelAnim"/>
 
         <effect>
             <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="0>0|5|0">
@@ -147,8 +165,8 @@
 
 
         <animationNodes>
-            <animationNode node="0>0|1|2|0|0|0" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
-			<animationNode node="0>0|1|2|0|0|4|0" rotSpeed="-200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <!--<animationNode node="0>0|1|2|0|0|0" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+			<animationNode node="0>0|1|2|0|0|4|0" rotSpeed="-200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>-->
             <animationNode node="0>0|1|2|1|0|1|0" rotSpeed="800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
             <animationNode node="0>0|1|2|8|0" rotSpeed="-800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
             <animationNode node="0>0|1|0" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
@@ -182,9 +200,11 @@
         <turnedOnAnimation name="knifeAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="2"/>
 		<sounds>
             <start template="HARVESTER_TOOL_START" volumeScale="1.5" />
-            <work template="HARVESTER_TOOL_WORK" volumeScale="1.5" />
+            <work file="sounds/Cutters/work.ogg" volumeScale="3.5" fadeIn="0.3" fadeOut="0.3" />
             <stop template="HARVESTER_TOOL_STOP" volumeScale="1.5" />
         </sounds>
+		<turnedOnAnimation name="turnedOnAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="2"/>
+		<turnedOnAnimation name="ReelAnim" speedScale="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
     </turnOnVehicle>
 
     <ai>
@@ -202,10 +222,108 @@
 		<designConfiguration name="Z056 III" price="0">
 			<objectChange node="0>0|7|2|4" visibilityActive="false" />
 			<objectChange node="0>0|7|2|11" visibilityActive="true" />
+
+			<!--Hydrostat/Mechanik-->
+			<objectChange node="0>0|1|2|0|0|3|0" visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|3|1" visibilityActive="false" />
+			
+			<!--Wonsz-->
+			<objectChange node="0>1|1" visibilityActive="false" />
+			
+			<!--Opasy-->
+			<objectChange node="0>0|7|2|0" visibilityActive="true" />
+			<objectChange node="0>0|7|2|1" visibilityActive="true" />
+			<objectChange node="0>0|7|2|6" visibilityActive="true" />
+			<objectChange node="0>0|7|2|7" visibilityActive="true" />
+			<objectChange node="0>0|7|2|8" visibilityActive="true" />
+			<objectChange node="0>0|7|2|9" visibilityActive="true" />
+			<objectChange node="0>0|7|2|10" visibilityActive="true" />
+			<objectChange node="0>0|7|2|4|0" visibilityActive="true" />
+			<objectChange node="0>0|7|2|11|0" visibilityActive="true" />
+			
+			<!--SkinnedOpasy-->
+			<objectChange node="0>1|0" visibilityActive="true" />
+			<objectChange node="0>0|1|2|1|0|1" visibilityActive="true" />
+			<objectChange node="0>0|1|2|8" visibilityActive="true" />
+			
+			<!--KoloDuze-->
+			<objectChange node="0>0|1|2|0|0|4" visibilityActive="true" />
+			
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="true" />
+			<objectChange node="0>0|7|0|1" visibilityActive="false" />
+			
+			<!--OslonaGorna-->
+			<objectChange node="0>0|1|2|6|0" visibilityActive="true" />
         </designConfiguration>
 		<designConfiguration name="Z056 IV-V" price="1500">
 			<objectChange node="0>0|7|2|4" visibilityActive="true" />
 			<objectChange node="0>0|7|2|11" visibilityActive="false" />
+			<!--Hydrostat/Mechanik-->
+			<objectChange node="0>0|1|2|0|0|3|0" visibilityActive="true" />
+			<objectChange node="0>0|1|2|0|0|3|1" visibilityActive="false" />
+			
+			<!--Wonsz-->
+			<objectChange node="0>1|1" visibilityActive="false" />
+			
+			<!--Opasy-->
+			<objectChange node="0>0|7|2|0" visibilityActive="true" />
+			<objectChange node="0>0|7|2|1" visibilityActive="true" />
+			<objectChange node="0>0|7|2|6" visibilityActive="true" />
+			<objectChange node="0>0|7|2|7" visibilityActive="true" />
+			<objectChange node="0>0|7|2|8" visibilityActive="true" />
+			<objectChange node="0>0|7|2|9" visibilityActive="true" />
+			<objectChange node="0>0|7|2|10" visibilityActive="true" />
+			<objectChange node="0>0|7|2|4|0" visibilityActive="true" />
+			<objectChange node="0>0|7|2|11|0" visibilityActive="true" />
+			
+			<!--SkinnedOpasy-->
+			<objectChange node="0>1|0" visibilityActive="true" />
+			<objectChange node="0>0|1|2|1|0|1" visibilityActive="true" />
+			<objectChange node="0>0|1|2|8" visibilityActive="true" />
+			<!--KoloDuze-->
+			<objectChange node="0>0|1|2|0|0|4" visibilityActive="true" />
+			
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="true" />
+			<objectChange node="0>0|7|0|1" visibilityActive="false" />
+			
+			<!--OslonaGorna-->
+			<objectChange node="0>0|1|2|6|0" visibilityActive="true" />
+        </designConfiguration>
+		<designConfiguration name="Z5056 H" price="2500">
+			<objectChange node="0>0|7|2|4" visibilityActive="true" />
+			<objectChange node="0>0|7|2|11" visibilityActive="false" />
+			<!--Hydrostat/Mechanik-->
+			<objectChange node="0>0|1|2|0|0|3|0" visibilityActive="false" />
+			<objectChange node="0>0|1|2|0|0|3|1" visibilityActive="true" />
+			
+			<!--Wonsz-->
+			<objectChange node="0>1|1" visibilityActive="true" />
+			
+			<!--Opasy-->
+			<objectChange node="0>0|7|2|0" visibilityActive="false" />
+			<objectChange node="0>0|7|2|1" visibilityActive="false" />
+			<objectChange node="0>0|7|2|6" visibilityActive="false" />
+			<objectChange node="0>0|7|2|7" visibilityActive="false" />
+			<objectChange node="0>0|7|2|8" visibilityActive="false" />
+			<objectChange node="0>0|7|2|9" visibilityActive="false" />
+			<objectChange node="0>0|7|2|10" visibilityActive="false" />
+			<objectChange node="0>0|7|2|4|0" visibilityActive="false" />
+			<objectChange node="0>0|7|2|11|0" visibilityActive="false" />
+			
+			<!--SkinnedOpasy-->
+			<objectChange node="0>1|0" visibilityActive="false" />
+			<objectChange node="0>0|1|2|1|0|1" visibilityActive="false" />
+			<objectChange node="0>0|1|2|8" visibilityActive="false" />
+			<!--KoloDuze-->
+			<objectChange node="0>0|1|2|0|0|4" visibilityActive="false" />
+			<!--Korpus-->
+			<objectChange node="0>0|7|0|0" visibilityActive="false" />
+			<objectChange node="0>0|7|0|1" visibilityActive="true" />
+			
+			<!--OslonaGorna-->
+			<objectChange node="0>0|1|2|6|0" visibilityActive="false" />
         </designConfiguration>
     </designConfigurations>
 	
@@ -229,21 +347,30 @@
 	</design2Configurations>
 	
 	<vehicleTypeConfigurations>
-		<vehicleTypeConfiguration name="$l10n_configuration_valueNo" price="0" vehicleType="cutter">
+		<vehicleTypeConfiguration name="$l10n_configuration_valueNo" price="0" vehicleType="cutterAnimated">
             <objectChange node="0>0|7|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|7|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|6" visibilityActive="false" />
 		</vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_Prawy" price="100" vehicleType="cutter">
+		<vehicleTypeConfiguration name="$l10n_Prawy" price="100" vehicleType="cutterAnimated">
             <objectChange node="0>0|7|1|4|0" visibilityActive="false" />
 			<objectChange node="0>0|7|1|4|1" visibilityActive="true" />
+			<objectChange node="0>0|6" visibilityActive="false" />
 		</vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_Lewy" price="100" vehicleType="cutter">
+		<vehicleTypeConfiguration name="$l10n_Lewy" price="100" vehicleType="cutterAnimated">
             <objectChange node="0>0|7|1|4|0" visibilityActive="true" />
 			<objectChange node="0>0|7|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|6" visibilityActive="false" />
 		</vehicleTypeConfiguration>
-		<vehicleTypeConfiguration name="$l10n_All" price="200" vehicleType="cutter">
+		<vehicleTypeConfiguration name="$l10n_All" price="200" vehicleType="cutterAnimated">
             <objectChange node="0>0|7|1|4|0" visibilityActive="true" />
 			<objectChange node="0>0|7|1|4|1" visibilityActive="true" />
+			<objectChange node="0>0|6" visibilityActive="false" />
+		</vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_canolaModule" price="200" vehicleType="cutterAnimated">
+            <objectChange node="0>0|7|1|4|0" visibilityActive="false" />
+			<objectChange node="0>0|7|1|4|1" visibilityActive="false" />
+			<objectChange node="0>0|6" visibilityActive="true" />
 		</vehicleTypeConfiguration>
     </vehicleTypeConfigurations>
 	
@@ -265,6 +392,9 @@
 			<shaderParameter name="colorMat1" value="BIZON_RED1"/>
         </material>
 		<material name="KorpusNew_mat" baseNode="0>0|7|0|0">
+            <shaderParameter name="colorMat0" value="BIZON_RED1"/>
+        </material>
+		<material name="tx32Header_mat" baseNode="0>0|6|0">
             <shaderParameter name="colorMat0" value="BIZON_RED1"/>
         </material>
     </baseMaterial>
@@ -325,6 +455,7 @@
 		<material name="KorpusNew_mat" shaderParameter="colorMat0" />
 		<material name="piston_mat" shaderParameter="colorMat0" />
 		<material name="HederNowe_mat" shaderParameter="colorMat0" />
+		<material name="tx32Header_mat" shaderParameter="colorMat0" />
     </baseMaterialConfigurations>
 	
 	<designMaterialConfigurations useDefaultColors="false" defaultColorIndex="0">

@@ -17,5 +17,11 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.6 51.5"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="49.5 57.9"/>
         </configuration>
+		<configuration id="Z040" >
+           <physics radius="0.677" width="0.42" mass="0.138" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM700/R28_TM700.i3d" nodeLeft="4|0" nodeRight="4|0" maxDeformation="0.064" sideDeformOffset="0.964" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="30.6 45.5"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" widthAndDiam="64.5 53.9"/>
+        </configuration>
     </configurations>
 </wheel>

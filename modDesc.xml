@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="63">
     <author>Deus Szmeus Volteus</author>
-    <version>0.6.0.0</version>
+    <version>0.6.0.1</version>
 	
 	<title>
         <en>Bizon Pack</en>
@@ -21,6 +21,7 @@
         <storeItem rootNode="vehicle" xmlFilename="z0601.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z060.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z083.xml"/>
+		<storeItem rootNode="vehicle" xmlFilename="z5056.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="Heder4M.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="Heder4M_Nowy.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="Heder5M.xml"/>
@@ -32,11 +33,15 @@
 	
 	<specializations>
         <specialization name="toggleAnimation"		className="toggleAnimation"	filename="Scripts/toggleAnimation.lua"/>
+		<specialization name="cutterMod"			className="cutterMod"	filename="Scripts/cutterMod.lua"/>
     </specializations>
 	
 	<vehicleTypes>
 		<type name="combineDrivableKeyAnim" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua"  parent="combineDrivable">
 			<specialization name="toggleAnimation" />
+		</type>
+		<type name="cutterAnimated" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua"  parent="cutter">
+			<specialization name="cutterMod" />
 		</type>
 	</vehicleTypes>
 	
@@ -89,10 +94,6 @@
 			<en>Chopper IV</en>
 			<pl>Siecz. Wągrowiec</pl>
 		</text>
-		<text name="Kabina">
-			<en>Cabin</en>
-			<pl>Kabina</pl>
-		</text>
 		<text name="Old">
 			<en>Old Type</en>
 			<pl>Stary Typ</pl>
@@ -144,6 +145,14 @@
 		<text name="Wygloszenie">
 			<en>Soundproofing</en>
 			<pl>Wygłuszenie Kabiny</pl>
+		</text>
+		<text name="CoverChopper">
+			<en>Chopper Cover</en>
+			<pl>Osłona sieczkarni</pl>
+		</text>
+		<text name="CoverCooler">
+			<en>Cooler Cover</en>
+			<pl>Osłona chłodnicy</pl>
 		</text>
 		<text name="Red">
 		<en>Red</en>
@@ -211,11 +220,19 @@
 		</text>
 		<text name="input_TA_anim2">
 			<en>Cover Right</en>
-			<de>Klapa Prawa</de>
+			<pl>Klapa Prawa</pl>
 		</text>
 		<text name="input_TA_anim3">
 			<en>Side Cover Small</en>
-			<de>Klapa Boczna</de>
+			<pl>Klapa Boczna</pl>
+		</text>
+		<text name="input_reelActionFaster_1">
+			<en>Reel Faster</en>
+			<pl>Motowidła Szybciej</pl>
+		</text>
+		<text name="input_reelActionFaster_2">
+			<en>Reel Slower</en>
+			<pl>Motowidła Wolniej</pl>
 		</text>
 	</l10n>
 	
@@ -223,6 +240,7 @@
 		<action name="TA_anim1" category="VEHICLE" axisType="HALF"/>
 		<action name="TA_anim2" category="VEHICLE" axisType="HALF"/>
 		<action name="TA_anim3" category="VEHICLE" axisType="HALF"/>
+		<action name="reelActionFaster" category="VEHICLE" axisType="FULL"/>
 	</actions>
 	
 	<inputBinding>
@@ -234,6 +252,12 @@
 		</actionBinding>
 		<actionBinding action="TA_anim3">
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_t" axisComponent="+" neutralInput="0" index="1"/>
+		</actionBinding>
+		<actionBinding action="reelActionFaster">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_semicolon" axisComponent="+" neutralInput="0" index="1"/>
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_quote" axisComponent="-" neutralInput="0" index="1"/>
+			<binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_RIGHT AXIS_Y+" axisComponent="+" neutralInput="0" index="3"/>
+			<binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_RIGHT AXIS_Y-" axisComponent="-" neutralInput="0" index="3"/>
 		</actionBinding>
 	</inputBinding>
 	

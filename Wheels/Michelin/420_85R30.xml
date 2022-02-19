@@ -18,5 +18,11 @@
 			<outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="32.5 51.7"/>
 			<innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="42.5 57.2"/>
         </configuration>
+		<configuration id="Z040" >
+            <physics radius="0.678" width="0.4" mass="0.129" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+			<tire filename="$data/shared/wheels/tires/michelin/agriBib/R28_agriBib.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.065" sideDeformOffset="0.950" isCareWheel="false" tireTrackAtlasIndex="0" />
+			<outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="26.5 42.3"/>
+			<innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" widthAndDiam="64.5 53.9"/>
+        </configuration>
     </configurations>
 </wheel>

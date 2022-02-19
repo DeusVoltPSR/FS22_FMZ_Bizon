@@ -29,6 +29,7 @@
 			</pitch>
 			<lowpassGain indoor="0.9" outdoor="1.1"/>
 		</retarder>
+		<motor template="indoorCabinRumble" volumeScale="4.5"  />
 		</sounds>
 	</motorized>
     <airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/>

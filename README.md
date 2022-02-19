@@ -33,4 +33,16 @@ Improved normlas quality on Gigant harvesters
 Unified rims material and textures
 Delete a few unused textures
 
+Changelog 0.6.0.1:
+Added Bizon 5056 combine harvester
+Improved sound effects on cutters and extraction pipes
+Added Bizon Z040
+Changed some wheels models
+Fixed cleaning start animation in Z058
+Added corn cutters
+Added Cooler Covers configuration for Bizon Super
+Fixed blocking bug in Z040
+Added 4 gears gearbox for Bizon Rekord
+Changed Bizon Rekord sounds.
+Improved Cabins model. 
 Nie pozdrawiam

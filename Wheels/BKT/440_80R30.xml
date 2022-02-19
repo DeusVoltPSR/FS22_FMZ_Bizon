@@ -17,5 +17,11 @@
         <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="33.1 45.8"/>
         <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|6|0" nodeRight="1|6|1" widthAndDiam="46.5 57.7"/>
         </configuration>
+		<configuration id="Z040" >
+		<physics radius="0.66" width="0.415" mass="0.158" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2"/>
+        <tire filename="$data/shared/wheels/tires/bkt/AS504/_24_AS504.i3d" node="2|0" maxDeformation="0.071" sideDeformOffset="0.976" isCareWheel="false" tireTrackAtlasIndex="0"/>
+        <outerRim filename="Wheels/Wheels.i3d" nodeLeft="0|0" nodeRight="0|0" widthAndDiam="30.1 40.8"/>
+        <innerRim filename="Wheels/Wheels.i3d" nodeLeft="1|2|0" nodeRight="1|2|1" widthAndDiam="48.5 38.7"/>
+        </configuration>
     </configurations>
 </wheel>
