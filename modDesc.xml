@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="63">
     <author>Deus Szmeus Volteus</author>
-    <version>0.6.0.1</version>
+    <version>0.6.0.2</version>
 	
 	<title>
         <en>Bizon Pack</en>
@@ -153,6 +153,10 @@
 		<text name="CoverCooler">
 			<en>Cooler Cover</en>
 			<pl>Osłona chłodnicy</pl>
+		</text>
+		<text name="CoverPipe">
+			<en>Pipe Cover</en>
+			<pl>Osłona Rury</pl>
 		</text>
 		<text name="Red">
 		<en>Red</en>
