@@ -402,7 +402,7 @@
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="effects" translation="-0.106838 -0.697708 0.934771" rotation="0 180 0" clipDistance="300" nodeId="214">
-            <TransformGroup name="cutterEffectLinkNode" translation="1.05209e-07 0.0179599 1.14496" rotation="-156.139 -5.00895e-06 -180" nodeId="215"/>
+            <TransformGroup name="cutterEffectLinkNode" translation="1.03676e-07 0.00571229 1.14857" rotation="-163.563 -5.00895e-06 180" nodeId="215"/>
             <Shape shapeId="24" name="smokeEmitter" translation="-4.71173e-16 0.0412591 0.624412" rotation="180 2.69403e-36 -180" visibility="false" nodeId="216" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </TransformGroup>
           <TransformGroup name="zieglerRapeseedModule" rotation="0.000368435 0 0" nodeId="217">

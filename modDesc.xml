@@ -14,7 +14,6 @@
 	<multiplayer supported="true" />
 
     <storeItems>
-		<storeItem rootNode="vehicle" xmlFilename="z040.xml"/>
         <storeItem rootNode="vehicle" xmlFilename="z056.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z058.xml"/>
 		<storeItem rootNode="vehicle" xmlFilename="z061.xml"/>
