@@ -214,9 +214,9 @@
         <turnedOnAnimation name="knifeAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="2"/>
 		<turnedOnAnimation name="ReelAnim" speedScale="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
 		<sounds>
-            <start template="HARVESTER_TOOL_START" volumeScale="1.5" />
-            <work file="sounds/Cutters/work.ogg" volumeScale="3.5" fadeIn="0.3" fadeOut="0.3"/>
-            <stop template="HARVESTER_TOOL_STOP" volumeScale="1.5" />
+            <start template="HARVESTER_TOOL_START" volumeScale="1.0" />
+            <work file="sounds/Cutters/work.ogg" volumeScale="1.5" fadeIn="0.3" fadeOut="0.3"/>
+            <stop template="HARVESTER_TOOL_STOP" volumeScale="1.0" />
         </sounds>
 		<turnedOnAnimation name="turnedOnAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="2"/>
     </turnOnVehicle>

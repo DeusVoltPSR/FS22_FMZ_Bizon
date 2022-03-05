@@ -243,7 +243,9 @@
 		<action name="TA_anim1" category="VEHICLE" axisType="HALF"/>
 		<action name="TA_anim2" category="VEHICLE" axisType="HALF"/>
 		<action name="TA_anim3" category="VEHICLE" axisType="HALF"/>
+		<action name="handRpmEnabled" category="VEHICLE" axisType="HALF"/>
 		<action name="reelActionFaster" category="VEHICLE" axisType="FULL"/>
+		<action name="handRpmRegulator" category="VEHICLE" axisType="FULL"/>
 	</actions>
 	
 	<inputBinding>

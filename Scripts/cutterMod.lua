@@ -22,7 +22,7 @@ function cutterMod:onLoad(savegame)
 	local spec= self.spec_cutter
 	isAnimReelPlaying = false
 	localSpeed=1
-	self.newReelSpeed = 1
+	self.newReelSpeed = 0.5
 	print("Loaded for" .. cutterMod.currentModName)
 
 

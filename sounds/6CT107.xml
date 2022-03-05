@@ -2,12 +2,12 @@
 <sounds>
 <motorized>
 	<sounds>
-    <motorStart file="sounds/Engines/6CT107/6CT107_start.ogg" linkNode="0>">
+    <motorStart file="sounds/Engines/6CT107/6CT107_start.ogg" linkNode="0>" volumeScale="0.4">
 	<volume indoor="1.5" outdoor="3.5"/>
 	</motorStart>
-    <motorStop template="DEFAULT_MOTOR_STOP" file="sounds/Engines/SW400/gaszenie.wav" linkNode="0>0|16|6|1"/>
-    <motor template="DEFAULT_MOTOR_IDLE" file="sounds/Engines/6CT107/6CT107_idle.ogg" linkNode="0>0|16|6|1" volumeScale="4.5" />
-    <motor template="DEFAULT_MOTOR_RUN" file="sounds/Engines/SW400/jazda.ogg" linkNode="0>0|16|6|1"/>
+    <motorStop template="DEFAULT_MOTOR_STOP" file="sounds/Engines/SW400/gaszenie.wav" linkNode="0>0|16|6|1" volumeScale="0.4"/>
+    <motor template="DEFAULT_MOTOR_IDLE" file="sounds/Engines/6CT107/6CT107_idle.ogg" linkNode="0>0|16|6|1" volumeScale="1.8"/>
+    <motor template="DEFAULT_MOTOR_RUN" file="sounds/Engines/SW400/jazda.ogg" linkNode="0>0|16|6|1" volumeScale="0.4"/>
 	<motor file="$data/sounds/vehicles/turbo/turbo_loop_2.wav" linkNode="0>0|16|6|1">
 		<volume indoor="0.6" outdoor="1">
 			<modifier type="MOTOR_RPM" value="0.0"  modifiedValue="0.05"/>
@@ -19,7 +19,7 @@
 
 	<gearGroupLeverStart template="clackVar5" volumeScale="1.5" pitchScale="0.6" linkNode="0>0|16|4|0|0"/>
     <gearGroupLeverEnd template="clackVar6"      volumeScale="1.5" pitchScale="0.6" linkNode="0>0|16|4|0|0"/>
-	<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>0|19|3">	
+	<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>0|19|3" volumeScale="0.4">	
 		<volume indoor="1.5" outdoor="4">
 			<modifier type="SPEED" value="0.0"  modifiedValue="0.05"/>
 			<modifier type="SPEED" value="5.0" modifiedValue="0.2"/>

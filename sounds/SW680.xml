@@ -2,16 +2,16 @@
 <sounds>
 	<motorized>
 		<sounds>
-			<motorStart template="HARVESTER_MOTOR_START" file="sounds/Engines/SW680/SW680_start.ogg" linkNode="0>" volumeScale="3.5"/>
-			<motorStop template="HARVESTER_MOTOR_STOP" file="sounds/Engines/SW680/SW680_stop.ogg" linkNode="0>" volumeScale="3.5"/>
+			<motorStart template="HARVESTER_MOTOR_START" file="sounds/Engines/SW680/SW680_start.ogg" linkNode="0>" volumeScale="0.9"/>
+			<motorStop template="HARVESTER_MOTOR_STOP" file="sounds/Engines/SW680/SW680_stop.ogg" linkNode="0>" volumeScale="0.9"/>
 
-			<motor template="HARVESTER_MOTOR_IDLE" file="sounds/Engines/SW680/SW680_idle.ogg" linkNode="0>" volumeScale="3.5"/>
-			<motor template="HARVESTER_MOTOR_OFFLOAD_RUN" file="sounds/Engines/SW680/SW680_run.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>" volumeScale="3.5"/>
-			<motor template="HARVESTER_MOTOR_ONLOAD_RUN" file="sounds/Engines/SW680/jazda.ogg" linkNode="0>" volumeScale="3.5"/>
+			<motor template="HARVESTER_MOTOR_IDLE" file="sounds/Engines/SW680/SW680_idle.ogg" linkNode="0>" volumeScale="0.9"/>
+			<motor template="HARVESTER_MOTOR_OFFLOAD_RUN" file="sounds/Engines/SW680/SW680_run.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>" volumeScale="0.9"/>
+			<motor template="HARVESTER_MOTOR_ONLOAD_RUN" file="sounds/Engines/SW680/jazda.ogg" linkNode="0>" volumeScale="0.9"/>
 	
 			<gearGroupLeverStart template="clackVar5" volumeScale="1.9" pitchScale="0.8"/>
 			<gearGroupLeverEnd template="clackVar6"      volumeScale="1.9" pitchScale="0.8"/>
-			<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>" volumeScale="1.5">	
+			<retarder file="sounds/Transmission/JD965_transmission.ogg" innerRadius="10.0" outerRadius="70.0" linkNode="0>" volumeScale="0.6">	
 			<volume indoor="2" outdoor="1">
 				<modifier type="SPEED" value="0.0"  modifiedValue="0.3"/>
 				<modifier type="SPEED" value="1.0"  modifiedValue="0.7"/>
@@ -43,23 +43,23 @@
             <chopperWork template="harvesterChopper" linkNode="0>0|9|1|2|0|1" fadeIn="2"/>
             <chopStraw   template="chopStrawDischarge" linkNode="0>0|9|1|2|0|1"/>
             <dropStraw   template="dropStrawDischarge" linkNode="0>0|9|1|2|0|1"/>
-            <fill file="$data/sounds/tools/fillTypes/grainMediumFillLoop.wav" innerRadius="2.0" outerRadius="8.0" fadeIn="0.5" fadeOut="1.0" linkNode="0>0|9|1|3">
+            <fill file="$data/sounds/tools/fillTypes/grainMediumFillLoop.wav" innerRadius="2.0" outerRadius="8.0" fadeIn="0.5" fadeOut="1.0" linkNode="0>0|9|1|3" volumeScale="0.7">
                 <volume indoor="0.60" outdoor="1.50" />
                 <pitch indoor="0.7" outdoor="0.7" />
                 <lowpassGain indoor="0.30" outdoor="1.00" />
                 <randomization maxVolume="0.2" isInside="true" isOutside="true"/>
             </fill>
-			<start file="sounds/Engines/SW680/obroty.wav" innerRadius="12.0" outerRadius="60.0">
+			<start file="sounds/Engines/SW680/obroty.wav" innerRadius="12.0" outerRadius="60.0" volumeScale="0.5">
                 <volume indoor="0.7" outdoor="1.2"/>
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
             </start>
-            <work file="sounds/Engines/SW680/praca.wav" innerRadius="12.0" outerRadius="60.0" fadeOut="0.3">
+            <work file="sounds/Engines/SW680/praca.wav" innerRadius="12.0" outerRadius="60.0" fadeOut="0.3" volumeScale="0.5">
                 <volume indoor="1.0" outdoor="1.4"/>
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
             </work>
-            <stop file="sounds/Engines/SW680/zobrotow.wav" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1">
+            <stop file="sounds/Engines/SW680/zobrotow.wav" innerRadius="12.0" outerRadius="60.0" fadeIn="0.1" volumeScale="0.5">
                 <volume indoor="0.7" outdoor="1.1"/>
                 <pitch indoor="1.00" outdoor="1.00"/>
                 <lowpassGain indoor="0.75" outdoor="1.00"/>
